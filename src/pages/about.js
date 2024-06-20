@@ -11,22 +11,44 @@ const About = () => {
                 textAlign: "center",
             }}
         >
-            <h1>About Our Boutique Hostel in Chiang Rai</h1>
-            <p>
+            <h1
+                style={{
+                    fontSize: "2rem",
+                    marginBottom: "20px",
+                    color: "#333333", // Dark gray text color
+                }}
+            >
+                About Our Boutique Hostel in Chiang Rai
+            </h1>
+            <p
+                style={{
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    marginBottom: "20px",
+                    color: "#555555", // Darker gray text color
+                }}
+            >
                 Located in the heart of Chiang Rai, our boutique hostel offers a unique
                 blend of comfort, style, and local charm. Whether you're exploring the
                 vibrant city center or venturing out to discover the natural beauty of
                 northern Thailand, our hostel is the perfect home base for your
                 adventures.
             </p>
-            <p>
+            <p
+                style={{
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    marginBottom: "20px",
+                    color: "#555555", // Darker gray text color
+                }}
+            >
                 Our hostel features modern amenities, cozy accommodations, and a warm
                 atmosphere that welcomes travelers from around the world. Immerse
                 yourself in the cultural richness of Chiang Rai while enjoying the
                 convenience of staying in a centrally located boutique hostel.
             </p>
             <div
-                style={{git 
+                style={{
                     marginTop: "20px",
                     marginBottom: "20px",
                     display: "flex",
@@ -41,13 +63,27 @@ const About = () => {
                 />
                 {/* Add more images or a map if needed */}
             </div>
-            <p>
+            <p
+                style={{
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    marginBottom: "20px",
+                    color: "#555555", // Darker gray text color
+                }}
+            >
                 Whether you're traveling solo, with friends, or as a family, our
                 friendly staff is dedicated to ensuring you have a memorable stay in
                 Chiang Rai. Discover the tranquility of our hostel and the excitement
                 of the surrounding area while creating lasting memories.
             </p>
-            <p>
+            <p
+                style={{
+                    fontSize: "1rem",
+                    lineHeight: "1.6",
+                    marginBottom: "20px",
+                    color: "#555555", // Darker gray text color
+                }}
+            >
                 We look forward to welcoming you to our boutique hostel in Chiang Rai and
                 sharing the best of northern Thailand with you.
             </p>
