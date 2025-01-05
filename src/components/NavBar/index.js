@@ -16,7 +16,13 @@ const Navbar = () => {
 
                 <NavMenu>
                     <NavLink to="/about" >
-                        About
+                        About Us
+                    </NavLink>
+                    <NavLink to="/gallery" activeStyle>
+                        Facilities
+                    </NavLink>
+                    <NavLink to="/gallery" activeStyle>
+                        Activities
                     </NavLink>
                     <NavLink to="/gallery" activeStyle>
                         Gallery
@@ -26,7 +32,7 @@ const Navbar = () => {
                 </NavMenu>
                 <NavBtn>
                     <NavBtnLink to="/signin">
-                        Sign In
+                        Make a Reservation
                     </NavBtnLink>
                 </NavBtn>
             </Nav>
