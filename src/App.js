@@ -8,11 +8,12 @@ import {
 } from "react-router-dom";
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
+import Facilities from "./pages/facilities";
 
 function NavigationBar() {
   return (
     <Router>
-      <div class="logo">
+      <div className="logo">
         {/* <a href="#home"><img width="100px" height="auto" src="https://www.codepel.com/wp-content/uploads/2023/01/CodePel-Logo-2.1.png"></a> */}
       </div>
       <Navbar />
@@ -20,6 +21,7 @@ function NavigationBar() {
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/facilities" element={<Facilities />} />
       </Routes>
   </Router>
   )

@@ -24,12 +24,20 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    &.active {
-        color: #000000; /* Black text color when active */
-    }
+    --b: 0.05em;   /* the thickness of the line */
+    --c:rgb(6, 24, 64); /* the color */
+
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+        linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
     &:hover {
-        color: #555555; /* Darker gray text color on hover */
+        --_p: 100%;
+        --_s: .3s;
     }
 `;
 

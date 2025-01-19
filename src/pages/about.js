@@ -16,13 +16,13 @@ const About = () => {
     return (
         <div>
             <AboutHeader></AboutHeader>
-            <div class="about-paragraphs" >
-                <h1 class="about-title ">
+            <div className="about-paragraphs" >
+                <h1 className="about-title ">
                     About Our Boutique Hostel in Chiang Rai
                 </h1>
 
-                <div class="container">
-                    <div class="text-column">
+                <div className="container">
+                    <div className="text-column">
                         <p>
                             Located in the heart of Chiang Rai, our boutique hostel offers a unique
                             blend of comfort, style, and local charm. Whether you're exploring the
@@ -47,7 +47,7 @@ const About = () => {
                             sharing the best of northern Thailand with you.
                         </p>
                     </div>
-                    <div class="image-column">
+                    <div className="image-column">
                         <img
                             src="https://happynest-inspiring-hostel-chiang-rai.hotelmix.co.th/data/Photos/450x450/3390/339097/339097186.JPEG"
                             alt="Hostel Exterior"

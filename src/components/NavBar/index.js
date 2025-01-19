@@ -7,6 +7,7 @@ import {
     NavBtn,
     NavBtnLink,
 } from "./NavbarElements";
+import "./NavBar.css";
 
 const Navbar = () => {
     return (
@@ -15,16 +16,16 @@ const Navbar = () => {
                 <Bars />
 
                 <NavMenu>
-                    <NavLink to="/about" >
+                    <NavLink className="hover-3" to="/about" >
                         About Us
                     </NavLink>
-                    <NavLink to="/gallery" activeStyle>
+                    <NavLink className="hover-3" to="/facilities" activestyle="true" >
                         Facilities
                     </NavLink>
-                    <NavLink to="/gallery" activeStyle>
+                    <NavLink className="hover-3" to="/gallery" activestyle="true" >
                         Activities
                     </NavLink>
-                    <NavLink to="/gallery" activeStyle>
+                    <NavLink className="hover-3" to="/gallery" activestyle="true" >
                         Gallery
                     </NavLink>
                     {/* Second Nav */}
