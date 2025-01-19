@@ -12,8 +12,12 @@ import Gallery from "./pages/gallery";
 function NavigationBar() {
   return (
     <Router>
+      <div class="logo">
+        {/* <a href="#home"><img width="100px" height="auto" src="https://www.codepel.com/wp-content/uploads/2023/01/CodePel-Logo-2.1.png"></a> */}
+      </div>
       <Navbar />
       <Routes>
+          <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
       </Routes>

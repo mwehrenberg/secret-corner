@@ -16,7 +16,6 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
     font-size: 1rem;
     color: #333333; /* Dark gray text color */
     text-decoration: none;
@@ -66,7 +65,6 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
     font-size: 0.9rem;
     border-radius: 4px;
     background: #333333; /* Dark gray background */

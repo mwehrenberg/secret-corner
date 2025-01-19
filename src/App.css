@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: Verdana;
+  font-family: "EB Garamond";
 }
 
 .App-logo {
@@ -38,19 +38,7 @@
   }
 }
 
-.AboutHeader {
-  position: relative;
-  height: 60%;
-  width: 100%;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 /* Centered text */
 .centered {
