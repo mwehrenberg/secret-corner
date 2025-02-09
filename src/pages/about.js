@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../logo.svg";
-import clockTower from '../clockTower.webp';
+import logo from "../images/logo.svg";
+import temple from '../images/temple.jpg';
 import "./about.css";
 
 const AboutHeader = () => {
     return (
       <div className="AboutHeader">
-          <img src={clockTower} alt={logo} />
+          <img src={temple} alt={logo} />
           <p className="centered">About Us</p>
       </div>
     );
