@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./facilities.css";
 import clockTower from "../images/clockTower.webp";
 // import "../../node_modules/uikit";
 
 const Facilities = () => {
+    useEffect(() => {
+        const gridContainer = document.getElementById("gridContainer");
+        for (let i = 1; i <= 9; i++){
+            const gridItem = document.createElement("div");
+            gridItem.classList.add("grid-item");
+            gridItem.textContent = i;
+            gridContainer.append(gridItem);
+        }
+    }, []);
+
     return (
         <div>
             {/* <section>
@@ -30,5 +40,6 @@ const Facilities = () => {
         </div>
     );
 };
+
 
 export default Facilities;
