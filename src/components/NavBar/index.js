@@ -8,24 +8,26 @@ import {
 } from "./NavbarElements";
 import "./NavBar.css";
 import "../../images/logo.svg";
+// import aiLogo from "../../images/aiLogo2.jpg";
 
 const Navbar = () => {
     return (
         <>
             <Nav>   
                 {/* <NavLink to="/">      
-                    <img src="logo.svg" alt="Logo" className="logo"></img>
+                    <img src={aiLogo} alt="Logo" className="logo"></img>
                 </NavLink> */}
                 
                 <NavMenu>
-                    <img src="logo.svg" alt="Logo" className="logo"></img>
+                    {/* <img src="logo.svg" alt="Logo" className="logo"></img> */}
+                    <h2>Secret Corner Hostel | Chiang Rai</h2>
                     <NavLink className="hover-3" to="/about" >
-                        About Us
+                        Our Story
                     </NavLink>
                     <NavLink className="hover-3" to="/facilities" activestyle="true" >
                         Facilities
                     </NavLink>
-                    <NavLink className="hover-3" to="/gallery" activestyle="true" >
+                    <NavLink className="hover-3" to="/facilities" activestyle="true" >
                         Activities
                     </NavLink>
                     <NavLink className="hover-3" to="/gallery" activestyle="true" >

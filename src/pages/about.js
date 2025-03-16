@@ -1,35 +1,44 @@
 import React from "react";
-import logo from "../images/logo.svg";
-import temple from '../images/temple.jpg';
+import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
+import temple from "../images/temple.jpg";
 import "./about.css";
 
 const AboutHeader = () => {
     return (
-      <div className="AboutHeader">
-          <img src={temple} alt={logo} />
-          <p className="centered">About Us</p>
-      </div>
+        <div className="about-header">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c1/8d/cd/getlstd-property-photo.jpg?w=1800&h=1000&s=1" alt="Temple in Chiang Rai" className="header-image" />
+            <p className="header-text">Our Story</p>
+        </div>
     );
-  }
+};
 
 const About = () => {
     return (
-        <div>
-            <AboutHeader></AboutHeader>
-            <div className="about-paragraphs" >
-                <h1 className="about-title ">
-                    About Our Boutique Hostel in Chiang Rai
-                </h1>
-
-                <div className="container">
-                    <div className="text-column">
+        <div className="about-container">
+            <AboutHeader />
+            <div className="about-content">
+                <div className="about-section">
+                    <div className="about-text-container">
+                        <h3>Locally Run</h3>
                         <p>
                             Located in the heart of Chiang Rai, our boutique hostel offers a unique
                             blend of comfort, style, and local charm. Whether you're exploring the
                             vibrant city center or venturing out to discover the natural beauty of
                             northern Thailand, our hostel is the perfect home base for your
-                            adventures. 
+                            adventures.
                         </p>
+                    </div>
+                    <div className="about-image-container">
+                        <img src="https://happynest-inspiring-hostel-chiang-rai.hotelmix.co.th/data/Photos/450x450/3390/339097/339097186.JPEG" alt="Hostel Exterior" className="about-image" />
+                    </div>
+                </div>
+                <hr class="custom-line"></hr>
+                <div className="about-section">
+                    <div className="about-image-container">
+                        <img src={chiangraiBackdrop} alt="Local Temple" className="about-image" />
+                    </div>
+                    <div className="about-text-container">
+                        <h3>Family Run</h3>
                         <p>
                             Our hostel features modern amenities, cozy accommodations, and a warm
                             atmosphere that welcomes travelers from around the world. Immerse
@@ -37,25 +46,18 @@ const About = () => {
                             convenience of staying in a centrally located hostel.
                         </p>
                         <p>
-                            Whether you're traveling solo, with friends, or as a family, our
-                            friendly staff is dedicated to ensuring you have a memorable stay in
-                            Chiang Rai. Discover the tranquility of our hostel and the excitement
-                            of the surrounding area while creating lasting memories.
+                            Our hostel features modern amenities, cozy accommodations, and a warm
+                            atmosphere that welcomes travelers from around the world. Immerse
+                            yourself in the cultural richness.
                         </p>
-                        <p>
-                            We look forward to welcoming you to Secret Corner Hostel in Chiang Rai and
-                            sharing the best of northern Thailand with you.
-                        </p>
-                    </div>
-                    <div className="image-column">
-                        <img
-                            src="https://happynest-inspiring-hostel-chiang-rai.hotelmix.co.th/data/Photos/450x450/3390/339097/339097186.JPEG"
-                            alt="Hostel Exterior"
-                            style={{ maxWidth: "100%", height: "auto", borderRadius: "8px" }}
-                        />
                     </div>
                 </div>
-
+                <hr class="custom-line"></hr>
+                {/* <div className="about-section">
+                    <div className="about-image-container">
+                        <img src={temple} alt="Local Temple" className="about-image" />
+                    </div>
+                </div> */}
             </div>
         </div>
     );

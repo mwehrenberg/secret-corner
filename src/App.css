@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  font-family: "EB Garamond";
+  /* font-family: "EB Garamond"; */
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
