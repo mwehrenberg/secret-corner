@@ -1,12 +1,13 @@
 import React from "react";
 import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
-import temple from "../images/temple.jpg";
+import aboutCover from "../images/aboutCover.png";
+import aboutImage from "../images/aboutImage.png";
 import "./about.css";
 
 const AboutHeader = () => {
     return (
         <div className="about-header">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c1/8d/cd/getlstd-property-photo.jpg?w=1800&h=1000&s=1" alt="Temple in Chiang Rai" className="header-image" />
+            <img src={aboutCover} alt="Temple in Chiang Rai" className="header-image" />
             <p className="header-text">Our Story</p>
         </div>
     );
@@ -29,7 +30,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image-container">
-                        <img src="https://happynest-inspiring-hostel-chiang-rai.hotelmix.co.th/data/Photos/450x450/3390/339097/339097186.JPEG" alt="Hostel Exterior" className="about-image" />
+                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
                 <hr class="custom-line"></hr>
