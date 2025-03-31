@@ -27,7 +27,7 @@ const Navbar = () => {
                     <NavLink className="hover-3" to="/facilities" activestyle="true" >
                         Facilities
                     </NavLink>
-                    <NavLink className="hover-3" to="/facilities" activestyle="true" >
+                    <NavLink className="hover-3" to="/activities" activestyle="true" >
                         Activities
                     </NavLink>
                     <NavLink className="hover-3" to="/gallery" activestyle="true" >

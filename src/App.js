@@ -9,6 +9,7 @@ import {
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Facilities from "./pages/facilities";
+import Activities from "./pages/activities"
 
 function NavigationBar() {
   return (
@@ -22,6 +23,7 @@ function NavigationBar() {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/facilities" element={<Facilities />} />
+          <Route path="/activities" element={<Activities />} />
       </Routes>
   </Router>
   )
