@@ -114,8 +114,7 @@ footer {
 }
 
 .header-image {
-    /* width: 100%; */
-    width: fill;
+    width: 100%;
     border-radius: 2px;
     height: 400px;
     object-fit: cover;
