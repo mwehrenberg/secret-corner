@@ -7,7 +7,6 @@ import {
     NavBtnLink,
 } from "./NavbarElements";
 import "./NavBar.css";
-import logo from "../../images/croppedLogo.png";
 
 const Navbar = () => {
     return (
