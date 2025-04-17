@@ -55,25 +55,6 @@ p {
     padding: 20px;
 }
 
-/* .container p {
-    flex: 1 1 45%;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-.container div {
-    flex: 1 1 100%;
-    margin: 10px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-} */
-
 .container {
     display: flex;
     max-width: 1200px;
@@ -122,17 +103,19 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
 .about-header {
     position: relative;
     width: 80%;
+    padding-bottom: 20px;
 }
 
 .header-image {
-    width: 100%;
+    /* width: 100%; */
+    width: fill;
     border-radius: 2px;
     height: 400px;
     object-fit: cover;

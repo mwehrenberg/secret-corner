@@ -20,13 +20,12 @@ const About = () => {
             <div className="about-content">
                 <div className="about-section">
                     <div className="about-text-container">
-                        <h3>Locally Run</h3>
                         <p>
-                            Located in the heart of Chiang Rai, our boutique hostel offers a unique
-                            blend of comfort, style, and local charm. Whether you're exploring the
-                            vibrant city center or venturing out to discover the natural beauty of
-                            northern Thailand, our hostel is the perfect home base for your
-                            adventures.
+                            Located in the heart of Chiang Rai, Secret Corner Boutique Hostel offers guests a 
+                            clean, beautiful place to stay, connect with the local community, and work comfortably. 
+                            With deep local knowledge, we craft authentic activities and experiences you won’t 
+                            find anywhere else. At Secret Corner, we put our heart and soul into creating a 
+                            fresh, inspiring way to explore the world.
                         </p>
                     </div>
                     <div className="about-image-container">
@@ -54,11 +53,21 @@ const About = () => {
                     </div>
                 </div>
                 <hr class="custom-line"></hr>
-                {/* <div className="about-section">
-                    <div className="about-image-container">
-                        <img src={temple} alt="Local Temple" className="about-image" />
+                <div className="about-section">
+                    <div className="about-text-container">
+                        <h3>Getting Here</h3>
+                        <p>
+                            Arrival by <b>bus</b>- the walk from the bus station is about ten minutes.
+                        </p>
+                        <p>
+                            From the <b>airport</b>- it takes about 20 minutes. We provide airport transfer for THB250 one way per car. Alternatively, you can use a taxi, Grab, or Bolt service.
+                        </p>
                     </div>
-                </div> */}
+                    <div className="about-image-container">
+                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
+                    </div>
+                </div>
+                <hr class="custom-line"></hr>
             </div>
         </div>
     );
