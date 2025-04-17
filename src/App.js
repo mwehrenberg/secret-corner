@@ -10,6 +10,7 @@ import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Facilities from "./pages/facilities";
 import Activities from "./pages/activities"
+import LocalAttractions from "./pages/localAttractions"
 
 function NavigationBar() {
   return (
@@ -24,6 +25,7 @@ function NavigationBar() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/localAttractions" element={<LocalAttractions />} />
       </Routes>
   </Router>
   )

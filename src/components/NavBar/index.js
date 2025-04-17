@@ -7,8 +7,7 @@ import {
     NavBtnLink,
 } from "./NavbarElements";
 import "./NavBar.css";
-import "../../images/logo.svg";
-// import aiLogo from "../../images/aiLogo2.jpg";
+import logo from "../../images/croppedLogo.png";
 
 const Navbar = () => {
     return (
@@ -19,7 +18,7 @@ const Navbar = () => {
                 </NavLink> */}
                 
                 <NavMenu>
-                    {/* <img src="logo.svg" alt="Logo" className="logo"></img> */}
+                    {/* <img src={logo} alt="Logo" className="logo"></img> */}
                     <h2>Secret Corner Hostel | Chiang Rai</h2>
                     <NavLink className="hover-3" to="/about" >
                         Our Story
@@ -30,11 +29,12 @@ const Navbar = () => {
                     <NavLink className="hover-3" to="/activities" activestyle="true" >
                         Activities
                     </NavLink>
+                    <NavLink className="hover-3" to="/localAttractions" activestyle="true" >
+                        Local Attractions
+                    </NavLink>
                     <NavLink className="hover-3" to="/gallery" activestyle="true" >
                         Gallery
                     </NavLink>
-                    {/* Second Nav */}
-                    {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
                 </NavMenu>
                 <NavBtn>
                     <NavBtnLink to="/">
