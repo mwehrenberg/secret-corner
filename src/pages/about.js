@@ -45,11 +45,6 @@ const About = () => {
                             yourself in the cultural richness of Chiang Rai while enjoying the
                             convenience of staying in a centrally located hostel.
                         </p>
-                        <p>
-                            Our hostel features modern amenities, cozy accommodations, and a warm
-                            atmosphere that welcomes travelers from around the world. Immerse
-                            yourself in the cultural richness.
-                        </p>
                     </div>
                 </div>
                 <hr class="custom-line"></hr>

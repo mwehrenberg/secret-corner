@@ -12,12 +12,6 @@ import maeFah from "../images/activities/maeFah.webp";
 import trekking from "../images/activities/trekking.jpg";
 
 const localAttractions = [
-  // {
-  //   title: "Chiang Rai Night Bazaar",
-  //   description: "Make new friends and enjoy a night at the Chiang Rai night bazaar. Every Tuesday and Friday at 7pm.",
-  //   image: "https://d13jio720g7qcs.cloudfront.net/images/destinations/origin/5dfb24fd86bd1.jpg",
-  //   content: nightbazaar
-  // },
   {
     title: "Doi Chang Coffee Mountain Trip",
     description: "This region is an hour and a half drive south and west from the city center. It is actually not far from the city as the bird would fly, but the only roads require a longer drive but the views and tranquil nature will more than make up for the drive. In fact, you will need to stop and car or motorbike frequently just to take in the views. Simply astounding. So many choices of places to stop for coffee and tea and of course Thai food. Our staff are happy to suggest some of the better places to stop if you desire to explore this region. Unlimited exploring, views, and choices for great coffee grown locally.",
@@ -77,6 +71,21 @@ const localAttractions = [
 const LocalAttractions = () => {
     return (
         <div>
+          <div className="localAttractions-container">
+            <h2>
+              Looking for something fun to do in Chiang Rai?
+            </h2>
+            <p className="localAttractions-text">
+              Not sure where to start with all the options? You’re in the right place — 
+              we’ve handpicked our favorite day tours and local experiences just for you! 
+              Whether you’re into cultural sights, food adventures, or laid-back nature walks, 
+              there’s something here you’ll love.
+            </p>
+            <p className="localAttractions-text">
+              Swing by reception anytime during your stay — our friendly team is always happy to share tips, 
+              hidden gems, and help you plan the perfect day.
+            </p>
+          </div>
         {localAttractions.map((activity, index) => (
             <div className="activity-container">
                 <div className="activity-image">

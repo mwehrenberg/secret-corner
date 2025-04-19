@@ -34,3 +34,14 @@
     color: #555;
     line-height: 1.6;
 }  
+
+.localAttractions-container {
+    align-items: center;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.localAttractions-text{
+    text-align: left;
+}
