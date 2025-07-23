@@ -36,7 +36,7 @@ const Navbar = () => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/">
+                    <NavBtnLink target="_blank" to="https://book-directonline.com/properties/secretcornerDirect">
                         Make a Reservation
                     </NavBtnLink>
                 </NavBtn>
