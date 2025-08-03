@@ -1,0 +1,77 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    color: #333;
+  }
+  
+  /* HERO SECTION with Parallax */
+  .hero {
+    height: 100vh;
+    background-image: url('../images/aboutCover.png'); /* Update this path */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 0 20px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 3000;
+  }
+  
+  /* ABOUT SECTION */
+  .about {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: left ;
+  }
+  
+  .why-us-content {
+    display: flex;
+  }
+
+  .fixed {
+    width: 35%;
+  }
+
+  .flex-item {
+    /* flex-grow: 1; */
+    width: 65%;
+  }

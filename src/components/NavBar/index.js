@@ -18,7 +18,7 @@ const Navbar = () => {
                 
                 <NavMenu>
                     {/* <img src={logo} alt="Logo" className="logo"></img> */}
-                    <h2>Secret Corner Hostel | Chiang Rai</h2>
+                    <a href="/"><h2>Secret Corner Hostel | Chiang Rai</h2></a>
                     <NavLink className="hover-3" to="/about" >
                         Our Story
                     </NavLink>

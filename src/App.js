@@ -6,6 +6,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+import LandingPage from "./pages/landingPage"
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Facilities from "./pages/facilities";
@@ -20,7 +21,7 @@ function NavigationBar() {
       </div>
       <Navbar />
       <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/facilities" element={<Facilities />} />

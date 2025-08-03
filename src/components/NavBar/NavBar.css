@@ -19,3 +19,8 @@
 h2 {
     padding-right: 10px;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
