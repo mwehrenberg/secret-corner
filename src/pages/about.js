@@ -2,7 +2,7 @@ import React from "react";
 import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
 import aboutCover from "../images/aboutCover.png";
 import aboutImage from "../images/aboutImage.png";
-import "./about.css";
+import "./about1.css";
 
 const AboutHeader = () => {
     return (
@@ -32,7 +32,7 @@ const About = () => {
                         <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
-                <hr class="custom-line"></hr>
+                <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
                         <img src={chiangraiBackdrop} alt="Local Temple" className="about-image" />
@@ -47,7 +47,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <hr class="custom-line"></hr>
+                <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-text-container">
                         <h3>Getting Here</h3>
@@ -62,7 +62,7 @@ const About = () => {
                         <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
-                <hr class="custom-line"></hr>
+                <hr className="custom-line"></hr>
             </div>
         </div>
     );
