@@ -1,4 +1,4 @@
-/* Base styles */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,11 +7,10 @@ body, html {
     color: #333;
   }
   
-  /* HERO SECTION with Parallax */
+  /* HERO SECTION */
   .hero {
     height: 100vh;
-    background-image: url('../images/aboutCover.png'); /* Update this path */
-    background-attachment: fixed;
+    background-image: url('../images/aboutCover.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +35,7 @@ body, html {
   .hero-overlay p {
     font-size: 1.5rem;
     margin-top: 0.5rem;
-    font-weight: 3000;
+    font-weight: 300;
   }
   
   /* ABOUT SECTION */
@@ -48,30 +47,71 @@ body, html {
   .content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
   }
   
   .content h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   
   .content p {
     font-size: 1.125rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    text-align: left ;
+    text-align: left;
   }
   
+  /* WHY US FLEX */
   .why-us-content {
     display: flex;
+    margin-bottom: 1rem;
   }
-
+  
   .fixed {
     width: 35%;
+    font-weight: bold;
   }
-
+  
   .flex-item {
-    /* flex-grow: 1; */
     width: 65%;
   }
+  
+  /* MOBILE STYLES */
+  @media (max-width: 768px) {
+    .hero-overlay h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 1.1rem;
+    }
+  
+    .about {
+      padding: 40px 15px;
+    }
+  
+    .content p {
+      font-size: 1rem;
+    }
+  
+    .why-us-content {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .fixed, .flex-item {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-overlay p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -2,7 +2,7 @@ import React from "react";
 import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
 import aboutCover from "../images/aboutCover.png";
 import aboutImage from "../images/aboutImage.png";
-import "./about1.css";
+import "./about.css";
 
 const AboutHeader = () => {
     return (

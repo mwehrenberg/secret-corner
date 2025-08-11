@@ -88,3 +88,26 @@ export const NavBtnLink = styled(Link)`
         background: #555555; /* Darker gray background on hover */
     }
 `;
+
+export const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+
+    a {
+        padding: 0.75rem 1.5rem;
+        color: #333;
+        text-decoration: none;
+        font-size: 1rem;
+        &:hover {
+            background: #f4f4f4;
+        }
+    }
+`;
