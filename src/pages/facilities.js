@@ -71,7 +71,8 @@ const Facilities = () => {
                 </div>
 
                 <div class="special-offer">
-                    <p>🎉 Book directly and enjoy <strong>25% off</strong> + a welcome drink on our rooftop!</p>
+                    <h3>🎉 Enjoy <strong>30% off</strong> when you book directly through our website!</h3>
+                    <h4>Use promo code <b>SECRETDEAL</b> at checkout!</h4>
                 </div>
             </section>
 
