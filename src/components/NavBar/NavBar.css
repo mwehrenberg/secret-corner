@@ -1,26 +1,56 @@
-.hover-3 {
-    --b: 0.1em;   /* the thickness of the line */
-    --c: #1095c1; /* the color */
-
-    color: #0000;
-    padding-block: var(--b);
-    background: 
-        linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-        linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-}
-.hover-3:hover {
-    --_p: 100%;
-    --_s: .3s;
-}
-
+/* Fix navbar overflow */
 h2 {
-    padding-right: 10px;
-}
+    font-size: 1.2rem;   /* smaller heading */
+    white-space: nowrap; /* prevent breaking weirdly */
+    margin-right: 10px;
+  }
 
-a {
+  a {
     color: inherit;
     text-decoration: none;
-}
+  }
+  
+  /* Reservation button styles */
+  .NavBtnLink {
+    font-size: 0.9rem;
+    border-radius: 4px;
+    background: #333333;
+    padding: 8px 16px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap; /* keep text on one line */
+  }
+  .NavBtnLink:hover {
+    background: #555555;
+  }
+  
+  /* Mobile fixes */
+  @media (max-width: 768px) {
+    /* Shrink heading */
+    h2 {
+      font-size: 1rem;
+      max-width: 200px; /* keep it from overflowing */
+      overflow: hidden;
+      text-overflow: ellipsis; /* "Secret Corner..." if too long */
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  
+    /* Hide reservation button in top nav */
+    .NavBtn {
+      display: none;
+    }
+  
+    /* Show reservation button inside dropdown */
+    .MobileMenu .NavBtnLink {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      width: 100%;
+    }
+  }
