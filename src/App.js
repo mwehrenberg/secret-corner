@@ -12,6 +12,7 @@ import Gallery from "./pages/gallery";
 import Facilities from "./pages/facilities";
 import Activities from "./pages/activities"
 import LocalAttractions from "./pages/localAttractions"
+import Footer from "./components/Footer/footer"
 
 function NavigationBar() {
   return (
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <NavigationBar></NavigationBar>
+      <Footer></Footer>
     </div>
   );
 }
