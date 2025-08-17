@@ -13,7 +13,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>6-Bed Female Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
-                        <p class="rate">THB 600 / night</p>
+                        {/* <p class="rate">THB 600 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -23,7 +23,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
-                        <p class="rate">THB 550 / night</p>
+                        {/* <p class="rate">THB 550 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -33,7 +33,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Most affordable option, same great design as our other dormitories.</p>
-                        <p class="rate">THB 500 / night</p>
+                        {/* <p class="rate">THB 500 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -43,7 +43,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>Deluxe King Room with Private Bath</h3>
                         <p>Premium furnishings, in-room fridge & TV, ensuite with walk-in shower.</p>
-                        <p class="rate">THB 2,500 / night</p>
+                        {/* <p class="rate">THB 2,500 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -54,7 +54,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>Standard King Room with Private Bath</h3>
                         <p>Cozy layout, king-size bed, in-room fridge, ensuite.</p>
-                        <p class="rate">THB 2,000 / night</p>
+                        {/* <p class="rate">THB 2,000 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -64,7 +64,7 @@ const Facilities = () => {
                     <div class="room-info">
                         <h3>Triple Room with Private Bath</h3>
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
-                        <p class="rate">THB 2,500 / night</p>
+                        {/* <p class="rate">THB 2,500 / night</p> */}
                         {/* <a href="/book" class="btn">Book Now</a> */}
                     </div>
                     </div>
@@ -72,7 +72,7 @@ const Facilities = () => {
 
                 <div class="special-offer">
                     <h3>🎉 Enjoy <strong>30% off</strong> when you book directly through our website!</h3>
-                    <h4>Use promo code <b>SECRETDEAL</b> at checkout!</h4>
+                    <h4>Use promo code <b class="promo-code">SECRETDEAL</b> at checkout!</h4>
                 </div>
             </section>
 

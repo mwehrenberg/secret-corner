@@ -5,7 +5,6 @@ import bluetemple from "../images/activities/bluetemple.webp";
 import goldentriangle from "../images/activities/goldentriangle.jpg";
 import teaplant from "../images/activities/teaplant.jpg";
 import cook from "../images/activities/cook.jpg";
-// import waterfall from "../images/activities/waterfall.jpg";
 import baanDam from "../images/activities/baanDam.jpg"
 import doiChang from "../images/activities/doiChang.png";
 import maeFah from "../images/activities/maeFah.webp";
