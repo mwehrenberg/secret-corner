@@ -1,12 +1,16 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
 import "./footer.css";
+import logo from "../../images/logo.png"
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer-top">
+      <div>
+        <img src={logo} alt="Secret Corner Hostel Logo" className="footer-logo" />
+      </div>
       <div className="column address">
-        <h4>Secret Corner Hostel</h4>
+        <h4>Contact Us</h4>
         <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40, 1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
         <p>Reception Hours: 07:00 - 20:00</p>
         <p><a href="tel:+66613326191">+66 61 332 6191</a></p>
@@ -27,7 +31,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      <p>© {new Date().getFullYear()} Secret Corner Hostel — Where culture, comfort & creativity meet.</p>
+      <p>© {new Date().getFullYear()} Secret Corner Hostel</p>
     </div>
   </footer>
 );

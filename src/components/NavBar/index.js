@@ -8,6 +8,7 @@ import {
     Bars,
     MobileMenu
 } from "./NavbarElements";
+import logo from "../../images/logo.png";
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -28,7 +29,10 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <a href="/"><h2>Secret Corner Hostel | Chiang Rai</h2></a>
+                <a href="/" className="navbar-logo">
+                    <img src={logo} alt="Secret Corner Hostel Logo" />
+                </a>
+
                 <Bars onClick={toggleMenu} />
 
                 <NavMenu>

@@ -88,3 +88,15 @@
       justify-content: center;
     }
   }  
+
+  .address {
+    text-align: center; /* center contents of address column */
+  }
+  
+  .footer-logo {
+    height: 150px;
+    width: auto;
+    margin: 0 auto 10px auto; /* center inside column */
+    display: block;
+  }
+  

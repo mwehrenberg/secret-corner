@@ -26,6 +26,18 @@ h2 {
     background: #555555;
   }
   
+  .navbar-logo img {
+    height: 130px;
+    width: auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo img {
+      height: 80px;
+    }
+  }  
+
   /* Mobile fixes */
   @media (max-width: 768px) {
     h2 {
