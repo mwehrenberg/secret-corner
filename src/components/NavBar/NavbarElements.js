@@ -90,26 +90,43 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    position: fixed;
-    top: 85px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 85px);
-    padding: 1rem 0;
-    overflow-y: auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    z-index: 999;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: fixed;   /* keep anchored under navbar */
+  top: 85px;         /* match navbar height */
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
 
-    a {
-        padding: 1rem 1.5rem;
-        color: #333;
-        text-decoration: none;
-        font-size: 1.1rem;
-        &:hover {
-            background: #f4f4f4;
-        }
+  a {
+    padding: 0.75rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    &:hover {
+      background: #f4f4f4;
     }
+  }
+
+  /* Reservation button styling inside dropdown */
+  .mobile-reserve {
+    margin: 1rem auto 0 auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+
+  .mobile-reserve:hover {
+    background: #555;
+  }
 `;
