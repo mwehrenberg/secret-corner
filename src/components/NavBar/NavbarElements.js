@@ -93,19 +93,21 @@ export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
     background: #fff;
-    position: absolute;
+    position: fixed;
     top: 85px;
     left: 0;
     width: 100%;
+    height: calc(100vh - 85px);
     padding: 1rem 0;
+    overflow-y: auto;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 999;
 
     a {
-        padding: 0.75rem 1.5rem;
+        padding: 1rem 1.5rem;
         color: #333;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.1rem;
         &:hover {
             background: #f4f4f4;
         }

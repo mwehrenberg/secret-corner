@@ -8,6 +8,7 @@ const Footer = () => (
       <div className="column address">
         <h4>Secret Corner Hostel</h4>
         <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40, 1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
+        <p>Reception Hours: 07:00 - 20:00</p>
         <p><a href="tel:+66613326191">+66 61 332 6191</a></p>
       </div>
       <div className="column links">

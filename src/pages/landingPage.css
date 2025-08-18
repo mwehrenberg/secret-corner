@@ -1,46 +1,45 @@
-
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
     color: #333;
+    scroll-behavior: smooth;
   }
   
-  /* HERO SECTION */
+  /* HERO */
   .hero {
     height: 100vh;
     background-image: url('../images/aboutCover.png');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   
   .hero-overlay {
     text-align: center;
     color: white;
+    padding: 0 1rem;
+    max-width: 90%;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    padding: 0 20px;
   }
   
   .hero-overlay h1 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 6vw, 4rem);
     margin: 0;
   }
   
   .hero-overlay p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     margin-top: 0.5rem;
     font-weight: 300;
   }
   
-  /* ABOUT SECTION */
+  /* ABOUT */
   .about {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: #f9f9f9;
   }
   
@@ -50,68 +49,51 @@ body, html {
   }
   
   .content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     text-align: center;
+    margin-bottom: 1rem;
   }
   
   .content p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
     text-align: left;
   }
   
-  /* WHY US FLEX */
-  .why-us-content {
-    display: flex;
-    margin-bottom: 1rem;
+  /* WHY US */
+  .why-us {
+    padding: 60px 20px;
   }
   
-  .fixed {
-    width: 35%;
-    font-weight: bold;
+  .why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
   }
   
-  .flex-item {
-    width: 65%;
+  .why-us-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
   }
   
-  /* MOBILE STYLES */
-  @media (max-width: 768px) {
-    .hero-overlay h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-overlay p {
-      font-size: 1.1rem;
-    }
-  
-    .about {
-      padding: 40px 15px;
-    }
-  
-    .content p {
-      font-size: 1rem;
-    }
-  
-    .why-us-content {
-      flex-direction: column;
-      text-align: left;
-    }
-  
-    .fixed, .flex-item {
-      width: 100%;
-    }
+  .why-us-card:hover {
+    transform: translateY(-5px);
   }
   
-  @media (max-width: 480px) {
-    .hero-overlay h1 {
-      font-size: 2rem;
-    }
+  .why-us-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #444;
+  }
   
-    .hero-overlay p {
-      font-size: 1rem;
-    }
+  .why-us-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
   }
   

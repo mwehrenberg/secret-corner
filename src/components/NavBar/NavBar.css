@@ -45,12 +45,27 @@ h2 {
     .NavBtn {
       display: none;
     }
-  
-    /* Show reservation button inside dropdown */
+
     .MobileMenu .NavBtnLink {
-      display: block;
-      margin-top: 10px;
+      margin: auto 1rem 1rem 1rem;
+      padding: 12px;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
       text-align: center;
-      width: 100%;
+      font-size: 1rem;
+      position: sticky;
+      bottom: 1rem;
     }
   }
+  
+
+  .menu-backdrop {
+    position: fixed;
+    top: 85px; /* match navbar height */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 85px);
+    background: rgba(0,0,0,0.4);
+    z-index: 998;
+  }  
