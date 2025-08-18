@@ -28,13 +28,13 @@ h2 {
   
   /* Mobile fixes */
   @media (max-width: 768px) {
-    /* Shrink heading */
     h2 {
-      font-size: 1rem;
-      max-width: 200px; /* keep it from overflowing */
-      overflow: hidden;
-      text-overflow: ellipsis; /* "Secret Corner..." if too long */
-    }
+        font-size: clamp(1rem, 4vw, 1.5rem); /* scales between mobile & desktop */
+        white-space: normal; /* allow wrapping */
+        overflow: visible;   /* don’t clip text */
+        text-overflow: unset;
+        word-break: break-word; /* ensures long words break if needed */
+    }      
 
     a {
       color: inherit;
