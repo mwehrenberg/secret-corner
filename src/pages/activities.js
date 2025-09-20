@@ -3,30 +3,46 @@ import "./activities.css";
 import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
 import pancakes from "../images/hostelActivities/pancakes.webp";
 import happyhour from "../images/hostelActivities/happyhour.png";
-import movie from "../images/hostelActivities/movie.png";
+import guide from "../images/hostelActivities/guide.png";
+import gamenight from "../images/hostelActivities/gamenight.png";
+import padthai from "../images/hostelActivities/padthai.png";
+import market from "../images/hostelActivities/market.webp";
 
 const weeklySchedule = {
   Monday: {
-    blurb: "Morning rooftop yoga",
+    blurb: "Rooftop Yoga",
+    details: "7am - 8am",
     image: yoga,
   },
-  Tuesday: null,
-  Wednesday: null,
-  Thursday: {
-    blurb: "Morning rooftop yoga",
-    image: yoga,
+  Tuesday: {
+    blurb: "Walk with Khun Tuk",
+    details: "Discover hidden corners of Chiang Rai with our local guide. Meet at the front desk at 7:30am.",
+    image: guide,
   },
-  Friday: {
-    blurb: "Breakfast",
+  Wednesday: {
+    blurb: "Breakfast club: Secret Corner Edition",
+    details: "8am - 10am",
     image: pancakes,
   },
+  Thursday: {
+    blurb: "Global Card Game Night",
+    details: "8pm on our rooftop",
+    image: gamenight,
+  },
+  Friday: {
+    blurb: "Secret Supper Night",
+    details: "6:30pm - 8:30pm",
+    image: padthai,
+  },
   Saturday: {
-    blurb: "Walking tour to the night market",
-    image: happyhour,
+    blurb: "Saturday Night Bites: Chiang Rai Walking Street",
+    details: "Meet at the front desk at 6pm",
+    image: market,
   },
   Sunday: {
-    blurb: "Movie night",
-    image: movie,
+    blurb: "Travel stories & Rooftop Tapas Night",
+    details: "Snacks and drinks provided — bring your best travel tales! 7pm",
+    image: happyhour,
   },
 };
 
@@ -39,7 +55,10 @@ const WeeklySchedule = () => {
           {activity ? (
             <div className="activity-content">
               <img src={activity.image} alt={activity.blurb} />
-              <p>{activity.blurb}</p>
+              <p className="activity-blurb">{activity.blurb}</p>
+              {activity.details && (
+                <p className="activity-details">{activity.details}</p>
+              )}
             </div>
           ) : (
             <p className="no-activity">No activities scheduled</p>

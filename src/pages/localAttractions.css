@@ -4,16 +4,74 @@
     max-width: 1000px;
     padding: 0 1rem;
     text-align: center;
-}
-
-.localAttractions-text {
+  }
+  
+  .localAttractions-text {
     text-align: left;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-/* Each attraction card */
-.activity-container {
+  }
+  
+  /* ===== Featured Activity Highlight ===== */
+  .featured-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fcebd4; /* warm highlight background */
+    border: 2px solid #f59e0b; /* amber border */
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .featured-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .featured-image img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .featured-text {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .featured-text h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #b45309; /* darker amber */
+    margin-bottom: 10px;
+  }
+  
+  .featured-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f59e0b;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .download-btn:hover {
+    background: #d97706;
+  }
+  
+  /* ===== Each attraction card ===== */
+  .activity-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,69 +79,70 @@
     margin: 40px auto;
     gap: 40px;
     padding: 0 1rem;
-}
-
-.activity-image {
+  }
+  
+  .activity-image {
     flex: 1;
-}
-
-.activity-image img {
+  }
+  
+  .activity-image img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-.activity-text {
+  }
+  
+  .activity-text {
     flex: 1;
     text-align: left;
-}
-
-.activity-text h2 {
+  }
+  
+  .activity-text h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-}
-
-.activity-text p {
+  }
+  
+  .activity-text p {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
-}
-
-/* ===== MOBILE STYLES ===== */
-@media (max-width: 768px) {
-    /* Stack text + image vertically */
+  }
+  
+  /* ===== MOBILE STYLES ===== */
+  @media (max-width: 768px) {
+    .featured-activity,
     .activity-container {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
     }
-
+  
+    .featured-text,
     .activity-text {
-        text-align: center;
+      text-align: center;
     }
-
+  
+    .featured-text h2,
     .activity-text h2 {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
+    .featured-text p,
     .activity-text p {
-        font-size: 15px;
+      font-size: 15px;
     }
-
-    .localAttractions-container {
-        width: 100%;
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
+    .featured-text h2,
     .activity-text h2 {
-        font-size: 18px;
+      font-size: 18px;
     }
+    .featured-text p,
     .activity-text p {
-        font-size: 14px;
-        line-height: 1.5;
+      font-size: 14px;
+      line-height: 1.5;
     }
-}
+  }
+  
