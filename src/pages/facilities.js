@@ -1,6 +1,12 @@
 import "./facilities.css";
-import DeluxeKingRoom from "../images/rooms/deluxeKingCover.jpeg";
-import StandardKingRoom from "../images/rooms/standardKingCover.jpeg";
+// import DeluxeKingRoom from "../images/rooms/deluxeKingCover.jpeg";
+// import StandardKingRoom from "../images/rooms/standardKingCover.jpeg";
+import DeluxeKingRoom from "../images/rooms/bunk3.jpeg";
+import StandardKingRoom from "../images/rooms/bunk1.jpeg";
+import TripleRoom from "../images/rooms/triple.jpeg";
+import SixBedDorm from "../images/rooms/6bed.jpeg";
+import SixBedFemaleDorm from "../images/rooms/6bedFemale.jpeg";
+import EightBed from "../images/rooms/8bed.jpeg";
 
 const Facilities = () => {
     return (
@@ -9,7 +15,7 @@ const Facilities = () => {
                 <h2>Our Rooms</h2>
                 <div className="room-grid">
                     <div className="room-card">
-                    <img src="images/triple-room.jpg" alt="6-Bed Female Dormitory"></img>
+                    <img src={SixBedFemaleDorm} alt="6-Bed Female Dormitory"></img>
                     <div className="room-info">
                         <h3>6-Bed Female Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -17,7 +23,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src="images/triple-room.jpg" alt="6-Bed Mixed Dormitory"></img>
+                    <img src={SixBedDorm} alt="6-Bed Mixed Dormitory"></img>
                     <div className="room-info">
                         <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -25,7 +31,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src="images/triple-room.jpg" alt="8-Bed Mixed Dormitory"></img>
+                    <img src={EightBed} alt="8-Bed Mixed Dormitory"></img>
                     <div className="room-info">
                         <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Most affordable option, same great design as our other dormitories.</p>
@@ -50,7 +56,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src="images/triple-room.jpg" alt="Triple Room"></img>
+                    <img src={TripleRoom} alt="Triple Room"></img>
                     <div className="room-info">
                         <h3>Triple Room with Private Bath</h3>
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
