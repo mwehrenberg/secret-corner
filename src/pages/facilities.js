@@ -1,8 +1,6 @@
 import "./facilities.css";
-// import DeluxeKingRoom from "../images/rooms/deluxeKingCover.jpeg";
-// import StandardKingRoom from "../images/rooms/standardKingCover.jpeg";
-import DeluxeKingRoom from "../images/rooms/bunk3.jpeg";
-import StandardKingRoom from "../images/rooms/bunk1.jpeg";
+import Standard from "../images/rooms/standard.jpeg";
+import DeluxeTv from "../images/rooms/deluxetv.jpeg";
 import TripleRoom from "../images/rooms/triple.jpeg";
 import SixBedDorm from "../images/rooms/6bed.jpeg";
 import SixBedFemaleDorm from "../images/rooms/6bedFemale.jpeg";
@@ -39,7 +37,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={DeluxeKingRoom} alt="Deluxe King Room"></img>
+                    <img src={DeluxeTv} alt="Deluxe King Room"></img>
                     <div className="room-info">
                         <h3>Deluxe King Room with Private Bath</h3>
                         <p>Premium furnishings, in-room fridge & TV, ensuite with walk-in shower.</p>
@@ -48,7 +46,7 @@ const Facilities = () => {
 
                     {/* <!-- Repeat for other rooms --> */}
                     <div className="room-card">
-                    <img src={StandardKingRoom} alt="Standard King Room"></img>
+                    <img src={Standard} alt="Standard King Room"></img>
                     <div className="room-info">
                         <h3>Standard King Room with Private Bath</h3>
                         <p>Cozy layout, king-size bed, in-room fridge, ensuite.</p>
