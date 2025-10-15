@@ -3,7 +3,7 @@ import Standard from "../images/rooms/standard.jpeg";
 import DeluxeTv from "../images/rooms/deluxetv.jpeg";
 import TripleRoom from "../images/rooms/triple.jpeg";
 import SixBedDorm from "../images/rooms/6mixed.jpeg";
-import SixBedFemaleDorm from "../images/rooms/6bedfemale.jpeg";
+import SixBedFemaleDorm from "../images/rooms/xroom4.2.jpeg";
 import EightBed from "../images/rooms/eightbed.jpeg";
 
 const Facilities = () => {
