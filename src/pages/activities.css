@@ -82,3 +82,56 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Fade + overlay for coming soon cards */
+.coming-soon {
+  opacity: 0.6;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.coming-soon:hover {
+  opacity: 0.8;
+}
+
+/* Wrapper for image + overlay */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* "Coming Soon" overlay */
+.coming-soon-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper img {
+  border-radius: 0.5rem;
+}
+
+/* Optional: subtle animation for text */
+.coming-soon-overlay span {
+  animation: pulseText 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseText {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}

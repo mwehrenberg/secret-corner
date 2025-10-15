@@ -13,6 +13,7 @@ const weeklySchedule = {
     blurb: "Rooftop Yoga",
     details: "7am - 8am",
     image: yoga,
+    comingSoon: true, // 👈 mark as coming soon
   },
   Tuesday: {
     blurb: "Walk with Khun Tuk",
@@ -50,11 +51,21 @@ const WeeklySchedule = () => {
   return (
     <div className="schedule-grid">
       {Object.entries(weeklySchedule).map(([day, activity]) => (
-        <div key={day} className="schedule-cell">
+        <div
+          key={day}
+          className={`schedule-cell ${activity.comingSoon ? "coming-soon" : ""}`}
+        >
           <h2 className="day-title">{day}</h2>
           {activity ? (
             <div className="activity-content">
-              <img src={activity.image} alt={activity.blurb} />
+              <div className="image-wrapper">
+                <img src={activity.image} alt={activity.blurb} />
+                {activity.comingSoon && (
+                  <div className="coming-soon-overlay">
+                    <span>Coming Soon</span>
+                  </div>
+                )}
+              </div>
               <p className="activity-blurb">{activity.blurb}</p>
               {activity.details && (
                 <p className="activity-details">{activity.details}</p>
