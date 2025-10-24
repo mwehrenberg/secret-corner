@@ -1,13 +1,17 @@
 import React from "react";
 import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
-import aboutCover from "../images/aboutCover.png";
-import aboutImage from "../images/aboutImage.png";
+import aboutDorm from "../images/about/aboutDorm.jpeg";
+import aboutImage from "../images/about/aboutImage.png";
+import welcome1 from "../images/about/welcome1.jpeg";
+import welcome2 from "../images/about/welcome2.jpeg";
+import welcome3 from "../images/about/welcome3.jpeg";
+import welcome4 from "../images/about/welcome4.jpeg";
 import "./about.css";
 
 const AboutHeader = () => {
     return (
         <div className="about-header">
-            <img src={aboutCover} alt="Temple in Chiang Rai" className="header-image" />
+            <img src={aboutDorm} alt="Temple in Chiang Rai" className="header-image" />
             <p className="header-text">Our Story</p>
         </div>
     );
@@ -29,13 +33,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image-container">
-                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
+                        <img src={welcome2} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
-                        <img src={chiangraiBackdrop} alt="Local Temple" className="about-image" />
+                        <img src={welcome1} alt="Local Temple" className="about-image" />
                     </div>
                     <div className="about-text-container">
                         <h3>What We Believe</h3>

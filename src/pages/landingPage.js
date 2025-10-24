@@ -1,5 +1,6 @@
 import React from "react";
 import "./landingPage.css";
+// import logo from "../images/logo.png";
 
 const LandingPage = () => {
   const whyUs = [
@@ -34,6 +35,11 @@ const LandingPage = () => {
           <p>Welcome to your home in Chiang Rai</p>
         </div>
       </section>
+      {/* <section className="hero">
+        <div className="hero-overlay">
+          <img src={logo} alt="Secret Corner Hostel logo" className="hero-logo" />
+        </div>
+      </section> */}
 
       {/* ABOUT */}
       <section className="about">

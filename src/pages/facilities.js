@@ -10,6 +10,11 @@ const Facilities = () => {
     return (
         <div>
             <section class="rooms-section">
+                <div className="special-offer">
+                    <h3>🎉 Enjoy <strong>30% off</strong> when you book directly through our website!</h3>
+                    <h4>Use promo code <b className="promo-code">SECRETDEAL</b> at checkout!</h4>
+                </div>
+                
                 <h2>Our Rooms</h2>
                 <div className="room-grid">
                     <div className="room-card">
@@ -60,11 +65,6 @@ const Facilities = () => {
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
                     </div>
                     </div>
-                </div>
-
-                <div className="special-offer">
-                    <h3>🎉 Enjoy <strong>30% off</strong> when you book directly through our website!</h3>
-                    <h4>Use promo code <b className="promo-code">SECRETDEAL</b> at checkout!</h4>
                 </div>
             </section>
 
