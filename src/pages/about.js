@@ -1,11 +1,8 @@
 import React from "react";
-import chiangraiBackdrop from "../images/chiangraibackdrop.jpg";
 import aboutDorm from "../images/about/aboutDorm.jpeg";
 import aboutImage from "../images/about/aboutImage.png";
 import welcome1 from "../images/about/welcome1.jpeg";
 import welcome2 from "../images/about/welcome2.jpeg";
-import welcome3 from "../images/about/welcome3.jpeg";
-import welcome4 from "../images/about/welcome4.jpeg";
 import "./about.css";
 
 const AboutHeader = () => {
