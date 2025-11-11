@@ -1,8 +1,35 @@
 import React from "react";
 import "./landingPage.css";
-// import logo from "../images/logo.png";
+import Booking from "../images/utils/booking.png";
+// import Expedia from "../images/utils/expedia.png";
+import HostelWorld from "../images/utils/hostelworld.png";
+// import Agoda from "../images/utils/agoda.png";
 
 const LandingPage = () => {
+  const reviews = [
+    {
+      name: "Zhen",
+      text: "Staff is very warm and welcoming... If you’re looking for more than just a bed — a place where people genuinely connect — this hostel is a gem in Chiang Rai’s growing travel scene. It’s fresh, friendly, and full of heart.",
+      platform: Booking,
+      platformText: "Booking.com",
+      rating: 5
+    },
+    {
+      name: "Pathira",
+      text: "Brand new Hostel and with a wonderful interior. A great hospitality staff and service. Excellent Location. Everything was perfect during my stay. I would definitely recommend and will be back to Secret Corner.",
+      platform: HostelWorld,
+      platformText: "HostelWorld.com",
+      rating: 5
+    },
+    {
+      name: "Yasuyo",
+      text: "It was a really amazing experience for me. The hostel is brand new and the facilities are excellent, and I was really impressed by the warm hospitality of the staff(^^) It’s definitely worth a visit (o^^o)",
+      platform: Booking,
+      platformText: "Booking.com",
+      rating: 5
+    }
+  ];
+
   const whyUs = [
     {
       title: "Boutique Comfort",
@@ -61,6 +88,23 @@ const LandingPage = () => {
             meaningful in-house activities that go beyond the tourist path — from
             cultural workshops to community dinners.
           </p>
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      <section className="reviews">
+        <div className="content">
+          <h2>Guest Reviews</h2>
+          <div className="reviews-grid">
+          {reviews.map(({ text, name, platform, platformText, rating }, idx) => (
+            <div className="review-card" key={idx}>
+              <p className="review-text">“{text}”</p>
+              <p className="review-source">
+                — {name}, <img src={platform} alt={platformText} className="review-logo" /> {"★".repeat(rating)}
+              </p>
+            </div>
+          ))}
+          </div>
         </div>
       </section>
 
