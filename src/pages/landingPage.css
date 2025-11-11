@@ -165,7 +165,8 @@ body, html {
     color: #333;
     font-style: italic;
     margin-bottom: 1rem;
-  }
+    white-space: pre-line; /* preserves newlines in your text */
+  }  
 
   .review-source {
     font-size: 0.9rem;
