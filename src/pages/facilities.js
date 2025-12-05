@@ -11,8 +11,8 @@ const Facilities = () => {
         <div>
             <section class="rooms-section">
                 <div className="special-offer">
-                    <h3>🎉 Enjoy <strong>30% off</strong> when you book directly through our website!</h3>
-                    <h4>Use promo code <b className="promo-code">SECRETDEAL</b> at checkout!</h4>
+                    <h3>GRAND OPENING RATES</h3>
+                    <h4>Use promo code <b className="promo-code">SECRETDEAL</b> at checkout to enjoy an extra <strong>10% off</strong> 🎉</h4>
                 </div>
                 
                 <h2>Our Rooms</h2>
