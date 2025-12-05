@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
 import "./footer.css";
 import logo from "../../images/logo.png"
+import whatsapp from "../../images/utils/whatsapp.webp"
 
 const Footer = () => (
   <footer className="footer">
@@ -11,9 +12,15 @@ const Footer = () => (
       </div>
       <div className="column address">
         <h4>Contact Us</h4>
-        <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40, 1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
+        <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40/1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
         <p>Reception Hours: 07:00 - 20:00</p>
-        <p><a href="tel:+66613326191">+66 61 332 6191</a></p>
+        <p>
+          <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+            Reach us on WhatsApp
+            <img src={whatsapp} alt="WhatsApp" class="wa-icon" />
+          </a>
+        </p>
+
       </div>
       <div className="column links">
         <h4>Quick Links</h4>

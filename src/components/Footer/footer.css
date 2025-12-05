@@ -99,4 +99,15 @@
     margin: 0 auto 10px auto; /* center inside column */
     display: block;
   }
+
+  .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .wa-icon {
+    width: 14px;
+    height: 14px;
+  }  
   
