@@ -54,7 +54,7 @@ const LandingPage = () => {
       text: "Steps from Chiang Rai’s best cafes, restaurants, temples, night market, and local gems — we’re in the sweet spot between culture and convenience."
     },
     {
-      title: "Soft Opening Rate",
+      title: "Grand Opening Rates",
       text: "Be part of our first chapter! Enjoy special rates, curated experiences, and that fresh-hostel feel."
     }
   ];
