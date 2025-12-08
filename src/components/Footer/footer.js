@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaEnvelope, FaTiktok } from "react-icons/fa";
 import "./footer.css";
 import logo from "../../images/logo.png"
 import whatsapp from "../../images/utils/whatsapp.webp"
@@ -33,6 +33,7 @@ const Footer = () => (
         <div className="social-icons">
           <a href="https://www.facebook.com/p/Secret-Corner-61575242781653/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
           <a href="https://www.instagram.com/secretcornerhostel/" target="_blank" rel="noreferrer"><FaInstagram /></a>
+          <a href="https://www.tiktok.com/@secret.corner59" target="_blank" rel="noreferrer"><FaTiktok /></a>
           <a href="mailto:secretcornerhostel@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
         </div>
       </div>
