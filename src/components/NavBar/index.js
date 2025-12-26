@@ -44,7 +44,7 @@ const Navbar = () => {
                 </NavMenu>
 
                 <NavBtn>
-                    <NavBtnLink target="_blank" to="https://book-directonline.com/properties/secretcornerDirect">
+                    <NavBtnLink to="/book">
                         Make a Reservation
                     </NavBtnLink>
                 </NavBtn>
@@ -62,15 +62,13 @@ const Navbar = () => {
                     <NavLink onClick={closeMenu} to="/localAttractions">Local Attractions</NavLink>
                     <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
 
-                    <a 
+                    <NavLink 
                     className="mobile-reserve" 
-                    href="https://book-directonline.com/properties/secretcornerDirect" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                    to="/book"
                     onClick={closeMenu}
                     >
                     Make a Reservation
-                    </a>
+                    </NavLink>
                 </MobileMenu>
             )}
         </>

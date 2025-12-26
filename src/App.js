@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import {
@@ -14,6 +14,23 @@ import Activities from "./pages/activities"
 import LocalAttractions from "./pages/localAttractions"
 import Footer from "./components/Footer/footer"
 
+const RedirectToBooking = () => {
+    const hasOpened = useRef(false);
+    
+    useEffect(() => {
+        if (!hasOpened.current) {
+            hasOpened.current = true;
+            window.open('https://book-directonline.com/properties/secretcornerDirect', '_blank');
+        }
+    }, []);
+    
+    return (
+        <div style={{ padding: '2rem', textAlign: 'center' }}>
+            <p>Opening booking page in a new tab...</p>
+        </div>
+    );
+};
+
 function NavigationBar() {
   return (
     <Router>
@@ -28,6 +45,7 @@ function NavigationBar() {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/localAttractions" element={<LocalAttractions />} />
+          <Route path="/book" element={<RedirectToBooking />} />
       </Routes>
   </Router>
   )
