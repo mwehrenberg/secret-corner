@@ -27,6 +27,9 @@ const RedirectToBooking = () => {
     return (
         <div style={{ padding: '2rem', textAlign: 'center' }}>
             <p>Opening booking page in a new tab...</p>
+            <p>
+                If the page didn't open, <a href="https://book-directonline.com/properties/secretcornerDirect" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>click here to book</a>.
+            </p>
         </div>
     );
 };
