@@ -9,7 +9,7 @@ body, html {
   /* HERO */
   .hero {
     height: 100vh;
-    background-image: url('../images/about/aboutCover.jpeg');
+    background-image: url('../images/architecture/IMG_0282.JPG');
     background-position: center;
     background-size: cover;
     display: flex;

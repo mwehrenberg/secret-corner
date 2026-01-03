@@ -7,7 +7,7 @@ const AbstractGallery = () => {
         <div className="grid-wrapper">
             {imageGallery.map((image, index) => (
                 <div key={index} className={image.className}>
-                    <img src={image.url} loading="lazy" alt={`Gallery ${index + 1}`} />
+                    <img src={image.url} alt={`Gallery ${index + 1}`} />
                 </div>
             ))}
         </div>

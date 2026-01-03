@@ -1,14 +1,18 @@
 import React from "react";
 import aboutDorm from "../images/about/aboutDorm.jpeg";
-import aboutImage from "../images/about/aboutImage.png";
-import welcome1 from "../images/about/welcome1.jpeg";
+// import aboutImage from "../images/about/aboutImage.png";
+// import welcome1 from "../images/about/welcome1.jpeg";
 import welcome2 from "../images/about/welcome2.jpeg";
+import about0 from "../images/architecture/IMG_0295.JPG";
+import about1 from "../images/architecture/IMG_0286.JPG";
+import about2 from "../images/architecture/IMG_0308.JPG";
+import about3 from "../images/architecture/IMG_0279.JPG";
 import "./about.css";
 
 const AboutHeader = () => {
     return (
         <div className="about-header">
-            <img src={aboutDorm} alt="Temple in Chiang Rai" className="header-image" />
+            <img src={about0} alt="Dorm room" className="header-image" />
             <p className="header-text">Our Story</p>
         </div>
     );
@@ -36,7 +40,7 @@ const About = () => {
                 <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
-                        <img src={welcome1} alt="Local Temple" className="about-image" />
+                        <img src={aboutDorm} alt="Local Temple" className="about-image" />
                     </div>
                     <div className="about-text-container">
                         <h3>What We Believe</h3>
@@ -58,7 +62,7 @@ const About = () => {
                         </ul>
                     </div>
                     <div className="about-image-container">
-                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
+                        <img src={about1} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
@@ -73,13 +77,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image-container">
-                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
+                        <img src={about2} alt="Hostel Exterior" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
-                        <img src={aboutImage} alt="Hostel Exterior" className="about-image" />
+                        <img src={about3} alt="Hostel Exterior" className="about-image" />
                     </div>
                     <div className="about-text-container">
                         <h3>House Rules</h3>

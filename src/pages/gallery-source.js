@@ -1,7 +1,16 @@
 const importAll = (r) => r.keys().map(r);
 
 // Dynamically import all images from the attachments folder
-const images = importAll(require.context("../images/attachments", false, /\.(png|jpe?g|svg)$/));
+const architectureImages = importAll(
+  require.context("../images/architecture", false, /\.(png|jpe?g|JPG|svg)$/)
+);
+
+const interiorImages = importAll(
+  require.context("../images/attachments", false, /\.(png|jpe?g|JPG|svg)$/)
+);
+
+// Combine them into one array
+const images = [...architectureImages, ...interiorImages];
 
 // Generate the image gallery
 const imageGallery = images.map((image, index) => ({
