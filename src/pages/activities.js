@@ -10,25 +10,25 @@ import market from "../images/hostelActivities/market.webp";
 
 const weeklySchedule = {
   Monday: {
-    blurb: "Rooftop Yoga",
-    details: "7am - 8am",
-    image: yoga,
-    comingSoon: true, // 👈 mark as coming soon
+    blurb: "Secret Supper Night",
+    details: "6:30pm - 8:30pm",
+    image: padthai,
   },
   Tuesday: {
-    blurb: "Walk with Khun Tuk",
-    details: "Discover hidden corners of Chiang Rai with our local guide. Meet at the front desk at 7:30am.",
+    blurb: "Morning Walking Tour",
+    details: "Discover hidden corners of Chiang Rai with our local guide or on your own using her tips!",
     image: guide,
   },
   Wednesday: {
-    blurb: "Breakfast club: Secret Corner Edition",
-    details: "8am - 10am",
-    image: pancakes,
+    blurb: "Secret Supper Night",
+    details: "6:30pm - 8:30pm",
+    image: padthai,
   },
   Thursday: {
     blurb: "Global Card Game Night",
     details: "8pm on our rooftop",
     image: gamenight,
+    comingSoon: true, // 👈 mark as coming soon
   },
   Friday: {
     blurb: "Secret Supper Night",
@@ -41,8 +41,8 @@ const weeklySchedule = {
     image: market,
   },
   Sunday: {
-    blurb: "Travel stories & Rooftop Tapas Night",
-    details: "Snacks and drinks provided — bring your best travel tales! 7pm",
+    blurb: "Travel Stories & Drinks Night",
+    details: "Bring your best travel tales and beverage of choice to unwind on our rooftop! 7pm",
     image: happyhour,
   },
 };

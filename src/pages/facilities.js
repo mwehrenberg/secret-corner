@@ -92,10 +92,9 @@ const Facilities = () => {
                     <div className="flex-item">
                         <ul>
                             <li>Rooftop coworking/lounge</li>
-                            <li>Rooftop bar open 5pm-11pm</li>
                             <li>Garden and patio</li>
                             <li>Shared bathrooms</li>
-                            <li>Laundry machines and drying racks</li>
+                            <li>Laundry machines, dryer, and drying racks</li>
                             <li>Cultural, creative, and social activities</li>
                         </ul>
                     </div>
@@ -109,8 +108,7 @@ const Facilities = () => {
                             <li>Free high-speed Wi-Fi</li>
                             <li>Luggage storage</li>
                             <li>Travel tips and bookings</li>
-                            <li>Morning cofee and tea</li>
-                            <li>Drinks vending machine</li>
+                            <li>Coffee and tea available for purchase</li>
                         </ul>
                     </div>
                 </div>
