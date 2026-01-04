@@ -1,17 +1,23 @@
 import "./localAttractions.css";
 import nightbazaar from "../images/activities/nightbazaar.jpg";
 import bluetemple from "../images/activities/bluetemple.webp";
-// import goldentriangle from "../images/activities/goldentriangle.jpg";
 import teaplant from "../images/activities/teaplant.jpg";
 import lpb from "../images/activities/lpb.jpg";
 import singhapark from "../images/activities/singhapark.jpg";
 import slowboat from "../images/activities/slowboat.webp";
-// import baanDam from "../images/activities/baanDam.jpg";
 import doiChang from "../images/activities/doiChang.png";
 import trek1 from "../images/activities/trek1.jpg";
 import trek2 from "../images/activities/trek2.jpeg";
+import motorbike from "../images/activities/motorbike.webp";
 
-// 🆕 Featured activity for the Walking Tour
+const motorbikePromotion = {
+  title: "Looking for a way to get around town?",
+  description:
+    "We can arrange motorbike rentals for you during your stay! Please contact us through WhatsApp or visit our front desk for more details and pricing.",
+  url: "https://wa.me/66613326191",
+  image: motorbike,
+};
+
 const featuredActivity = {
   title: "Secret Corner Chiang Rai Walking Tour",
   description:
@@ -97,7 +103,39 @@ const LocalAttractions = () => {
         </p>
       </div>
 
-      {/* 🆕 Featured Activity */}
+      {/* Motorbike Promotion */}
+      <div className="featured-activity">
+        <div className="featured-image">
+          <img src={motorbikePromotion.image} alt={motorbikePromotion.title} />
+        </div>
+        <div className="featured-text">
+          <h2>{motorbikePromotion.title}</h2>
+          <p>{motorbikePromotion.description}</p>
+          {/* <a
+            href={motorbikePromotion.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-btn"
+          >
+            Call on WhatsApp
+          </a> */}
+        </div>
+      </div>
+
+      {/* Regular Activities */}
+      {localAttractions.map((activity, index) => (
+        <div className="activity-container" key={index}>
+          <div className="activity-image">
+            <img src={activity.content} alt={activity.title} />
+          </div>
+          <div className="activity-text">
+            <h2>{activity.title}</h2>
+            <p>{activity.description}</p>
+          </div>
+        </div>
+      ))}
+
+      {/* Featured Activity */}
       <div className="featured-activity">
         <div className="featured-image">
           <img src={featuredActivity.image} alt={featuredActivity.title} />
@@ -115,19 +153,6 @@ const LocalAttractions = () => {
           </a>
         </div>
       </div>
-
-      {/* Regular Activities */}
-      {localAttractions.map((activity, index) => (
-        <div className="activity-container" key={index}>
-          <div className="activity-image">
-            <img src={activity.content} alt={activity.title} />
-          </div>
-          <div className="activity-text">
-            <h2>{activity.title}</h2>
-            <p>{activity.description}</p>
-          </div>
-        </div>
-      ))}
     </div>
   );
 };
