@@ -1,7 +1,6 @@
-import React from "react";
 import "./activities.css";
-import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
-import pancakes from "../images/hostelActivities/pancakes.webp";
+// import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
+// import pancakes from "../images/hostelActivities/pancakes.webp";
 import happyhour from "../images/hostelActivities/happyhour.png";
 import guide from "../images/hostelActivities/guide.png";
 import gamenight from "../images/hostelActivities/gamenight.png";
