@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import "./activities.css";
 // import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
 // import pancakes from "../images/hostelActivities/pancakes.webp";
@@ -48,8 +50,13 @@ const weeklySchedule = {
 
 const WeeklySchedule = () => {
   return (
-    <div className="schedule-grid">
-      {Object.entries(weeklySchedule).map(([day, activity]) => (
+    <>
+      <Helmet>
+        <title>Hostel Activities & Events - Secret Corner Chiang Rai</title>
+        <meta name="description" content="Join our weekly activities at Secret Corner Hostel Chiang Rai: walking tours, supper nights, game nights, and travel stories. Meet fellow travelers!" />
+      </Helmet>
+      <div className="schedule-grid">
+        {Object.entries(weeklySchedule).map(([day, activity]) => (
         <div
           key={day}
           className={`schedule-cell ${activity.comingSoon ? "coming-soon" : ""}`}
@@ -76,6 +83,7 @@ const WeeklySchedule = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

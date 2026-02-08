@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 import aboutDorm from "../images/about/aboutDorm.jpeg";
 // import aboutImage from "../images/about/aboutImage.png";
 // import welcome1 from "../images/about/welcome1.jpeg";
@@ -21,6 +22,10 @@ const AboutHeader = () => {
 const About = () => {
     return (
         <div className="about-container">
+            <Helmet>
+                <title>About Secret Corner - Boutique Hostel in Chiang Rai, Thailand</title>
+                <meta name="description" content="Learn about Secret Corner Hostel Chiang Rai - our story, location, house rules, and directions. Walking distance from bus station and near airport." />
+            </Helmet>
             <AboutHeader />
             <div className="about-content">
                 <div className="about-section">

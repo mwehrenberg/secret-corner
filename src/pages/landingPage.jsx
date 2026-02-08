@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 import "./landingPage.css";
 import Booking from "../images/utils/booking.png";
 // import Expedia from "../images/utils/expedia.png";
@@ -61,6 +62,10 @@ const LandingPage = () => {
 
   return (
     <main>
+      <Helmet>
+        <title>Secret Corner Hostel Chiang Rai - Boutique Hostel & Hotel Thailand</title>
+        <meta name="description" content="Secret Corner Hostel in Chiang Rai offers boutique accommodation with premium beds, community spaces, and rooftop bar. Perfect budget hotel near night market and temples." />
+      </Helmet>
       {/* HERO */}
       <section className="hero">
         <div className="hero-overlay">
