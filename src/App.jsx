@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import "./App.css";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/NavBar/index.jsx";
 import {
     BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
-import LandingPage from "./pages/landingPage"
-import About from "./pages/about";
-import Gallery from "./pages/gallery";
-import Facilities from "./pages/facilities";
-import Activities from "./pages/activities"
-import LocalAttractions from "./pages/localAttractions"
-import Footer from "./components/Footer/footer"
+import LandingPage from "./pages/landingPage.jsx"
+import About from "./pages/about.jsx";
+import Gallery from "./pages/gallery.jsx";
+import Facilities from "./pages/facilities.jsx";
+import Activities from "./pages/activities.jsx"
+import LocalAttractions from "./pages/localAttractions.jsx"
+import Footer from "./components/Footer/footer.jsx"
 
 const RedirectToBooking = () => {
     const hasOpened = useRef(false);

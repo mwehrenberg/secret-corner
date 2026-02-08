@@ -15,9 +15,9 @@ const Footer = () => (
         <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40/1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
         <p>Reception Hours: 07:00 - 20:00</p>
         <p>
-          <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+          <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
             Reach us on WhatsApp
-            <img src={whatsapp} alt="WhatsApp" class="wa-icon" />
+            <img src={whatsapp} alt="WhatsApp" className="wa-icon" />
           </a>
         </p>
 

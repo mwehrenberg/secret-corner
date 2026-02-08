@@ -1,12 +1,22 @@
-const importAll = (r) => r.keys().map(r);
+// const importAll = (r) => r.keys().map(r);
+import.meta.glob
 
 // Dynamically import all images from the attachments folder
-const architectureImages = importAll(
-  require.context("../images/architecture", false, /\.(png|jpe?g|JPG|svg)$/)
+// const architectureImages = importAll(
+//   require.context("../images/architecture", false, /\.(png|jpe?g|JPG|svg)$/)
+// );
+const architectureImages = Object.values(
+  import.meta.glob("../images/architecture/*.{png,jpg,jpeg,JPG,svg}", {
+    eager: true,
+    import: "default",
+  })
 );
 
-const interiorImages = importAll(
-  require.context("../images/attachments", false, /\.(png|jpe?g|JPG|svg)$/)
+const interiorImages = Object.values(
+  import.meta.glob("../images/attachments/*.{png,jpg,jpeg,JPG,svg}", {
+    eager: true,
+    import: "default",
+  })
 );
 
 // Combine them into one array
