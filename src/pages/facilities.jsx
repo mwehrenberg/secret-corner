@@ -1,5 +1,4 @@
-import React from "react";
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from "react";
 import "./facilities.css";
 import Standard from "../images/rooms/standard.jpeg";
 import DeluxeTv from "../images/rooms/deluxetv.jpeg";
@@ -9,12 +8,16 @@ import SixBedFemaleDorm from "../images/rooms/xroom4.2.jpeg";
 import EightBed from "../images/rooms/eightbed.jpeg";
 
 const Facilities = () => {
+    useEffect(() => {
+        document.title = "Hostel Facilities & Rooms - Secret Corner Chiang Rai Accommodation";
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', 'Explore our dorms and private rooms at Secret Corner Chiang Rai. Female dorms, mixed dorms, deluxe rooms with premium beds and modern facilities.');
+        }
+    }, []);
+
     return (
         <div>
-            <Helmet>
-                <title>Hostel Facilities & Rooms - Secret Corner Chiang Rai</title>
-                <meta name="description" content="Explore our dorms and private rooms at Secret Corner Chiang Rai. Female dorms, mixed dorms, deluxe rooms with premium beds and modern facilities." />
-            </Helmet>
             <section class="rooms-section">
                 <div className="special-offer">
                     <h3>GRAND OPENING RATES</h3>

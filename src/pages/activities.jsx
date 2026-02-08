@@ -1,5 +1,4 @@
-import React from "react";
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from "react";
 import "./activities.css";
 // import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
 // import pancakes from "../images/hostelActivities/pancakes.webp";
@@ -49,12 +48,16 @@ const weeklySchedule = {
 };
 
 const WeeklySchedule = () => {
+  useEffect(() => {
+    document.title = "Hostel Activities & Events - Secret Corner Chiang Rai";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Join our weekly activities at Secret Corner Hostel Chiang Rai: walking tours, supper nights, game nights, and travel stories. Meet fellow travelers!');
+    }
+  }, []);
+
   return (
     <>
-      <Helmet>
-        <title>Hostel Activities & Events - Secret Corner Chiang Rai</title>
-        <meta name="description" content="Join our weekly activities at Secret Corner Hostel Chiang Rai: walking tours, supper nights, game nights, and travel stories. Meet fellow travelers!" />
-      </Helmet>
       <div className="schedule-grid">
         {Object.entries(weeklySchedule).map(([day, activity]) => (
         <div

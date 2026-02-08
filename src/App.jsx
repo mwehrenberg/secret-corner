@@ -6,7 +6,6 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import { HelmetProvider } from 'react-helmet-async';
 import LandingPage from "./pages/landingPage.jsx"
 import About from "./pages/about.jsx";
 import Gallery from "./pages/gallery.jsx";
@@ -57,12 +56,10 @@ function NavigationBar() {
 
 function App() {
   return (
-    <HelmetProvider>
-      <div className="App">
-        <NavigationBar></NavigationBar>
-        <Footer></Footer>
-      </div>
-    </HelmetProvider>
+    <div className="App">
+      <NavigationBar></NavigationBar>
+      <Footer></Footer>
+    </div>
   );
 }
 

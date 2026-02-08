@@ -1,5 +1,4 @@
-import React from "react";
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from "react";
 import "./localAttractions.css";
 import nightbazaar from "../images/activities/nightbazaar.jpg";
 import bluetemple from "../images/activities/bluetemple.webp";
@@ -88,12 +87,16 @@ const localAttractions = [
 ];
 
 const LocalAttractions = () => {
+  useEffect(() => {
+    document.title = "Chiang Rai Attractions & Tours - Secret Corner Hostel Guide";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Discover top things to do in Chiang Rai! Slow boat to Laos, trekking, Golden Triangle tours, temples, and local experiences. Guided tours from Secret Corner Hostel.');
+    }
+  }, []);
+
   return (
     <div>
-      <Helmet>
-        <title>Chiang Rai Attractions & Tours - Secret Corner Hostel Guide</title>
-        <meta name="description" content="Discover top things to do in Chiang Rai! Slow boat to Laos, trekking, Golden Triangle tours, temples, and local experiences. Guided tours from Secret Corner Hostel." />
-      </Helmet>
       <div className="localAttractions-container">
         <h2>Looking for something fun to do in Chiang Rai?</h2>
         <p className="localAttractions-text">
