@@ -7,7 +7,7 @@ const AbstractGallery = () => {
         <div className="grid-wrapper">
             {imageGallery.map((image, index) => (
                 <div key={index} className={image.className}>
-                    <img src={image.url} alt={`Gallery ${index + 1}`} />
+                    <img src={image.url} alt={`Secret Corner Hostel Chiang Rai interior photos showing rooms facilities and common areas`} />
                 </div>
             ))}
         </div>

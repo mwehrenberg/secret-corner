@@ -112,9 +112,9 @@ const LandingPage = () => {
           <div className="reviews-grid">
           {reviews.map(({ text, name, platform, platformText, rating }, idx) => (
             <div className="review-card" key={idx}>
-              <p className="review-text">“{text}”</p>
+              <p className="review-text">"{text}"</p>
               <p className="review-source">
-                — {name} <img src={platform} alt={platformText} className="review-logo" /> {"★".repeat(rating)}
+                — {name} <img src={platform} alt={`5-star review from ${platformText} for Secret Corner Hostel Chiang Rai`} className="review-logo" /> {"★".repeat(rating)}
               </p>
             </div>
           ))}

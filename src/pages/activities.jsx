@@ -68,7 +68,7 @@ const WeeklySchedule = () => {
           {activity ? (
             <div className="activity-content">
               <div className="image-wrapper">
-                <img src={activity.image} alt={activity.blurb} />
+                <img src={activity.image} alt={`${activity.blurb} at Secret Corner Hostel Chiang Rai - hostel activities and events`} />
                 {activity.comingSoon && (
                   <div className="coming-soon-overlay">
                     <span>Coming Soon</span>

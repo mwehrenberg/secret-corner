@@ -8,7 +8,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-top">
       <div>
-        <img src={logo} alt="Secret Corner Hostel Logo" className="footer-logo" />
+        <img src={logo} alt="Secret Corner Hostel Chiang Rai - Boutique Accommodation in Thailand" className="footer-logo" />
       </div>
       <div className="column address">
         <h4>Contact Us</h4>
@@ -17,7 +17,7 @@ const Footer = () => (
         <p>
           <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
             Reach us on WhatsApp
-            <img src={whatsapp} alt="WhatsApp" className="wa-icon" />
+            <img src={whatsapp} alt="Contact Secret Corner Hostel Chiang Rai on WhatsApp" className="wa-icon" />
           </a>
         </p>
 

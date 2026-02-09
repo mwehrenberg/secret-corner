@@ -12,7 +12,7 @@ import "./about.css";
 const AboutHeader = () => {
     return (
         <div className="about-header">
-            <img src={about0} alt="Dorm room" className="header-image" />
+            <img src={about0} alt="Secret Corner Hostel Chiang Rai boutique hostel interior and common areas" className="header-image" />
             <p className="header-text">Our Story</p>
         </div>
     );
@@ -42,13 +42,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image-container">
-                        <img src={welcome2} alt="Hostel Exterior" className="about-image" />
+                        <img src={welcome2} alt="Secret Corner Hostel exterior entrance in Chiang Rai Thailand" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
-                        <img src={aboutDorm} alt="Local Temple" className="about-image" />
+                        <img src={aboutDorm} alt="Clean modern dormitory interior at Secret Corner Hostel Chiang Rai" className="about-image" />
                     </div>
                     <div className="about-text-container">
                         <h3>What We Believe</h3>
@@ -70,7 +70,7 @@ const About = () => {
                         </ul>
                     </div>
                     <div className="about-image-container">
-                        <img src={about1} alt="Hostel Exterior" className="about-image" />
+                        <img src={about1} alt="Secret Corner Hostel building architecture in Chiang Rai near bus station" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
@@ -85,13 +85,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image-container">
-                        <img src={about2} alt="Hostel Exterior" className="about-image" />
+                        <img src={about2} alt="Secret Corner Hostel Chiang Rai location near airport and bus terminal" className="about-image" />
                     </div>
                 </div>
                 <hr className="custom-line"></hr>
                 <div className="about-section">
                     <div className="about-image-container">
-                        <img src={about3} alt="Hostel Exterior" className="about-image" />
+                        <img src={about3} alt="Boutique hostel architecture and design at Secret Corner Chiang Rai" className="about-image" />
                     </div>
                     <div className="about-text-container">
                         <h3>House Rules</h3>

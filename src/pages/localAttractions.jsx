@@ -33,56 +33,65 @@ const localAttractions = [
   {
     title: "Slow Boat to Luang Prabang",
     description:
-    "Cruise along the mighty Mekong River and experience one of Southeast Asia’s most iconic journeys. This two-day, one-night adventure takes you past dramatic mountains, riverside villages, and lush jungle landscapes on the way to Luang Prabang. Departure from Secret Corner is around 05:00, with arrival in Luang Prabang at approximately 16:00 on day two. The price is 1,600 THB per person and includes taxi to the pier, bus ticket for the border crossing, slow boat ticket, and lunch on day one. Lao visa fees and overnight accommodation in Pak Beng are not included.",
+    "Cruise along the mighty Mekong River and experience one of Southeast Asia's most iconic journeys. This two-day, one-night adventure takes you past dramatic mountains, riverside villages, and lush jungle landscapes on the way to Luang Prabang. Departure from Secret Corner is around 05:00, with arrival in Luang Prabang at approximately 16:00 on day two. The price is 1,600 THB per person and includes taxi to the pier, bus ticket for the border crossing, slow boat ticket, and lunch on day one. Lao visa fees and overnight accommodation in Pak Beng are not included.",
     content: slowboat,
+    alt: "Slow boat journey on Mekong River from Chiang Rai to Luang Prabang Laos",
   },
   {
     title: "Train Journey to Laos",
     description:
-    "A fast and comfortable one-day journey to Luang Prabang via Laos’ modern railway. Depart Secret Corner around 05:00 and arrive in Luang Prabang at approximately 18:00 the same day. The cost is 1,990 THB per person and includes pickup from Secret Corner, bus ticket for the border crossing, train ticket to Luang Prabang, and a boxed lunch.",
-    content: lpb
+    "A fast and comfortable one-day journey to Luang Prabang via Laos' modern railway. Depart Secret Corner around 05:00 and arrive in Luang Prabang at approximately 18:00 the same day. The cost is 1,990 THB per person and includes pickup from Secret Corner, bus ticket for the border crossing, train ticket to Luang Prabang, and a boxed lunch.",
+    content: lpb,
+    alt: "Train journey from Chiang Rai Thailand to Luang Prabang Laos",
   },
   {
     title: "Trekking to Minority Villages",
     description:
       "A full-day guided trekking adventure in a small group, visiting a Lisu Chinese village, waterfalls, tea plantations, and stunning natural viewpoints. Lunch is included and prepared with your guide using foraged jungle ingredients — a true hands-on cultural experience. Pickup is around 09:00 with return to Secret Corner in the late afternoon. Minimum of two people. Expect rewarding walking and some climbing. Price: 1,500 THB per person.",
     content: trek1,
+    alt: "Trekking tour to hill tribe villages near Chiang Rai with Secret Corner Hostel",
   },
   {
     title: "Two Day Trekking Adventure",
     description:
       "An immersive two-day trekking experience through remote hill tribe regions. Day one includes 5–6 hours of moderate trekking with visits to a Lahu village, lunch along the way, and an overnight stay in an Akha village. Day two focuses on jungle survival skills, followed by lunch and a visit to a Lisu village in the high mountains. Return to Chiang Rai city in the late afternoon. Price: 2,800 THB per person. Minimum two people.",
     content: trek2,
+    alt: "Two day trekking adventure to Akha and Lahu villages from Chiang Rai",
   },
   {
     title: "Top Sites and Golden Triangle Day Trip",
     description:
-      "A full-day tour visiting Chiang Rai’s highlights, including the White Temple, Blue Temple, Baan Dam Museum, and the famous Golden Triangle where Thailand, Laos, and Myanmar meet. A great way to see the region’s top sights in one day.",
+      "A full-day tour visiting Chiang Rai's highlights, including the White Temple, Blue Temple, Baan Dam Museum, and the famous Golden Triangle where Thailand, Laos, and Myanmar meet. A great way to see the region's top sights in one day.",
     content: bluetemple,
+    alt: "Blue Temple and Golden Triangle day tour from Chiang Rai",
   },
   {
     title: "Doi Chang Coffee Mountain Trip",
     description:
-      "Discover Chiang Rai’s famous coffee region, located about 1.5 hours southwest of the city. While the drive is winding, the panoramic mountain views and peaceful atmosphere make it more than worthwhile. Expect breathtaking viewpoints, fresh mountain air, and countless cafés serving locally grown coffee and tea. Our staff are happy to recommend great spots to stop for food, drinks, and photos. Perfect for a relaxed day of exploration.",
+      "Discover Chiang Rai's famous coffee region, located about 1.5 hours southwest of the city. While the drive is winding, the panoramic mountain views and peaceful atmosphere make it more than worthwhile. Expect breathtaking viewpoints, fresh mountain air, and countless cafés serving locally grown coffee and tea. Our staff are happy to recommend great spots to stop for food, drinks, and photos. Perfect for a relaxed day of exploration.",
     content: doiChang,
+    alt: "Doi Chang coffee mountain plantations near Chiang Rai Thailand",
   },
   {
     title: "Saturday Chiang Rai Night Market",
     description:
-      "Chiang Rai’s largest and liveliest night market, located east of the Clock Tower. Every Saturday night the streets come alive with local food, handmade crafts, live performances, massage stalls, and endless people-watching. A perfect place to eat, explore, and soak up the local atmosphere.",
+      "Chiang Rai's largest and liveliest night market, located east of the Clock Tower. Every Saturday night the streets come alive with local food, handmade crafts, live performances, massage stalls, and endless people-watching. A perfect place to eat, explore, and soak up the local atmosphere.",
     content: nightbazaar,
+    alt: "Saturday night market in Chiang Rai with street food and local crafts",
   },
   {
     title: "Doi Maesalong",
     description:
-      "Known as Thailand’s tea valley, Doi Mae Salong is about 1.5 hours northwest of the city and famous for its rolling hills covered in tea plantations. Enjoy breathtaking viewpoints, tea tastings, hill tribe markets, and Chinese-influenced culture. Best explored by car, motorbike, or small group tour.",
+      "Known as Thailand's tea valley, Doi Mae Salong is about 1.5 hours northwest of the city and famous for its rolling hills covered in tea plantations. Enjoy breathtaking viewpoints, tea tastings, hill tribe markets, and Chinese-influenced culture. Best explored by car, motorbike, or small group tour.",
     content: teaplant,
+    alt: "Doi Mae Salong tea plantations and hill tribe villages near Chiang Rai",
   },
   {
     title: "Visit Singha Park",
     description:
-      "A beautifully landscaped park just outside Chiang Rai city, Singha Park offers wide open green spaces, tea plantations, cycling paths, and scenic viewpoints. It’s a great spot for a relaxed afternoon, photos, and sunset views, with cafés and restaurants on site.",
+      "A beautifully landscaped park just outside Chiang Rai city, Singha Park offers wide open green spaces, tea plantations, cycling paths, and scenic viewpoints. It's a great spot for a relaxed afternoon, photos, and sunset views, with cafés and restaurants on site.",
     content: singhapark,
+    alt: "Singha Park tea plantations and scenic viewpoints in Chiang Rai",
   },
 ];
 
@@ -115,7 +124,7 @@ const LocalAttractions = () => {
       {/* Motorbike Promotion */}
       <div className="featured-activity">
         <div className="featured-image">
-          <img src={motorbikePromotion.image} alt={motorbikePromotion.title} />
+          <img src={motorbikePromotion.image} alt="Motorbike rental service in Chiang Rai from Secret Corner Hostel" />
         </div>
         <div className="featured-text">
           <h2>{motorbikePromotion.title}</h2>
@@ -135,7 +144,7 @@ const LocalAttractions = () => {
       {localAttractions.map((activity, index) => (
         <div className="activity-container" key={index}>
           <div className="activity-image">
-            <img src={activity.content} alt={activity.title} />
+            <img src={activity.content} alt={activity.alt} />
           </div>
           <div className="activity-text">
             <h2>{activity.title}</h2>
@@ -147,7 +156,7 @@ const LocalAttractions = () => {
       {/* Featured Activity */}
       <div className="featured-activity">
         <div className="featured-image">
-          <img src={featuredActivity.image} alt={featuredActivity.title} />
+          <img src={featuredActivity.image} alt="Secret Corner Chiang Rai walking tour map - guided hostel tours" />
         </div>
         <div className="featured-text">
           <h2>{featuredActivity.title}</h2>
