@@ -49,10 +49,10 @@ const weeklySchedule = {
 
 const WeeklySchedule = () => {
   useEffect(() => {
-    document.title = "Hostel Activities & Events - Secret Corner Chiang Rai";
+    document.title = "Social Hostel Events & Activities | Chiang Rai";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Join our weekly activities at Secret Corner Hostel Chiang Rai: walking tours, supper nights, game nights, and travel stories. Meet fellow travelers!');
+      metaDescription.setAttribute('content', 'Join rooftop game nights, walking tours & supper clubs at our social hostel in Chiang Rai. Meet travelers & make memories. Book direct for the best experience!');
     }
   }, []);
 

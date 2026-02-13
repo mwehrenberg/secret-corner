@@ -60,10 +60,10 @@ const LandingPage = () => {
   ];
 
   useEffect(() => {
-    document.title = "Secret Corner Hostel Chiang Rai - Boutique Accommodation & Budget Hotel Thailand";
+    document.title = "Best Hostel in Chiang Rai | Book Direct & Save";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Secret Corner Hostel in Chiang Rai offers boutique accommodation with premium beds, community spaces, and rooftop bar. Perfect budget hotel near night market and temples.');
+      metaDescription.setAttribute('content', 'Clean, comfy & affordable hostel in Chiang Rai town near Night Bazaar. Rooftop bar, coworking space, privacy curtains & female dorm. Book direct for best rates!');
     }
   }, []);
 

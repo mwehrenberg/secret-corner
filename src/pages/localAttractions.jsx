@@ -97,10 +97,10 @@ const localAttractions = [
 
 const LocalAttractions = () => {
   useEffect(() => {
-    document.title = "Chiang Rai Attractions & Tours - Secret Corner Hostel Guide";
+    document.title = "Things to Do in Chiang Rai | Tours & Day Trips";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Discover top things to do in Chiang Rai! Slow boat to Laos, trekking, Golden Triangle tours, temples, and local experiences. Guided tours from Secret Corner Hostel.');
+      metaDescription.setAttribute('content', 'Slow boat to Laos, trekking tours & Golden Triangle trips from Chiang Rai. Book tours at our hostel near Night Bazaar. Stay with us & save on your adventures!');
     }
   }, []);
 

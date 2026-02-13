@@ -9,10 +9,10 @@ import EightBed from "../images/rooms/eightbed.jpeg";
 
 const Facilities = () => {
     useEffect(() => {
-        document.title = "Hostel Facilities & Rooms - Secret Corner Chiang Rai Accommodation";
+        document.title = "Rooms & Facilities | Clean Comfy Affordable Dorms";
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', 'Explore our dorms and private rooms at Secret Corner Chiang Rai. Female dorms, mixed dorms, deluxe rooms with premium beds and modern facilities.');
+            metaDescription.setAttribute('content', 'Female dorm, mixed dorms & private rooms with privacy curtains, A/C & premium beds. Rooftop bar, coworking space & fast WiFi. Book direct for exclusive rates!');
         }
     }, []);
 

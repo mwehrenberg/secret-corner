@@ -16,10 +16,10 @@ const AbstractGallery = () => {
 
 const Gallery = () => {
     useEffect(() => {
-        document.title = "Photo Gallery - Secret Corner Hostel Chiang Rai Accommodation";
+        document.title = "Photos | Secret Corner Hostel Chiang Rai";
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', 'View photos of Secret Corner Hostel in Chiang Rai. See our dorms, private rooms, common areas, rooftop bar, and facilities.');
+            metaDescription.setAttribute('content', 'See our clean modern dorms, rooftop bar & coworking space. Privacy curtains, female rooms & comfy beds. Best hostel near Chiang Rai Night Bazaar. Book direct & save!');
         }
     }, []);
 

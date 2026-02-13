@@ -20,10 +20,10 @@ const AboutHeader = () => {
 
 const About = () => {
     useEffect(() => {
-        document.title = "About Secret Corner - Boutique Hostel in Chiang Rai, Thailand";
+        document.title = "About Us | Secret Corner Hostel Chiang Rai";
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute('content', 'Learn about Secret Corner Hostel Chiang Rai - our story, location, house rules, and directions. Walking distance from bus station and near airport.');
+            metaDescription.setAttribute('content', 'Discover our boutique social hostel near Chiang Rai bus station & Night Bazaar. 8-min walk to town center. Easy airport transfer. Book direct & save on your stay!');
         }
     }, []);
 
