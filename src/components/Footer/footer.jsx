@@ -28,6 +28,13 @@ const Footer = () => (
           <li><a href="https://book-directonline.com/properties/secretcornerDirect" target="_blank" rel="noreferrer">Book Now</a></li>
         </ul>
       </div>
+      <div className="column links travel-guides">
+        <h4>Travel Guides</h4>
+        <ul>
+          <li><a href="/guides/best-day-trips-chiang-rai">Best Day Trips from Chiang Rai</a></li>
+          <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>
+        </ul>
+      </div>
       <div className="column socials">
         <h4>Follow Us</h4>
         <div className="social-icons">

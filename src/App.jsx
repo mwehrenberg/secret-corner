@@ -5,6 +5,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
+    useLocation,
 } from "react-router-dom";
 import LandingPage from "./pages/landingPage.jsx"
 import About from "./pages/about.jsx";
@@ -12,6 +13,7 @@ import Gallery from "./pages/gallery.jsx";
 import Facilities from "./pages/facilities.jsx";
 import Activities from "./pages/activities.jsx"
 import LocalAttractions from "./pages/localAttractions.jsx"
+import BestDayTripsChiangRai from "./pages/guides/BestDayTripsChiangRai.jsx"
 import Footer from "./components/Footer/footer.jsx"
 
 const RedirectToBooking = () => {
@@ -34,9 +36,18 @@ const RedirectToBooking = () => {
     );
 };
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+}
+
 function NavigationBar() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="logo">
         {/* <a href="#home"><img width="100px" height="auto" src="https://www.codepel.com/wp-content/uploads/2023/01/CodePel-Logo-2.1.png"></a> */}
       </div>
@@ -48,6 +59,7 @@ function NavigationBar() {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/localAttractions" element={<LocalAttractions />} />
+          <Route path="/guides/best-day-trips-chiang-rai" element={<BestDayTripsChiangRai />} />
           <Route path="/book" element={<RedirectToBooking />} />
       </Routes>
   </Router>
