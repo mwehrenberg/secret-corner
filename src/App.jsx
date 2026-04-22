@@ -23,7 +23,7 @@ const RedirectToBooking = () => {
     useEffect(() => {
         if (!hasOpened.current) {
             hasOpened.current = true;
-            window.open('https://book-directonline.com/properties/secretcornerDirect', '_blank');
+            window.open('https://us2.cloudbeds.com/reservation/T5pGtj', '_blank');
         }
     }, []);
     
@@ -31,7 +31,7 @@ const RedirectToBooking = () => {
         <div style={{ padding: '2rem', textAlign: 'center' }}>
             <p>Opening booking page in a new tab...</p>
             <p>
-                If the page didn't open, <a href="https://book-directonline.com/properties/secretcornerDirect" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>click here to book</a>.
+                If the page didn't open, <a href="https://us2.cloudbeds.com/reservation/T5pGtj" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>click here to book</a>.
             </p>
         </div>
     );
