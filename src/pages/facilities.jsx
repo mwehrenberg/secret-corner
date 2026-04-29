@@ -68,12 +68,37 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
+                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <div className="room-info">
+                        <h3>Superior Queen Room</h3>
+                        <p>A cozy and comfortable private room, with a comfortable L-shaped sofa seating area and private ensuite.</p>
+                    </div>
+                    </div>
+
+                    <div className="room-card">
+                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <div className="room-info">
+                        <h3>Superior Twin Room with Private Bath</h3>
+                        <p>Perfect for friends or travelers who prefer separate beds without compromising on comfort.</p>
+                    </div>
+                    </div>
+
+                    <div className="room-card">
                     <img src={TripleRoom} alt="Triple room for groups and families at Secret Corner Hostel Chiang Rai with private bathroom"></img>
                     <div className="room-info">
                         <h3>Triple Room with Private Bath</h3>
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
                     </div>
                     </div>
+
+                    <div className="room-card">
+                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <div className="room-info">
+                        <h3>Family Room (Connecting Rooms)</h3>
+                        <p>Ideal for families or small groups, this spacious setup features two connecting rooms, offering both privacy and shared space.</p>
+                    </div>
+                    </div>
+
                 </div>
             </section>
 

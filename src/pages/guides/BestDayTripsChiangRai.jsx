@@ -204,7 +204,7 @@ const BestDayTripsChiangRai = () => {
           tips, and help planning your perfect day trip.
         </p>
         <a
-          href="https://book-directonline.com/properties/secretcornerDirect"
+          href="https://us2.cloudbeds.com/reservation/T5pGtj"
           target="_blank"
           rel="noopener noreferrer"
         >

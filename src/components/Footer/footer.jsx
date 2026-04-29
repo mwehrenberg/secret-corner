@@ -25,7 +25,8 @@ const Footer = () => (
       <div className="column links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="https://book-directonline.com/properties/secretcornerDirect" target="_blank" rel="noreferrer">Book Now</a></li>
+          <li><a href="https://us2.cloudbeds.com/reservation/T5pGtj" target="_blank" rel="noreferrer">Book Now</a></li>
+          <li><a href="/guides/faq">Traveler's FAQ</a></li>
         </ul>
       </div>
       <div className="column links travel-guides">

@@ -274,7 +274,7 @@ const TwoDaysChiangRai = () => {
           local tips, day trip planning, and the best vibe in town.
         </p>
         <a
-          href="https://book-directonline.com/properties/secretcornerDirect"
+          href="https://us2.cloudbeds.com/reservation/T5pGtj"
           target="_blank"
           rel="noopener noreferrer"
         >
