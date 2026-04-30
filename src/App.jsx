@@ -15,6 +15,7 @@ import Activities from "./pages/activities.jsx"
 import LocalAttractions from "./pages/localAttractions.jsx"
 import BestDayTripsChiangRai from "./pages/guides/BestDayTripsChiangRai.jsx"
 import TwoDaysChiangRai from "./pages/guides/TwoDaysChiangRai.jsx"
+import FAQ from "./pages/guides/FAQ.jsx"
 import Footer from "./components/Footer/footer.jsx"
 
 const RedirectToBooking = () => {
@@ -62,6 +63,7 @@ function NavigationBar() {
           <Route path="/localAttractions" element={<LocalAttractions />} />
           <Route path="/guides/best-day-trips-chiang-rai" element={<BestDayTripsChiangRai />} />
           <Route path="/guides/two-days-chiangrai" element={<TwoDaysChiangRai />} />
+          <Route path="/guides/faq" element={<FAQ />} />
           <Route path="/book" element={<RedirectToBooking />} />
       </Routes>
   </Router>

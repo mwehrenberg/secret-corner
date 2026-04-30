@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaEnvelope, FaTiktok } from "react-icons/fa";
 import "./footer.css";
 import logo from "../../images/logo.png"
 import whatsapp from "../../images/utils/whatsapp.webp"
+import line from "../../images/utils/lineIcon.png"
 
 const Footer = () => (
   <footer className="footer">
@@ -12,13 +13,19 @@ const Footer = () => (
       </div>
       <div className="column address">
         <h4>Contact Us</h4>
-        <p><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40/1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></p>
         <p>Reception Hours: 07:00 - 20:00</p>
+        <p><u><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40/1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></u></p>
         <p>
           <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
-            Reach us on WhatsApp
             <img src={whatsapp} alt="Contact Secret Corner Hostel Chiang Rai on WhatsApp" className="wa-icon" />
+            WhatsApp (+66) 61 332 6191
           </a>
+        </p>
+        <p>
+          <a>
+            <img src={line} alt="Contact Secret Corner Hostel Chiang Rai on Line" className="wa-icon" />
+            Line 081-321-7080
+            </a>
         </p>
 
       </div>
@@ -42,7 +49,7 @@ const Footer = () => (
           <a href="https://www.facebook.com/p/Secret-Corner-61575242781653/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
           <a href="https://www.instagram.com/secretcornerhostel/" target="_blank" rel="noreferrer"><FaInstagram /></a>
           <a href="https://www.tiktok.com/@secret.corner59" target="_blank" rel="noreferrer"><FaTiktok /></a>
-          <a href="mailto:secretcornerhostel@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+          <a href="mailto:secretcornerhostel@outlook.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
         </div>
       </div>
     </div>
