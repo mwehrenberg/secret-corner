@@ -28,7 +28,7 @@ const faqData = [
       },
       {
         q: "What beverages are included?",
-        a: "Fruit, coffee, and tea are provided each morning from 07:00 until 09:30. Tea and water are available throughout the rest of the day and evening. Beer and soda can be purchased at reception or from the cooler on the rooftop, payment by the honor system.",
+        a: "Fruit, coffee, and tea, as well as beer and soda, are available for purchase at reception. Water is available for free.",
       },
       {
         q: "Is there a kitchen I can use?",
