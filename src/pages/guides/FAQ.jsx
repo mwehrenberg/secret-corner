@@ -32,7 +32,7 @@ const faqData = [
       },
       {
         q: "Is there a kitchen I can use?",
-        a: "There is a shared fridge on the rooftop for all guests — please be considerate of others. Dishes and a microwave are also available for your use on the rooftop.",
+        a: "A simple kitchen is available on the rooftop for all guests—please be considerate of others. Dishes, utensils, and a cutting board are provided, ideal for light use such as preparing a healthy salad. A kettle and microwave are also available for your convenience.",
       },
       {
         q: "Are visitors allowed?",
@@ -40,11 +40,11 @@ const faqData = [
       },
       {
         q: "Where do I leave my shoes?",
-        a: "Cabinets are provided in each room. Please remove your shoes and use the cabinet.",
+        a: "A shoe rack is provided in each room. Please remove your shoes and use the rack.",
       },
       {
         q: "Are there any rooftop rules?",
-        a: "Rooftop activity should be finished by 22:00 out of respect for our neighbors. Sound carries easily from the roof, so please be considerate.",
+        a: "Rooftop activities should finish by 22:00 out of respect for our neighbors. Sound carries easily from the roof, so we kindly ask that you be considerate. Please note that outside drinks are not permitted on the rooftop.",
       },
     ],
   },
@@ -53,7 +53,7 @@ const faqData = [
     questions: [
       {
         q: "How do I get to Secret Corner from the bus station?",
-        a: "Secret Corner is about a 12-minute walk from the bus station. Buses arrive from Chiang Mai, Mae Sai, Chiang Saen, and other regional destinations. Buses to the White Temple also depart from there.",
+        a: "Secret Corner is about an 8-minute walk from the bus station. Buses arrive from Chiang Mai, Mae Sai, Chiang Saen, and other regional destinations. Buses to the White Temple also depart from there.",
       },
       {
         q: "How do I get to and from the airport?",
@@ -90,7 +90,7 @@ const faqData = [
       },
       {
         q: "How does the slow boat to Luang Prabang work?",
-        a: "A two-day, one-night journey along the Mekong River. Depart Secret Corner around 05:00 and arrive in Luang Prabang around 16:00 on day two. Cost is 1,600 THB per person and includes taxi to the pier, bus ticket for the border crossing, boat ticket, and lunch on day one. Lao visa fee and overnight accommodation in Pak Beng are excluded.",
+        a: "A two-day, one-night journey along the Mekong River. Depart Secret Corner around 05:00 and arrive in Luang Prabang around 16:00 on day two. This package includes taxi to the pier, bus ticket for the border crossing, boat ticket, and lunch on day one. Lao visa fee and overnight accommodation in Pak Beng are excluded.",
       },
       {
         q: "Is there a train option to Luang Prabang?",
@@ -102,7 +102,7 @@ const faqData = [
       },
       {
         q: "Where is the Night Market?",
-        a: "The Night Market is about a 20-minute walk from the hostel, one block north of the new clock tower. It's a great opportunity to experience a market made for locals — unlimited food options, shopping, drinks, entertainment, and even massage stalls. You'll find some tourists, but it's mostly Chiang Rai citizens.",
+        a: "The Chiang Rai Night Market is located in the city center, just an 8-minute walk from Secret Corner. The Saturday Walking Street/Night Market is also nearby, about a 15-minute walk. Both markets offer a variety of local food, handicrafts, and souvenirs.",
       },
     ],
   },
