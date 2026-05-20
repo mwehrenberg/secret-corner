@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Promo Banner */
+.promo-banner {
+  background: linear-gradient(90deg, #1a1a2e, #16213e);
+  color: #f0f0f0;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1001;
+}
+
+.promo-banner p {
+  margin: 0;
+}
+
+.promo-banner .promo-code {
+  background: #ffcc00;
+  color: #1a1a2e;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .promo-banner {
+    font-size: 0.78rem;
+    padding: 8px 12px;
+  }
+}
+
 .App {
   text-align: center;
   /* font-family: "EB Garamond"; */

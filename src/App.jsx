@@ -70,9 +70,44 @@ function NavigationBar() {
   )
 }
 
+function PromoBanner() {
+  return (
+    <div className="promo-banner" role="banner" aria-label="Special offer">
+      <p>
+        <strong>Best Price Guarantee:</strong> Book direct for the best deal! Use code{" "}
+        <span className="promo-code">SECRETDEAL</span> for 10% off your stay.
+      </p>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Offer",
+            "name": "Book Direct & Save 10%",
+            "description": "Book directly with Secret Corner Hostel Chiang Rai for the best price guaranteed. Use promo code SECRETDEAL for 10% off. No middleman fees — booking direct always gives you the lowest rate.",
+            "discount": "10%",
+            "discountCode": "SECRETDEAL",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "LodgingBusiness",
+              "name": "Secret Corner Hostel",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Chiang Rai",
+                "addressCountry": "TH"
+              }
+            }
+          }),
+        }}
+      />
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
+      <PromoBanner />
       <NavigationBar></NavigationBar>
       <Footer></Footer>
     </div>

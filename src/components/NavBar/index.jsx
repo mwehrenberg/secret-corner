@@ -38,7 +38,7 @@ const Navbar = () => {
                 <NavMenu>
                     <NavLink to="/about">Our Story</NavLink>
                     <NavLink to="/facilities">Facilities</NavLink>
-                    <NavLink to="/activities">Activities</NavLink>
+                    <NavLink to="/activities">In-House Activities</NavLink>
                     <NavLink to="/localAttractions">Local Attractions</NavLink>
                     <NavLink to="/gallery">Gallery</NavLink>
                 </NavMenu>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <MobileMenu>
                     <NavLink onClick={closeMenu} to="/about">Our Story</NavLink>
                     <NavLink onClick={closeMenu} to="/facilities">Facilities</NavLink>
-                    <NavLink onClick={closeMenu} to="/activities">Activities</NavLink>
+                    <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
                     <NavLink onClick={closeMenu} to="/localAttractions">Local Attractions</NavLink>
                     <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
 
