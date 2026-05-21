@@ -92,6 +92,95 @@ body, html {
     margin-bottom: 1.25rem;
     text-align: left;
   }
+
+  .section-kicker {
+    color: #8a5b2f;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /* OTA RATINGS */
+  .ota-ratings {
+    background-color: #fff;
+    padding: 56px 20px;
+  }
+
+  .ota-ratings h2 {
+    margin-bottom: 1.75rem;
+  }
+
+  .ota-ratings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+  }
+
+  .ota-rating-card {
+    background: #fbfaf7;
+    border: 1px solid #eadfce;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(76, 55, 34, 0.08);
+    min-height: 225px;
+    padding: 1.25rem 1.25rem 1.35rem;
+    text-align: center;
+  }
+
+  .ota-platform {
+    align-items: center;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .ota-logo {
+    max-height: 28px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+
+  .ota-platform-name {
+    color: #34515e;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .ota-rating-card .ota-score {
+    align-items: baseline;
+    color: #2a2119;
+    display: flex;
+    font-size: clamp(2.35rem, 5vw, 3.1rem);
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0 0 0.6rem;
+    text-align: center;
+  }
+
+  .ota-denominator {
+    color: #6f645a;
+    font-size: 0.45em;
+    font-weight: 600;
+    margin-left: 0.12em;
+  }
+
+  .ota-rating-card h3 {
+    color: #6d4827;
+    font-size: 1rem;
+    margin: 0 0 0.65rem;
+  }
+
+  .ota-rating-card p {
+    color: #5c554d;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0;
+    text-align: center;
+  }
   
   /* WHY US */
   .why-us {
@@ -178,4 +267,4 @@ body, html {
     height: 16px;
     margin-left: 4px;
     vertical-align: middle;
-  }  
+  } 

@@ -1,12 +1,65 @@
 import React, { useEffect } from "react";
 import "./landingPage.css";
 import Booking from "../images/utils/booking.png";
-// import Expedia from "../images/utils/expedia.png";
+import Expedia from "../images/utils/expedia.png";
+import Agoda from "../images/utils/agoda.png";
 import HostelWorld from "../images/utils/hostelworld.png";
 import Google from "../images/utils/google.png";
-// import Agoda from "../images/utils/agoda.png";
+import TripAdvisor from "../images/utils/tripadvisor.svg";
+import Hotels from "../images/utils/hotelscom.png";
 
 const LandingPage = () => {
+  const otaHighlights = [
+    {
+      platform: "Booking.com",
+      logo: Booking,
+      score: "9.3",
+      denominator: "/10",
+      label: "Wonderful",
+      detail: "Based on verified guest reviews"
+    },
+    {
+      platform: "Hostelworld",
+      logo: HostelWorld,
+      score: "9.5",
+      denominator: "/10",
+      label: "Superb",
+      detail: "Praised for cleanliness, comfort, and value"
+    },
+    {
+      platform: "Tripadvisor",
+      logo: TripAdvisor,
+      score: "5.0",
+      denominator: "/5",
+      label: "Excellent",
+      detail: "Recognized by travelers for a calm boutique stay"
+    },
+    {
+      platform: "Agoda",
+      logo: Agoda,
+      score: "9.4",
+      denominator: "/10",
+      label: "Excellent",
+      detail: "Recognized for top value"
+    },
+    {
+      platform: "Expedia",
+      logo: Expedia,
+      score: "10",
+      denominator: "/10",
+      label: "Exceptional",
+      detail: "Praised for location and comfort"
+    },
+    {
+      platform: "Hotels.com",
+      logo: Hotels,
+      score: "10",
+      denominator: "/10",
+      label: "Exceptional",
+      detail: "From verified guest stays"
+    }
+  ];
+
   const reviews = [
     {
       text: "This hostel is the best we have been to so far. First of all, the world's sweetest girl owns this place and has recently opened with the aim of creating a home when you are not at home. The best thing about the hostel is the cleanliness and the beds. Such incredibly comfortable mattresses and duvets. Everything is incredibly fresh and new. \n We chose this hostel because of its proximity to the bus station as that is where we were dropped off. We could walk around with our backpacks without any problems. 10/10",
@@ -51,7 +104,7 @@ const LandingPage = () => {
     },
     {
       title: "Prime Location",
-      text: "Steps from Chiang Rai’s best cafes, restaurants, temples, night market, and local gems — we’re in the sweet spot between culture and convenience."
+      text: "Steps from Chiang Rai’s best cafes, restaurants, temples, and night market."
     },
     {
       title: "Grand Opening Rates",
@@ -76,32 +129,72 @@ const LandingPage = () => {
           <p>Welcome to your home in Chiang Rai</p>
         </div>
       </section>
-      {/* <section className="hero">
-        <div className="hero-overlay">
-          <img src={logo} alt="Secret Corner Hostel logo" className="hero-logo" />
-        </div>
-      </section> */}
 
       {/* ABOUT */}
       <section className="about">
         <div className="content">
           <h2>About Us</h2>
           <p>
-            Located in the heart of Chiang Rai, Secret Corner Boutique Hostel is
-            a clean, beautifully designed space where guests can relax, connect
-            with the local community, and work comfortably.
+            Welcome to Secret Corner Boutique Hostel — truly the best night’s 
+            stay in Chiang Rai for travelers who want <b>premium comfort</b> and 
+            <b> local immersion</b> in a relaxed atmosphere.
           </p>
           <p>
-            Blending modern amenities with cozy, curated accommodations, our
-            hostel offers a warm and welcoming atmosphere for travelers from
-            around the world. Guests can enjoy practical perks like on-site
-            laundry, plus unwind at our rooftop bar for great conversation.
+            Whether you choose a cozy dorm or a private room, we offer clean, thoughtfully 
+            designed spaces with hotel-quality beds, soft premium linens, and daily housekeeping 
+            services for a restful stay. <b>Newly built less than five years ago</b>, our property 
+            features modern facilities and quality amenities such as reliably hot showers, air 
+            conditioning, privacy curtains, personal reading lights and power outlets, and complimentary 
+            individual lockers. Our guests often mention the exceptional quality of our comfort 
+            and cleanliness, stating that Secret Corner stands out above the rest.
           </p>
           <p>
-            With deep local insight, we curate authentic experiences and
-            meaningful in-house activities that go beyond the tourist path — from
-            cultural workshops to community dinners.
+            Enjoy our <b>social rooftop</b> — a laid-back space for sunset drinks, meeting 
+            fellow travelers, remote work, or simply unwinding after a day out. We 
+            offer complimentary high-speed WiFi, a common kitchen with kitchenware 
+            provided (microwave, refrigerator, water kettle, utensils), drinking water, 
+            laundry services, coffee/tea/breakfast options, and an evening happy hour. 
+            Self-check-in is available for late arrivals.
           </p>
+          <p>
+            Secret Corner is located conveniently in <b>downtown Chiang Rai</b> just a few 
+            minutes walk from the Night Bazaar, walking streets, 7-Eleven, and bus 
+            station. Walking distance from many art cafés and local attractions such 
+            as the City Clock Tower, fresh morning market, and temples. We are not on 
+            the main road, so you may enjoy peaceful, private nights.
+          </p>
+          <p>
+            Lastly, our <b>friendly local team</b> is happy to help arrange day trips, 
+            motorbike/scooter rentals, and slow boat journeys to Laos. We often help
+             you organize your following plans to make your experience easy-going and enjoyable!
+          </p>
+        </div>
+      </section>
+
+      {/* OTA RATINGS */}
+      <section className="ota-ratings" aria-labelledby="ota-ratings-title">
+        <div className="content">
+          <p className="section-kicker">Trusted by Travelers</p>
+          <h2 id="ota-ratings-title">Loved Around the World</h2>
+          <div className="ota-ratings-grid">
+            {otaHighlights.map(({ platform, logo, score, denominator, label, detail }) => (
+              <article className="ota-rating-card" key={platform}>
+                <div className="ota-platform">
+                  {logo ? (
+                    <img src={logo} alt={`${platform} rating for Secret Corner Hostel`} className="ota-logo" />
+                  ) : (
+                    <span className="ota-platform-name">{platform}</span>
+                  )}
+                </div>
+                <p className="ota-score">
+                  <span>{score}</span>
+                  <span className="ota-denominator">{denominator}</span>
+                </p>
+                <h3>{label}</h3>
+                <p>{detail}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
