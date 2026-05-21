@@ -2,8 +2,9 @@
 
 /* Promo Banner */
 .promo-banner {
-  background: linear-gradient(90deg, #1a1a2e, #16213e);
-  color: #f0f0f0;
+  background: linear-gradient(90deg, #f7f4f0, #fcebd4);
+  border-bottom: 1px solid #e0d4c6;
+  color: #3f3329;
   text-align: center;
   padding: 10px 20px;
   font-size: 0.9rem;
@@ -16,8 +17,8 @@
 }
 
 .promo-banner .promo-code {
-  background: #ffcc00;
-  color: #1a1a2e;
+  background: #c49b63;
+  color: #fffaf2;
   padding: 2px 8px;
   border-radius: 4px;
   font-weight: 700;
