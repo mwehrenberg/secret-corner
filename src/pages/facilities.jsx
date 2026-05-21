@@ -18,10 +18,12 @@ const Facilities = () => {
 
     return (
         <div>
-            <section class="rooms-section">
+            <section className="rooms-section">
                 <div className="special-offer">
                     <h3>GRAND OPENING RATES</h3>
-                    <h4>Use promo code <b className="promo-code">SECRETDEAL</b> at checkout to enjoy an extra <strong>10% off</strong> 🎉</h4>
+                    <h4>
+                        Use promo code <span className="promo-code">SECRETDEAL</span> at checkout to enjoy an extra <strong>10% off</strong>
+                    </h4>
                 </div>
                 
                 <h2>Our Rooms</h2>

@@ -86,11 +86,29 @@
 
 .special-offer {
   background: #fcebd4;
-  padding: 1rem;
+  color: inherit;
+  font-weight: bold;
   text-align: center;
+  padding: 1rem;
   border-radius: 8px;
   margin: 2rem 0;
-  font-weight: bold;
+}
+
+.special-offer h3 {
+  margin: 0 0 0.5rem;
+}
+
+.special-offer h4 {
+  margin: 0;
+}
+
+.special-offer .promo-code {
+  background: #ffcc00;
+  color: #1a1a2e;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .amenities-content {
@@ -109,6 +127,8 @@
   text-align: left;
 }
 
-.promo-code {
-  color: #7c3aed;
+@media (max-width: 480px) {
+  .special-offer {
+    padding: 1rem;
+  }
 }
