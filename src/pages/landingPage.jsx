@@ -142,7 +142,7 @@ const LandingPage = () => {
           <p>
             Whether you choose a cozy dorm or a private room, we offer clean, thoughtfully 
             designed spaces with hotel-quality beds, soft premium linens, and daily housekeeping 
-            services for a restful stay. <b>Newly built less than five years ago</b>, our property 
+            services for a restful stay. <b>Newly built</b>, our property 
             features modern facilities and quality amenities such as reliably hot showers, air 
             conditioning, privacy curtains, personal reading lights and power outlets, and complimentary 
             individual lockers. Our guests often mention the exceptional quality of our comfort 
