@@ -116,7 +116,7 @@ const LandingPage = () => {
     document.title = "Best Hostel in Chiang Rai | Book Direct & Save";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Clean, comfy & affordable hostel in Chiang Rai town near Night Bazaar. Rooftop bar, coworking space, privacy curtains & female dorm. Book direct for best rates!');
+      metaDescription.setAttribute('content', 'Boutique hotel comfort at hostel prices. Enjoy thoughtful design, exceptional cleanliness, comfortable beds, and a calm atmosphere just eight minutes from Chiang Rai\'s Night Bazaar.');
     }
   }, []);
 
