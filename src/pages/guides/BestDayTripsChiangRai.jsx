@@ -221,6 +221,11 @@ const BestDayTripsChiangRai = () => {
               2 Days in Chiang Rai: A Local’s Itinerary
             </Link>
           </li>
+          <li>
+            <Link to="/guides/why-chiang-rai">
+              Why Chiang Rai is Absolutely Worth Visiting
+            </Link>
+          </li>
         </ul>
       </nav>
     </article>

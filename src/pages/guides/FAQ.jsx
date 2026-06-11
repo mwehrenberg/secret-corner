@@ -175,6 +175,11 @@ const FAQ = () => {
         <h3>Travel Guides</h3>
         <ul>
           <li>
+            <Link to="/guides/why-chiang-rai">
+              Why Chiang Rai is Absolutely Worth Visiting
+            </Link>
+          </li>
+          <li>
             <Link to="/guides/best-day-trips-chiang-rai">
               Best Day Trips from Chiang Rai
             </Link>

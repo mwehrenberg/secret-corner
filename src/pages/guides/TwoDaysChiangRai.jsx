@@ -291,6 +291,11 @@ const TwoDaysChiangRai = () => {
               Best Day Trips from Chiang Rai
             </Link>
           </li>
+          <li>
+            <Link to="/guides/why-chiang-rai">
+              Why Chiang Rai is Absolutely Worth Visiting
+            </Link>
+          </li>
         </ul>
       </nav>
     </article>

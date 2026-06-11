@@ -39,6 +39,7 @@ const Footer = () => (
       <div className="column links travel-guides">
         <h4>Travel Guides</h4>
         <ul>
+          <li><a href="/guides/why-chiang-rai">Why Chiang Rai is Absolutely Worth Visiting</a></li>
           <li><a href="/guides/best-day-trips-chiang-rai">Best Day Trips from Chiang Rai</a></li>
           <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>
         </ul>
