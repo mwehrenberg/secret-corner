@@ -14,13 +14,13 @@ const routes = [
     path: '',
     title: 'Secret Corner Hostel Chiang Rai | Book Direct & Save',
     description: 'Best hostel in Chiang Rai near Night Bazaar. Book direct & save! Clean dorms with privacy curtains, rooftop bar, coworking space & female-only rooms. Social hostel vibes.',
-    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/home.jpeg' },
+    ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/home.jpeg' },
   },
   {
     path: 'about',
     title: 'About Secret Corner | Hostel in Chiang Rai',
     description: "The story behind Secret Corner — a family owned business in the heart of Chiang Rai.",
-    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/about.jpeg' },
+    ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/about.jpeg' },
   },
   {
     path: 'gallery',
@@ -68,7 +68,7 @@ const routes = [
     path: 'guides/faq',
     title: 'FAQ | Secret Corner Hostel Chiang Rai',
     description: 'Frequently asked questions for your stay at Secret Corner Hostel.',
-    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/faq.jpeg' },
+    ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/faq.jpeg' },
   },
 ];
 
