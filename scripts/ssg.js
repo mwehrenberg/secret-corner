@@ -38,7 +38,7 @@ const routes = [
     path: 'activities',
     title: 'Hostel Activities | Secret Corner Hostel Chiang Rai',
     description: 'Join weekly hostel activities: Secret Supper Night, Morning Walking Tour, Global Card Game Night and more. Social hostel vibes in Chiang Rai.',
-    ogImage: { src: 'architecture/IMG_0295.jpg', dest: 'og/activities.png' },
+    ogImage: { src: 'architecture/IMG_0295.JPG', dest: 'og/activities.png' },
   },
   {
     path: 'localAttractions',
