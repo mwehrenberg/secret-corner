@@ -8,12 +8,13 @@ const distDir = path.join(rootDir, 'dist');
 const srcImagesDir = path.join(rootDir, 'src', 'images');
 
 const BASE_URL = 'https://www.secretcornerhostel.com';
+const OG_VERSION = '2';
 
 const routes = [
   {
     path: '',
     title: 'Secret Corner Hostel Chiang Rai | Book Direct & Save',
-    description: 'Best hostel in Chiang Rai near Night Bazaar. Book direct & save! Clean dorms with privacy curtains, rooftop bar, coworking space & female-only rooms. Social hostel vibes.',
+    description: 'Clean. Comfortable. Calm. Centrally located.',
     ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/home.jpeg' },
   },
   {
@@ -85,7 +86,7 @@ for (const route of routes) {
     const destFile = path.join(distDir, ogImage.dest);
     fs.mkdirSync(path.dirname(destFile), { recursive: true });
     fs.copyFileSync(srcFile, destFile);
-    ogImageUrl = `${BASE_URL}/${ogImage.dest}`;
+    ogImageUrl = `${BASE_URL}/${ogImage.dest}?v=${OG_VERSION}`;
   }
 
   const ogTags = [
