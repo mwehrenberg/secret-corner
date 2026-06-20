@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import aboutDorm from "../images/about/aboutDorm.jpeg";
 // import aboutImage from "../images/about/aboutImage.png";
 // import welcome1 from "../images/about/welcome1.jpeg";
@@ -44,16 +45,12 @@ const AboutHeader = () => {
 };
 
 const About = () => {
-    useEffect(() => {
-        document.title = "About Us | Secret Corner Hostel Chiang Rai";
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-            metaDescription.setAttribute('content', 'Read the founder story behind Secret Corner Hostel in Chiang Rai, a calm boutique hostel created for comfort, connection, and meaningful travel near the Night Bazaar.');
-        }
-    }, []);
-
     return (
         <div className="about-container">
+            <Helmet>
+                <title>About Us | Secret Corner Hostel Chiang Rai</title>
+                <meta name="description" content="The story behind Secret Corner — why we built it and what makes it our guests' favourite hostel in Chiang Rai." />
+            </Helmet>
             <AboutHeader />
             <main className="founder-story" aria-labelledby="founder-story-title">
                 <div className="letter-shell">

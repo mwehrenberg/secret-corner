@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import "./activities.css";
 // import yoga from "../images/hostelActivities/dragon-yoga-pose.png";
 // import pancakes from "../images/hostelActivities/pancakes.webp";
@@ -48,14 +49,6 @@ const weeklySchedule = {
 };
 
 const WeeklySchedule = () => {
-  useEffect(() => {
-    document.title = "Social Hostel Events & Activities | Chiang Rai";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Join rooftop game nights, walking tours & supper clubs at our social hostel in Chiang Rai. Meet travelers & make memories. Book direct for the best experience!');
-    }
-  }, []);
-
   return (
     <>
       <div className="schedule-grid">
@@ -93,6 +86,10 @@ const WeeklySchedule = () => {
 const Activities = () => {
   return (
     <div>
+      <Helmet>
+        <title>Hostel Activities | Secret Corner Hostel Chiang Rai</title>
+        <meta name="description" content="Join weekly hostel activities: Secret Supper Night, Morning Walking Tour, Global Card Game Night and more. Social hostel vibes in Chiang Rai." />
+      </Helmet>
       <div className="activities-container">
         <h2>Join Our Daily Experiences</h2>
         <p className="activities-text">

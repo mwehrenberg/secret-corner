@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
@@ -8,20 +9,12 @@ import trek1 from "../../images/activities/trek1.jpg";
 import teaplant from "../../images/activities/teaplant.jpg";
 
 const TwoDaysChiangRai = () => {
-  useEffect(() => {
-    document.title =
-      "How to Spend Two Days in Chiang Rai: A Local's Itinerary (2026) | Secret Corner Hostel";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "The perfect 2-day Chiang Rai itinerary — temples, night markets, mountain tea villages, and local food. Written by the team at Secret Corner Hostel."
-      );
-    }
-  }, []);
-
   return (
     <article className="guide-page">
+      <Helmet>
+        <title>How to Spend Two Days in Chiang Rai</title>
+        <meta name="description" content="The perfect 2-day Chiang Rai itinerary — temples, night markets, mountain tea villages, and local food. Written by the team at Secret Corner Hostel." />
+      </Helmet>
       {/* Hero */}
       <header className="guide-hero">
         <h1>How to Spend Two Days in Chiang Rai</h1>

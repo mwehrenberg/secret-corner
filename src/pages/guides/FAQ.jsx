@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
@@ -127,20 +128,12 @@ const FAQItem = ({ question, answer }) => {
 };
 
 const FAQ = () => {
-  useEffect(() => {
-    document.title =
-      "Traveler's FAQ | Secret Corner Hostel Chiang Rai";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Frequently asked questions for travelers visiting Secret Corner Hostel in Chiang Rai, Thailand. Everything you need to know before your trip."
-      );
-    }
-  }, []);
-
   return (
     <div className="guide-page">
+      <Helmet>
+        <title>FAQ | Secret Corner Hostel Chiang Rai</title>
+        <meta name="description" content="Frequently asked questions about staying at Secret Corner Hostel — check-in times, booking, facilities, amenities, and local tips." />
+      </Helmet>
       <header className="guide-hero">
         <h1>Traveler's FAQ</h1>
         <p className="guide-subtitle">

@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import "./localAttractions.css";
 import nightbazaar from "../images/activities/nightbazaar.jpg";
 import bluetemple from "../images/activities/bluetemple.webp";
@@ -96,16 +97,12 @@ const localAttractions = [
 ];
 
 const LocalAttractions = () => {
-  useEffect(() => {
-    document.title = "Things to Do in Chiang Rai | Tours & Day Trips";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Slow boat to Laos, trekking tours & Golden Triangle trips from Chiang Rai. Book tours at our hostel near Night Bazaar. Stay with us & save on your adventures!');
-    }
-  }, []);
-
   return (
     <div>
+      <Helmet>
+        <title>Local Attractions | Secret Corner Hostel Chiang Rai</title>
+        <meta name="description" content="Discover the best things to do in Chiang Rai — walking tours, motorbike rentals, the Blue Temple, Night Bazaar, and the Slow Boat to Luang Prabang." />
+      </Helmet>
       <div className="localAttractions-container">
         <h2>Looking for something fun to do in Chiang Rai?</h2>
         <p className="localAttractions-text">

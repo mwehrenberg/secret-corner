@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
@@ -73,20 +74,12 @@ const dayTrips = [
 ];
 
 const BestDayTripsChiangRai = () => {
-  useEffect(() => {
-    document.title =
-      "Best Day Trips from Chiang Rai (2026) | Local Guide to Excursions & Tours";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Discover the best day trips from Chiang Rai — from the Golden Triangle and Doi Mae Salong tea villages to hill tribe treks and the slow boat to Laos. Curated by locals at Secret Corner Hostel."
-      );
-    }
-  }, []);
-
   return (
     <article className="guide-page">
+      <Helmet>
+        <title>Best Day Trips from Chiang Rai</title>
+        <meta name="description" content="Where to go when you’ve seen the White Temple — the Golden Triangle, Doi Mae Salong tea villages, Doi Chang coffee mountain, waterfalls and more." />
+      </Helmet>
       {/* Hero */}
       <header className="guide-hero">
         <h1>Best Day Trips from Chiang Rai</h1>

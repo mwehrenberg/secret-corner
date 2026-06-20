@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
@@ -94,20 +95,12 @@ const WhyChiangRai = () => {
     return () => window.removeEventListener("keydown", onKey);
   }, [lightbox.open, nextImage, prevImage, closeLightbox]);
 
-  useEffect(() => {
-    document.title =
-      "Why Chiang Rai is Absolutely Worth Visiting | Secret Corner Hostel";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Wondering if Chiang Rai is worth visiting? Here's why this northern Thai city deserves a place on your itinerary — from the temples and mountains to the food and culture."
-      );
-    }
-  }, []);
-
   return (
     <article className="guide-page">
+      <Helmet>
+        <title>Why Chiang Rai is Absolutely Worth Visiting</title>
+        <meta name="description" content="A local's guide to Chiang Rai — adventure itineraries, mountain tea villages, temples, markets, and hidden gems. Written by someone who has lived here for years." />
+      </Helmet>
       {/* Hero */}
       <header className="guide-hero">
         <h1>Why Chiang Rai is Absolutely Worth Visiting</h1>
