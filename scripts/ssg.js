@@ -11,58 +11,64 @@ const BASE_URL = 'https://www.secretcornerhostel.com';
 
 const routes = [
   {
+    path: '',
+    title: 'Secret Corner Hostel Chiang Rai | Book Direct & Save',
+    description: 'Best hostel in Chiang Rai near Night Bazaar. Book direct & save! Clean dorms with privacy curtains, rooftop bar, coworking space & female-only rooms. Social hostel vibes.',
+    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/home.jpeg' },
+  },
+  {
     path: 'about',
     title: 'About Secret Corner | Hostel in Chiang Rai',
-    description: "The story behind Secret Corner — why we built it and what makes it our guests' favourite hostel in Chiang Rai.",
-    ogImage: { src: 'about/aboutCover.jpeg', dest: 'og/about.jpeg' },
+    description: "The story behind Secret Corner — a family owned business in the heart of Chiang Rai.",
+    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/about.jpeg' },
   },
   {
     path: 'gallery',
     title: 'Photos | Secret Corner Hostel Chiang Rai',
-    description: 'See our clean modern dorms, rooftop bar & coworking space. Privacy curtains, female rooms & comfy beds. Best hostel near Chiang Rai Night Bazaar.',
+    description: 'See our clean modern dorms, rooftop bar & coworking space.',
     ogImage: { src: 'about/aboutDorm.jpeg', dest: 'og/gallery.jpeg' },
   },
   {
     path: 'facilities',
     title: 'Rooms & Facilities | Clean Comfy Affordable Dorms',
-    description: 'Female dorm, mixed dorms & private rooms with privacy curtains, A/C & premium beds. Rooftop bar, coworking space & fast WiFi. Book direct for exclusive rates!',
-    ogImage: { src: 'rooms/standard.jpeg', dest: 'og/facilities.jpeg' },
+    description: 'Book direct for the lowest rates guaranteed.',
+    ogImage: { src: 'attachments/xroom1.1.jpeg', dest: 'og/facilities.jpeg' },
   },
   {
     path: 'activities',
     title: 'Hostel Activities | Secret Corner Hostel Chiang Rai',
     description: 'Join weekly hostel activities: Secret Supper Night, Morning Walking Tour, Global Card Game Night and more. Social hostel vibes in Chiang Rai.',
-    ogImage: { src: 'hostelActivities/happyhour.png', dest: 'og/activities.png' },
+    ogImage: { src: 'architecture/IMG_0295.jpg', dest: 'og/activities.png' },
   },
   {
     path: 'localAttractions',
     title: 'Local Attractions | Secret Corner Hostel Chiang Rai',
-    description: 'Discover the best things to do in Chiang Rai — walking tours, motorbike rentals, the Blue Temple, Night Bazaar, and the Slow Boat to Luang Prabang.',
-    ogImage: { src: 'activities/bluetemple.webp', dest: 'og/local-attractions.webp' },
+    description: 'Discover the best things to do in Chiang Rai — with the help of our team.',
+    ogImage: { src: 'activities/slowboat.webp', dest: 'og/local-attractions.webp' },
   },
   {
     path: 'guides/why-chiang-rai',
     title: 'Why Chiang Rai is Absolutely Worth Visiting',
-    description: "A local's guide to Chiang Rai — adventure itineraries, mountain tea villages, temples, markets, and hidden gems. Written by someone who has lived here for years.",
-    ogImage: { src: 'blog/whyChiangRai/whiteTemple.jpeg', dest: 'og/why-chiang-rai.jpeg' },
+    description: "My Favorite Day Trips in Chiang Rai — written by someone who has lived here for years.",
+    ogImage: { src: 'blog/whyChiangRai/homePahDinVineyard.jpeg', dest: 'og/why-chiang-rai.jpeg' },
   },
   {
     path: 'guides/best-day-trips-chiang-rai',
     title: 'Best Day Trips from Chiang Rai',
-    description: "Where to go when you've seen the White Temple — the Golden Triangle, Doi Mae Salong tea villages, Doi Chang coffee mountain, waterfalls and more.",
-    ogImage: { src: 'activities/goldentriangle.jpg', dest: 'og/best-day-trips.jpg' },
+    description: "Where to go when you've seen the White Temple...",
+    ogImage: { src: 'activities/doiChang.jpg', dest: 'og/best-day-trips.jpg' },
   },
   {
     path: 'guides/two-days-chiangrai',
     title: 'How to Spend Two Days in Chiang Rai',
-    description: 'The perfect 2-day Chiang Rai itinerary — temples, night markets, mountain tea villages, and local food. Written by the team at Secret Corner Hostel.',
+    description: 'The perfect 2-day Chiang Rai itinerary writtenby the team at Secret Corner Hostel.',
     ogImage: { src: 'activities/bluetemple.webp', dest: 'og/two-days-chiangrai.webp' },
   },
   {
     path: 'guides/faq',
     title: 'FAQ | Secret Corner Hostel Chiang Rai',
-    description: 'Frequently asked questions about staying at Secret Corner Hostel — check-in times, booking, facilities, amenities, and local tips.',
-    ogImage: { src: 'about/welcome2.jpeg', dest: 'og/faq.jpeg' },
+    description: 'Frequently asked questions for your stay at Secret Corner Hostel.',
+    ogImage: { src: 'architecture/IMG_0282.jpg', dest: 'og/faq.jpeg' },
   },
 ];
 
@@ -84,7 +90,8 @@ for (const route of routes) {
 
   const ogTags = [
     `<meta property="og:type" content="website" />`,
-    `<meta property="og:url" content="${BASE_URL}/${routePath}" />`,
+    `<meta property="og:site_name" content="Secret Corner Hostel" />`,
+    `<meta property="og:url" content="${routePath ? `${BASE_URL}/${routePath}` : BASE_URL}" />`,
     `<meta property="og:title" content="${title}" />`,
     `<meta property="og:description" content="${description}" />`,
     ogImageUrl ? `<meta property="og:image" content="${ogImageUrl}" />` : '',
@@ -99,7 +106,7 @@ for (const route of routes) {
     .replace(/<meta name="description" content="[^"]*"[^>]*\/>/, `<meta name="description" content="${description}" />`)
     .replace('</head>', `    ${ogTags}\n  </head>`);
 
-  const destDir = path.join(distDir, routePath);
+  const destDir = routePath ? path.join(distDir, routePath) : distDir;
   fs.mkdirSync(destDir, { recursive: true });
   fs.writeFileSync(path.join(destDir, 'index.html'), html);
 
