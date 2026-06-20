@@ -50,13 +50,13 @@ const routes = [
     path: 'guides/why-chiang-rai',
     title: 'Why Chiang Rai is Absolutely Worth Visiting',
     description: "My Favorite Day Trips in Chiang Rai — written by someone who has lived here for years.",
-    ogImage: { src: 'blog/whyChiangRai/homePahDinVineyard.jpeg', dest: 'og/why-chiang-rai.jpeg' },
+    ogImage: { src: 'blog/whyChiangRai/homPahDinVineyard.png', dest: 'og/why-chiang-rai.jpeg' },
   },
   {
     path: 'guides/best-day-trips-chiang-rai',
     title: 'Best Day Trips from Chiang Rai',
     description: "Where to go when you've seen the White Temple...",
-    ogImage: { src: 'activities/doiChang.jpg', dest: 'og/best-day-trips.jpg' },
+    ogImage: { src: 'activities/doiChang.png', dest: 'og/best-day-trips.jpg' },
   },
   {
     path: 'guides/two-days-chiangrai',
