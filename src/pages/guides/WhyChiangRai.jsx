@@ -19,6 +19,8 @@ import maeSaiRoute from "../../images/blog/whyChiangRai/maeSaiRoute.png";
 import john from "../../images/blog/whyChiangRai/john.jpeg";
 import watPrathat from "../../images/blog/whyChiangRai/watPrathat.jpg";
 import atTheBorder from "../../images/blog/whyChiangRai/atTheBorder.jpeg";
+import dancingAtMarket from "../../images/blog/whyChiangRai/dancingAtMarket.jpg";
+import relaxHotSpring from "../../images/blog/whyChiangRai/relaxHotSpring.jpg";
 
 const MAP_LINKS = {
   doiMaeSalong:      "https://maps.app.goo.gl/aXmm6MZaHvh2NJjY7",
@@ -45,6 +47,7 @@ const ADVENTURE_I_IMAGES = [
   { src: papaEatery,           alt: "Papa Eatery",                              caption: "Papa Eatery" },
   { src: royalGarden,         alt: "Royal Garden at Doi Tung",                 caption: "Royal Garden at Doi Tung" },
   { src: homPanDinVineyard,    alt: "Hom Pan Din Vineyard",                     caption: "Hom Pan Din Vineyard" },
+  { src: relaxHotSpring,       alt: "Relaxing in a hot spring",                 caption: "Relaxing in a hot spring" },
 ];
 
 const ADVENTURE_I_ROUTES = [
@@ -66,7 +69,7 @@ const ADVENTURE_II_ROUTES = [
 
 const ADVENTURE_III_IMAGES = [
   { src: whiteTemple,          alt: "White Temple Wat Rong Khun in Chiang Rai", caption: "White Temple (Wat Rong Khun)" },
-//   { src: chiangRaiNightMarket, alt: "Chiang Rai Night Bazaar",                  caption: "Chiang Rai Night Bazaar" },
+  { src: dancingAtMarket,      alt: "Locals Dancing at the Night Market",       caption: "Locals Dancing at the Night Market" },
   { src: freshMarket,          alt: "Fresh local market in Chiang Rai",         caption: "Fresh local market" },
   { src: flowerFestival,       alt: "Chiang Rai flower festival season",        caption: "Flower festival season" },
   { src: cafeHopping,          alt: "Cafe hopping in Chiang Rai",               caption: "Cafe hopping in the city (Pasom - Art cafe and activity)" },
