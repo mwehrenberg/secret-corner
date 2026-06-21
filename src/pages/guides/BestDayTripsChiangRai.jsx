@@ -218,8 +218,11 @@ const BestDayTripsChiangRai = () => {
             <Link to="/guides/why-chiang-rai">
               Why Chiang Rai is Absolutely Worth Visiting
             </Link>
-          </li>
-        </ul>
+          </li>          <li>
+            <Link to="/guides/best-cafes-chiang-rai">
+              Best Cafes in Chiang Rai
+            </Link>
+          </li>        </ul>
       </nav>
     </article>
   );

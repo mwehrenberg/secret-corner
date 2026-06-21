@@ -71,6 +71,12 @@ const routes = [
     description: 'Frequently asked questions for your stay at Secret Corner Hostel.',
     ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/faq.jpeg' },
   },
+  {
+    path: 'guides/best-cafes-chiang-rai',
+    title: 'Best Cafes in Chiang Rai',
+    description: 'The best cafes in Chiang Rai — from specialty coffee roasters to mountain-view terraces and hidden local gems.',
+    ogImage: { src: 'blog/bestCafes/cafe100.webp', dest: 'og/best-cafes-chiang-rai.webp' },
+  },
 ];
 
 const baseHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');

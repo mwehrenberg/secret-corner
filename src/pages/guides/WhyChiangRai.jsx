@@ -349,6 +349,11 @@ const WhyChiangRai = () => {
               2 Days in Chiang Rai: A Local's Itinerary
             </Link>
           </li>
+          <li>
+            <Link to="/guides/best-cafes-chiang-rai">
+              Best Cafes in Chiang Rai
+            </Link>
+          </li>
         </ul>
       </nav>
     </article>

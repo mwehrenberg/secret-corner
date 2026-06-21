@@ -165,7 +165,7 @@ const FAQ = () => {
 
       {/* Related guides */}
       <div className="guide-related">
-        <h3>Travel Guides</h3>
+        <h3>More Chiang Rai Travel Guides</h3>
         <ul>
           <li>
             <Link to="/guides/why-chiang-rai">
@@ -180,6 +180,11 @@ const FAQ = () => {
           <li>
             <Link to="/guides/two-days-chiangrai">
               2 Days in Chiang Rai: A Local's Itinerary
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/best-cafes-chiang-rai">
+              Best Cafes in Chiang Rai
             </Link>
           </li>
         </ul>

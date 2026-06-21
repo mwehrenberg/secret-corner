@@ -41,8 +41,7 @@ const Footer = () => (
         <ul>
           <li><a href="/guides/why-chiang-rai">Why Chiang Rai is Absolutely Worth Visiting</a></li>
           <li><a href="/guides/best-day-trips-chiang-rai">Best Day Trips from Chiang Rai</a></li>
-          <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>
-        </ul>
+          <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>          <li><a href="/guides/best-cafes-chiang-rai">Best Cafes in Chiang Rai</a></li>        </ul>
       </div>
       <div className="column socials">
         <h4>Follow Us</h4>
