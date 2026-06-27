@@ -212,7 +212,7 @@ const WhyChiangRai = () => {
 
       {/* Section 3 */}
       <section className="guide-section">
-        <h2>Adventure II - Laos Border Road</h2>
+        <h2>Adventure II - Myanmar Border Road</h2>
         <p>
           Another great driving experience is the border road in the NW of the province. Start this day
           of adventure by visiting the{" "}
