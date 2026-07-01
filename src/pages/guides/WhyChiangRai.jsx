@@ -32,6 +32,7 @@ const MAP_LINKS = {
   homPanDinVineyard: "https://maps.app.goo.gl/UyLFUmrPFa9hcLSr7",
   hotSprings:        "https://maps.app.goo.gl/Y8tbg3gqMyHFMu3dA",
   royalVilla:        "https://maps.app.goo.gl/d4rxBg69mm2WsWtAA",
+  ozonePahmee:       "https://maps.app.goo.gl/g8vwoJEjphppBud68",
   pahHeeVillage:     "https://maps.app.goo.gl/kbymJ5a2pzjFF9y76",
   giantSwing:        "https://maps.app.goo.gl/w7czQD5EJG1kAjKv8",
   watPraThatDoiWao:  "https://maps.app.goo.gl/c945nrRwQuZjhAK59",
@@ -231,7 +232,10 @@ const WhyChiangRai = () => {
           for a glimpse of Akha culture and divine coffee and views. Park above the village in the large
           lot just below the main road (20.352042, 99.825378) and above the giant swing to explore the
           village community. Back headed north along the border road, another 20-minute drive will bring
-          you to Pahmee Village where the road turns left — great food and views at Oasis Pahmee. Look
+          you to Pahmee Village where the road turns left — check out the great food and views at{" "}
+          <a href={MAP_LINKS.ozonePahmee} className="map-link" {...newTab}>
+            Ozone Pahmee
+          </a>. Look
           out for the{" "}
           <a href={MAP_LINKS.giantSwing} className="map-link" {...newTab}>
             Pha Hami Village Giant Swing
