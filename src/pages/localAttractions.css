@@ -1,3 +1,7 @@
+.local-attractions-page {
+    font-family: 'Poppins', sans-serif;
+  }
+
 /* Container for the intro text */
 .localAttractions-container {
     margin: 30px auto;

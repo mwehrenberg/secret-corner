@@ -105,10 +105,6 @@ const LandingPage = () => {
     {
       title: "Prime Location",
       text: "Steps from Chiang Rai’s best cafes, restaurants, temples, and night market."
-    },
-    {
-      title: "Grand Opening Rates",
-      text: "Be part of our first chapter! Enjoy special rates, curated experiences, and that fresh-hostel feel."
     }
   ];
 

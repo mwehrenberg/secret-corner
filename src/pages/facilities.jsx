@@ -1,32 +1,28 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
 import "./facilities.css";
-import Standard from "../images/rooms/standard.jpeg";
-import DeluxeTv from "../images/rooms/deluxetv.jpeg";
-import TripleRoom from "../images/rooms/triple.jpeg";
-import SixBedDorm from "../images/rooms/6mixed.jpeg";
-import SixBedFemaleDorm from "../images/rooms/xroom4.2.jpeg";
-import EightBed from "../images/rooms/eightbed.jpeg";
+import Standard from "../images/rooms/standard.jpg";
+import DeluxeTv from "../images/rooms/deluxetv.jpg";
+import TripleRoom from "../images/rooms/triple.jpg";
+import SixBedDorm from "../images/rooms/6mixed.jpg";
+import SixBedFemaleDorm from "../images/rooms/bunkRainbow.jpg";
+import EightBed from "../images/rooms/eightbed.jpg";
+import FamilyRoom from "../images/rooms/familyRoom.jpg";
+import SuperiorQueen from "../images/rooms/supqueen.jpg";
+import TwinRoom from "../images/rooms/twinRoom.jpg";
 
 const Facilities = () => {
     return (
-        <div>
+        <main className="facilities-page">
             <Helmet>
                 <title>Rooms & Facilities | Secret Corner Hostel Chiang Rai</title>
                 <meta name="description" content="Female dorm, mixed dorms & private rooms with privacy curtains, A/C & premium beds. Rooftop bar, coworking space & fast WiFi. Book direct for exclusive rates!" />
             </Helmet>
             <section className="rooms-section">
-                <div className="special-offer">
-                    <h3>GRAND OPENING RATES</h3>
-                    <h4>
-                        Use promo code <span className="promo-code">SECRETDEAL</span> at checkout to enjoy an extra <strong>10% off</strong>
-                    </h4>
-                </div>
-                
                 <h2>Our Rooms</h2>
                 <div className="room-grid">
                     <div className="room-card">
-                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and lockers"></img>
+                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and lockers" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>6-Bed Female Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -34,7 +30,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and reading lights"></img>
+                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and reading lights" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -42,7 +38,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Hostel Chiang Rai"></img>
+                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Most affordable option, same great design as our other dormitories.</p>
@@ -50,7 +46,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={DeluxeTv} alt="Deluxe king room with private bathroom at Secret Corner Hostel Chiang Rai"></img>
+                    <img src={DeluxeTv} alt="Deluxe king room with private bathroom at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Deluxe King Room with Private Bath</h3>
                         <p>Premium furnishings, in-room fridge & TV, ensuite with walk-in shower.</p>
@@ -59,7 +55,7 @@ const Facilities = () => {
 
                     {/* <!-- Repeat for other rooms --> */}
                     <div className="room-card">
-                    <img src={Standard} alt="Standard king room private bathroom accommodation Secret Corner Hostel Chiang Rai"></img>
+                    <img src={Standard} alt="Standard king room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Standard King Room with Private Bath</h3>
                         <p>Cozy layout, king-size bed, in-room fridge, ensuite.</p>
@@ -67,7 +63,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <img src={SuperiorQueen} alt="Superior queen room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Superior Queen Room</h3>
                         <p>A cozy and comfortable private room, with a comfortable L-shaped sofa seating area and private ensuite.</p>
@@ -75,7 +71,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <img src={TwinRoom} alt="Superior twin room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Superior Twin Room with Private Bath</h3>
                         <p>Perfect for friends or travelers who prefer separate beds without compromising on comfort.</p>
@@ -83,7 +79,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={TripleRoom} alt="Triple room for groups and families at Secret Corner Hostel Chiang Rai with private bathroom"></img>
+                    <img src={TripleRoom} alt="Triple room for groups and families at Secret Corner Hostel Chiang Rai with private bathroom" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Triple Room with Private Bath</h3>
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
@@ -91,7 +87,8 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <div className="coming-soon-placeholder"><span>Coming soon</span></div>
+                    <img src={FamilyRoom} alt="Family room connecting rooms accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    {/* <div className="coming-soon-placeholder"><span>Coming soon</span></div> */}
                     <div className="room-info">
                         <h3>Family Room (Connecting Rooms)</h3>
                         <p>Ideal for families or small groups, this spacious setup features two connecting rooms, offering both privacy and shared space.</p>
@@ -146,7 +143,7 @@ const Facilities = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     );
 };
 

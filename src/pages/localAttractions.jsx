@@ -98,7 +98,7 @@ const localAttractions = [
 
 const LocalAttractions = () => {
   return (
-    <div>
+    <main className="local-attractions-page">
       <Helmet>
         <title>Local Attractions | Secret Corner Hostel Chiang Rai</title>
         <meta name="description" content="Discover the best things to do in Chiang Rai — walking tours, motorbike rentals, the Blue Temple, Night Bazaar, and the Slow Boat to Luang Prabang." />
@@ -168,7 +168,7 @@ const LocalAttractions = () => {
           </a>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
