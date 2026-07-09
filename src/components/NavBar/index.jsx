@@ -11,6 +11,15 @@ import {
 import logo from "../../images/logo.png";
 import "./NavBar.css";
 
+const travelGuideLinks = [
+    { to: "/localAttractions", label: "Local Attractions" },
+    { to: "/guides/best-day-trips-chiang-rai", label: "Best Day Trips" },
+    { to: "/guides/two-days-chiangrai", label: "Two Days in Chiang Rai" },
+    { to: "/guides/why-chiang-rai", label: "Why Chiang Rai" },
+    { to: "/guides/best-cafes-chiang-rai", label: "Best Cafes" },
+    { to: "/guides/faq", label: "FAQ" },
+];
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -39,7 +48,18 @@ const Navbar = () => {
                     <NavLink to="/about">Our Story</NavLink>
                     <NavLink to="/facilities">Facilities</NavLink>
                     <NavLink to="/activities">In-House Activities</NavLink>
-                    <NavLink to="/localAttractions">Local Attractions</NavLink>
+                    <div className="nav-dropdown">
+                        <button className="nav-dropdown-trigger" type="button" aria-haspopup="true">
+                            Travel Guides
+                        </button>
+                        <div className="nav-dropdown-menu">
+                            {travelGuideLinks.map((link) => (
+                                <NavLink to={link.to} key={link.to}>
+                                    {link.label}
+                                </NavLink>
+                            ))}
+                        </div>
+                    </div>
                     <NavLink to="/gallery">Gallery</NavLink>
                 </NavMenu>
 
@@ -59,7 +79,14 @@ const Navbar = () => {
                     <NavLink onClick={closeMenu} to="/about">Our Story</NavLink>
                     <NavLink onClick={closeMenu} to="/facilities">Facilities</NavLink>
                     <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
-                    <NavLink onClick={closeMenu} to="/localAttractions">Local Attractions</NavLink>
+                    <div className="mobile-guide-group">
+                        <p>Travel Guides</p>
+                        {travelGuideLinks.map((link) => (
+                            <NavLink onClick={closeMenu} to={link.to} key={link.to}>
+                                {link.label}
+                            </NavLink>
+                        ))}
+                    </div>
                     <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
 
                     <NavLink 

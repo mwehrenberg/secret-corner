@@ -115,14 +115,15 @@ export const MobileMenu = styled.div`
 
   /* Reservation button styling inside dropdown */
   .mobile-reserve {
-    margin: 1rem auto 0 auto;
+    box-sizing: border-box;
+    margin: 1rem 1.5rem 0;
     padding: 10px 20px;
     border-radius: 6px;
     background: #333;
     color: #fff;
     font-size: 1rem;
     text-align: center;
-    width: 90%;
+    width: auto;
     text-decoration: none;
     font-weight: 500;
     transition: background 0.2s ease;

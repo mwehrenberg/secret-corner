@@ -152,14 +152,18 @@ const FAQ = () => {
 
       {/* CTA */}
       <div className="guide-cta">
-        <h3>Ready to Book?</h3>
-        <p>Reserve your stay at Secret Corner Hostel today.</p>
+        <p className="guide-kicker">Book Direct</p>
+        <h3>Ready to experience Secret Corner?</h3>
+        <p>
+          Clean rooms, comfortable beds, thoughtful shared spaces, and a rooftop made
+          for slow mornings and relaxed evenings in Chiang Rai.
+        </p>
         <a
           href="https://us2.cloudbeds.com/reservation/T5pGtj"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Book Now
+          Book Direct
         </a>
       </div>
 

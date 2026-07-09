@@ -326,16 +326,18 @@ const WhyChiangRai = () => {
 
       {/* CTA */}
       <div className="guide-cta">
-        <h3>Ready to Experience Chiang Rai?</h3>
+        <p className="guide-kicker">Book Direct</p>
+        <h3>Ready to experience Secret Corner?</h3>
         <p>
-          Book direct with Secret Corner Hostel for the best rates and local tips.
+          Clean rooms, comfortable beds, thoughtful shared spaces, and a rooftop made
+          for slow mornings and relaxed evenings in Chiang Rai.
         </p>
         <a
           href="https://us2.cloudbeds.com/reservation/T5pGtj"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Book Now &amp; Save
+          Book Direct
         </a>
       </div>
 

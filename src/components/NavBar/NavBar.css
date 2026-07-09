@@ -31,6 +31,85 @@ h2 {
     width: auto;
     display: block;
   }
+
+  .nav-dropdown {
+    position: relative;
+    height: 85px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-dropdown-trigger {
+    height: 100%;
+    padding: 0 1rem;
+    color: #333333;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    position: relative;
+  }
+
+  .nav-dropdown-trigger::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    height: 2px;
+    background-color: #c49b63;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-dropdown-trigger:hover::after,
+  .nav-dropdown:focus-within .nav-dropdown-trigger::after {
+    transform: scaleX(1);
+  }
+
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1002;
+    display: grid;
+    min-width: 230px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid rgba(196, 155, 99, 0.24);
+    border-radius: 8px;
+    box-shadow: 0 14px 32px rgba(41, 34, 25, 0.14);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-dropdown-menu a {
+    height: auto;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown-menu a::after {
+    display: none;
+  }
+
+  .nav-dropdown-menu a:hover,
+  .nav-dropdown-menu a:focus-visible {
+    background: #fcebd4;
+    outline: none;
+  }
   
   @media (max-width: 768px) {
     .navbar-logo img {
@@ -68,6 +147,27 @@ h2 {
       font-size: 1rem;
       position: sticky;
       bottom: 1rem;
+    }
+
+    .mobile-guide-group {
+      padding: 0.25rem 0;
+      border-top: 1px solid rgba(196, 155, 99, 0.2);
+      border-bottom: 1px solid rgba(196, 155, 99, 0.2);
+    }
+
+    .mobile-guide-group p {
+      margin: 0;
+      padding: 0.75rem 1.5rem 0.35rem;
+      color: #8c6239;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .MobileMenu .mobile-guide-group a {
+      padding-left: 2.25rem;
     }
   }
   

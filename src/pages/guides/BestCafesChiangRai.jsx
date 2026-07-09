@@ -243,14 +243,19 @@ const BestCafesChiangRai = () => {
 
       {/* Book CTA */}
       <div className="guide-cta">
-        <p>Staying in Chiang Rai? Come find us in the heart of the old city.</p>
+        <p className="guide-kicker">Book Direct</p>
+        <h3>Ready to experience Secret Corner?</h3>
+        <p>
+          Clean rooms, comfortable beds, thoughtful shared spaces, and a rooftop made
+          for slow mornings and relaxed evenings in Chiang Rai.
+        </p>
         <a
           className="guide-cta-btn"
           href="https://us2.cloudbeds.com/reservation/T5pGtj"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Book Now &amp; Save
+          Book Direct
         </a>
       </div>
 

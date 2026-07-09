@@ -157,43 +157,68 @@
 
 /* CTA Banner */
 .guide-cta {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  border-radius: 12px;
-  padding: 32px 28px;
-  text-align: center;
+  display: grid;
+  gap: 24px;
+  align-items: center;
   margin: 48px auto 20px;
-  max-width: 680px;
-  color: #fff;
+  max-width: 920px;
+  padding: clamp(28px, 5vw, 48px);
+  color: #2d2b28;
+  background: #fcebd4;
+  border: 1px solid rgba(124, 94, 61, 0.16);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.guide-kicker {
+  margin: 0 0 10px;
+  color: #8c6239;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .guide-cta h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 10px;
-  color: #fff;
+  margin: 0;
+  color: #24211d;
+  font-size: clamp(1.85rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.12;
 }
 
-.guide-cta p {
-  font-size: 1rem;
-  margin: 0 0 18px;
-  color: rgba(255, 255, 255, 0.92);
+.guide-cta p:not(.guide-kicker) {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: #4f453a;
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  line-height: 1.75;
 }
 
 .guide-cta a {
-  display: inline-block;
-  background: #fff;
-  color: #b45009;
+  box-sizing: border-box;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 0 24px;
+  color: #fffaf2;
+  background: #8c6239;
+  border: 1px solid #8c6239;
+  border-radius: 999px;
   font-weight: 700;
-  font-size: 1rem;
-  padding: 12px 28px;
-  border-radius: 8px;
+  text-align: center;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.guide-cta a:hover {
-  background: #fef3c7;
-  transform: scale(1.03);
+.guide-cta a:hover,
+.guide-cta a:focus-visible {
+  background: #6f4b2a;
+  outline: none;
+  transform: translateY(-1px);
 }
 
 /* Author photo */
@@ -487,11 +512,11 @@
   }
 
   .guide-cta {
-    padding: 24px 18px;
+    padding: 26px 20px;
   }
 
-  .guide-cta h3 {
-    font-size: 1.2rem;
+  .guide-cta a {
+    width: 100%;
   }
 }
 
