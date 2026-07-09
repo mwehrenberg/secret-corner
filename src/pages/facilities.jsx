@@ -22,30 +22,6 @@ const Facilities = () => {
                 <h2>Our Rooms</h2>
                 <div className="room-grid">
                     <div className="room-card">
-                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and lockers" loading="lazy" decoding="async"></img>
-                    <div className="room-info">
-                        <h3>6-Bed Female Dormitory (Shared Bath)</h3>
-                        <p>Privacy curtains, lockers, reading lights, shared bath.</p>
-                    </div>
-                    </div>
-                    
-                    <div className="room-card">
-                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and reading lights" loading="lazy" decoding="async"></img>
-                    <div className="room-info">
-                        <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
-                        <p>Privacy curtains, lockers, reading lights, shared bath.</p>
-                    </div>
-                    </div>
-                    
-                    <div className="room-card">
-                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
-                    <div className="room-info">
-                        <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
-                        <p>Most affordable option, same great design as our other dormitories.</p>
-                    </div>
-                    </div>
-
-                    <div className="room-card">
                     <img src={DeluxeTv} alt="Deluxe king room with private bathroom at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Deluxe King Room with Private Bath</h3>
@@ -95,6 +71,29 @@ const Facilities = () => {
                     </div>
                     </div>
 
+                    <div className="room-card">
+                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and lockers" loading="lazy" decoding="async"></img>
+                    <div className="room-info">
+                        <h3>6-Bed Female Dormitory (Shared Bath)</h3>
+                        <p>Privacy curtains, lockers, reading lights, shared bath.</p>
+                    </div>
+                    </div>
+                    
+                    <div className="room-card">
+                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and reading lights" loading="lazy" decoding="async"></img>
+                    <div className="room-info">
+                        <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
+                        <p>Privacy curtains, lockers, reading lights, shared bath.</p>
+                    </div>
+                    </div>
+                    
+                    <div className="room-card">
+                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <div className="room-info">
+                        <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
+                        <p>Most affordable option, same great design as our other dormitories.</p>
+                    </div>
+                    </div>
                 </div>
             </section>
 
