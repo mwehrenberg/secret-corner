@@ -6,7 +6,7 @@ import DeluxeTv from "../images/rooms/deluxetv.jpg";
 import TripleRoom from "../images/rooms/triple.jpg";
 import SixBedDorm from "../images/rooms/6mixed.jpg";
 import SixBedFemaleDorm from "../images/rooms/bunkRainbow.jpg";
-import EightBed from "../images/rooms/eightbed.jpg";
+import EightBed from "../images/rooms/eightBed.jpg";
 import FamilyRoom from "../images/rooms/familyRoom.jpg";
 import SuperiorQueen from "../images/rooms/supqueen.jpg";
 import TwinRoom from "../images/rooms/twinRoom.jpg";
