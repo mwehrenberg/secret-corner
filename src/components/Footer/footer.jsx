@@ -24,7 +24,7 @@ const Footer = () => (
         <p>
           <a>
             <img src={line} alt="Contact Secret Corner Hostel Chiang Rai on Line" className="wa-icon" />
-            Line 081-321-7080
+            Line (+66) 61 332 6191
             </a>
         </p>
 

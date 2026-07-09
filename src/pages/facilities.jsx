@@ -125,6 +125,7 @@ const Facilities = () => {
                             <li>Garden and patio</li>
                             <li>Shared bathrooms</li>
                             <li>Laundry machines, dryer, and drying racks</li>
+                            <li>Electric pots, pans and rice cooker</li>
                             <li>Cultural, creative, and social activities</li>
                         </ul>
                     </div>
