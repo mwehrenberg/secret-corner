@@ -12,18 +12,27 @@ h2 {
   
   /* Reservation button styles */
   .NavBtnLink {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
     font-size: 0.9rem;
-    border-radius: 4px;
-    background: #333333;
-    padding: 8px 16px;
-    color: #ffffff;
-    border: none;
+    border-radius: 999px;
+    background: #8c6239;
+    padding: 0 24px;
+    color: #fffaf2;
+    border: 1px solid #8c6239;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 700;
+    text-align: center;
     white-space: nowrap; /* keep text on one line */
+    transition: background 0.2s ease, transform 0.2s ease;
   }
   .NavBtnLink:hover {
-    background: #555555;
+    background: #6f4b2a;
+    transform: translateY(-1px);
   }
   
   .navbar-logo img {
@@ -139,10 +148,10 @@ h2 {
 
     .MobileMenu .NavBtnLink {
       margin: auto 1rem 1rem 1rem;
-      padding: 12px;
-      border-radius: 8px;
-      background: #333;
-      color: #fff;
+      padding: 0 24px;
+      border-radius: 999px;
+      background: #8c6239;
+      color: #fffaf2;
       text-align: center;
       font-size: 1rem;
       position: sticky;

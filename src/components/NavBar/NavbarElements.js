@@ -75,19 +75,27 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
     font-size: 0.9rem;
-    border-radius: 4px;
-    background: #333333; /* Dark gray background */
-    padding: 10px 22px;
-    color: #ffffff; /* White text color */
+    border-radius: 999px;
+    background: #8c6239;
+    padding: 0 24px;
+    color: #fffaf2;
     outline: none;
-    border: none;
+    border: 1px solid #8c6239;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease, transform 0.2s ease;
     text-decoration: none;
+    font-weight: 700;
+    text-align: center;
     margin-left: 24px;
     &:hover {
-        background: #555555; /* Darker gray background on hover */
+        background: #6f4b2a;
+        transform: translateY(-1px);
     }
 `;
 
@@ -116,20 +124,25 @@ export const MobileMenu = styled.div`
   /* Reservation button styling inside dropdown */
   .mobile-reserve {
     box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
     margin: 1rem 1.5rem 0;
-    padding: 10px 20px;
-    border-radius: 6px;
-    background: #333;
-    color: #fff;
+    padding: 0 24px;
+    border: 1px solid #8c6239;
+    border-radius: 999px;
+    background: #8c6239;
+    color: #fffaf2;
     font-size: 1rem;
     text-align: center;
     width: auto;
     text-decoration: none;
-    font-weight: 500;
-    transition: background 0.2s ease;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
   }
 
   .mobile-reserve:hover {
-    background: #555;
+    background: #6f4b2a;
   }
 `;
