@@ -121,8 +121,10 @@ const LandingPage = () => {
       {/* HERO */}
       <section className="hero">
         <div className="hero-overlay">
-          <h1>Secret Corner Hostel</h1>
-          <p>Welcome to your home in Chiang Rai</p>
+          <span className="hero-eyebrow">Welcome to</span>
+          <h1>Secret Corner</h1>
+          <span className="hero-divider" aria-hidden="true"></span>
+          <p>Boutique Stay <span aria-hidden="true">·</span> Chiang Rai</p>
         </div>
       </section>
 
