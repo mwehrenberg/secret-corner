@@ -7,7 +7,7 @@ import HostelWorld from "../images/utils/hostelworld.png";
 import Google from "../images/utils/google.png";
 import TripAdvisor from "../images/utils/tripadvisor.svg";
 import Hotels from "../images/utils/hotelscom.png";
-import HostelExterior from "../images/architecture/IMG_0266.jpg";
+import HostelExterior from "../images/architecture/IMG_0266.JPG";
 
 const LandingPage = () => {
   const otaHighlights = [
