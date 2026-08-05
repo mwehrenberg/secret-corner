@@ -7,6 +7,7 @@ import HostelWorld from "../images/utils/hostelworld.png";
 import Google from "../images/utils/google.png";
 import TripAdvisor from "../images/utils/tripadvisor.svg";
 import Hotels from "../images/utils/hotelscom.png";
+import HostelExterior from "../images/architecture/IMG_0266.jpg";
 
 const LandingPage = () => {
   const otaHighlights = [
@@ -133,39 +134,53 @@ const LandingPage = () => {
         <div className="content">
           <h2>About Us</h2>
           <p>
-            Welcome to Secret Corner Boutique Hostel — truly the best night’s 
-            stay in Chiang Rai for travelers who want <b>premium comfort</b> and 
-            <b> local immersion</b> in a relaxed atmosphere.
+            Secret Corner Boutique Stay is a calm, design-led place to stay in central Chiang Rai. We
+            offer comfortable private rooms and thoughtfully designed dorm beds for travelers who value
+            cleanliness, good sleep, and a relaxed atmosphere. Guests can unwind on our signature rooftop
+            while staying within easy reach of the Night Bazaar, Bus Terminal 1, cafés, local restaurants,
+            and markets.
           </p>
-          <p>
-            Whether you choose a cozy dorm or a private room, we offer clean, thoughtfully 
-            designed spaces with hotel-quality beds, soft premium linens, and daily housekeeping 
-            services for a restful stay. <b>Newly built</b>, our property 
-            features modern facilities and quality amenities such as reliably hot showers, air 
-            conditioning, privacy curtains, personal reading lights and power outlets, and complimentary 
-            individual lockers. Our guests often mention the exceptional quality of our comfort 
-            and cleanliness, stating that Secret Corner stands out above the rest.
-          </p>
-          <p>
-            Enjoy our <b>social rooftop</b> — a laid-back space for sunset drinks, meeting 
-            fellow travelers, remote work, or simply unwinding after a day out. We 
-            offer complimentary high-speed WiFi, a common kitchen with kitchenware 
-            provided (microwave, refrigerator, water kettle, utensils), drinking water, 
-            laundry services, coffee/tea/breakfast options, and an evening happy hour. 
-            Self-check-in is available for late arrivals.
-          </p>
-          <p>
-            Secret Corner is located conveniently in <b>downtown Chiang Rai</b> just a few 
-            minutes walk from the Night Bazaar, walking streets, 7-Eleven, and bus 
-            station. Walking distance from many art cafés and local attractions such 
-            as the City Clock Tower, fresh morning market, and temples. We are not on 
-            the main road, so you may enjoy peaceful, private nights.
-          </p>
-          <p>
-            Lastly, our <b>friendly local team</b> is happy to help arrange day trips, 
-            motorbike/scooter rentals, and slow boat journeys to Laos. We often help
-             you organize your following plans to make your experience easy-going and enjoyable!
-          </p>
+        </div>
+      </section>
+
+      {/* LOCATION */}
+      <section className="location" aria-labelledby="location-title">
+        <div className="location-content">
+          <div className="location-image-wrap">
+            <img
+              src={HostelExterior}
+              alt="Secret Corner Boutique Stay on a quiet street in central Chiang Rai"
+              className="location-image"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="location-copy">
+            <p className="section-kicker">Central, yet peaceful</p>
+            <h2 id="location-title">Stay close to the heart of Chiang Rai</h2>
+            <p>
+              Secret Corner is tucked away on a quiet side street in central Chiang Rai, giving solo
+              travelers and couples a calm place to rest while keeping the city’s food, markets, and
+              transport within easy reach.
+            </p>
+            <ul className="location-details">
+              <li><strong>7 minutes</strong><span>Walk to nearby restaurants and shops</span></li>
+              <li><strong>8 minutes</strong><span>Walk to Chiang Rai Bus Terminal 1</span></li>
+              <li><strong>10 minutes</strong><span>Walk to the Night Bazaar</span></li>
+              <li><strong>15–20 minutes</strong><span>By taxi or Grab from the airport</span></li>
+            </ul>
+            {/* <p className="location-address">
+              40/1 Sanpanard Soi 2, Wiang, Mueang Chiang Rai, Chiang Rai 57000, Thailand
+            </p> */}
+            <a
+              className="location-link"
+              href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Find Secret Corner on Google Maps
+            </a>
+          </div>
         </div>
       </section>
 
