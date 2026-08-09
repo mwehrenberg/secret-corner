@@ -48,7 +48,7 @@ const About = () => {
     return (
         <div className="about-container">
             <Helmet>
-                <title>About Us | Secret Corner Hostel Chiang Rai</title>
+                <title>About Us | Secret Corner Boutique Stay Chiang Rai</title>
                 <meta name="description" content="The story behind Secret Corner — why we built it and what makes it our guests' favourite hostel in Chiang Rai." />
             </Helmet>
             <AboutHeader />

@@ -110,7 +110,7 @@ const LandingPage = () => {
   ];
 
   useEffect(() => {
-    document.title = "Best Hostel in Chiang Rai | Book Direct & Save";
+    document.title = "Secret Corner Boutique Stay Chiang Rai | Book Direct & Save";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Boutique hotel comfort at hostel prices. Enjoy thoughtful design, exceptional cleanliness, comfortable beds, and a calm atmosphere just eight minutes from Chiang Rai\'s Night Bazaar.');

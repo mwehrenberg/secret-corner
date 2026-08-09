@@ -88,13 +88,13 @@ function PromoBanner() {
             "@context": "https://schema.org",
             "@type": "Offer",
             "name": "Book Direct & Save 10%",
-            "description": "Book directly with Secret Corner Hostel Chiang Rai for the best price guaranteed. Use promo code SECRETDEAL for 10% off. No middleman fees — booking direct always gives you the lowest rate.",
+            "description": "Book directly with Secret Corner Boutique Stay Chiang Rai for the best price guaranteed. Use promo code SECRETDEAL for 10% off. No middleman fees — booking direct always gives you the lowest rate.",
             "discount": "10%",
             "discountCode": "SECRETDEAL",
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "LodgingBusiness",
-              "name": "Secret Corner Hostel",
+              "name": "Secret Corner Boutique Stay",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Chiang Rai",

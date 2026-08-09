@@ -131,7 +131,7 @@ const FAQ = () => {
   return (
     <div className="guide-page">
       <Helmet>
-        <title>FAQ | Secret Corner Hostel Chiang Rai</title>
+        <title>FAQ | Secret Corner Boutique Stay Chiang Rai</title>
         <meta name="description" content="Frequently asked questions about staying at Secret Corner Hostel — check-in times, booking, facilities, amenities, and local tips." />
       </Helmet>
       <header className="guide-hero">

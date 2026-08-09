@@ -39,7 +39,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <a href="/" className="navbar-logo">
-                    <img src={logo} alt="Secret Corner Hostel Chiang Rai - Boutique Hostel Logo" />
+                    <img src={logo} alt="Secret Corner Boutique Stay Chiang Rai - Logo" />
                 </a>
 
                 <Bars onClick={toggleMenu} />

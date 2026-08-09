@@ -13,19 +13,19 @@ const OG_VERSION = '2';
 const routes = [
   {
     path: '',
-    title: 'Secret Corner Hostel Chiang Rai | Book Direct & Save',
+    title: 'Secret Corner Boutique Stay Chiang Rai | Book Direct & Save',
     description: 'Clean. Comfortable. Calm. Centrally located.',
     ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/home.jpeg' },
   },
   {
     path: 'about',
-    title: 'About Secret Corner | Hostel in Chiang Rai',
+    title: 'About Secret Corner | Boutique Stay in Chiang Rai',
     description: "The story behind Secret Corner — a family owned business in the heart of Chiang Rai.",
     ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/about.jpeg' },
   },
   {
     path: 'gallery',
-    title: 'Photos | Secret Corner Hostel Chiang Rai',
+    title: 'Photos | Secret Corner Boutique Stay Chiang Rai',
     description: 'See our clean modern dorms, rooftop bar & coworking space.',
     ogImage: { src: 'about/aboutDorm.jpeg', dest: 'og/gallery.jpeg' },
   },
@@ -37,13 +37,13 @@ const routes = [
   },
   {
     path: 'activities',
-    title: 'Hostel Activities | Secret Corner Hostel Chiang Rai',
+    title: 'Activities | Secret Corner Boutique Stay Chiang Rai',
     description: 'Join weekly hostel activities: Secret Supper Night, Morning Walking Tour, Global Card Game Night and more. Social hostel vibes in Chiang Rai.',
     ogImage: { src: 'architecture/IMG_0295.JPG', dest: 'og/activities.png' },
   },
   {
     path: 'localAttractions',
-    title: 'Local Attractions | Secret Corner Hostel Chiang Rai',
+    title: 'Local Attractions | Secret Corner Boutique Stay Chiang Rai',
     description: 'Discover the best things to do in Chiang Rai — with the help of our team.',
     ogImage: { src: 'activities/slowboat.webp', dest: 'og/local-attractions.webp' },
   },

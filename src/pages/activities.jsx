@@ -87,7 +87,7 @@ const Activities = () => {
   return (
     <div>
       <Helmet>
-        <title>Hostel Activities | Secret Corner Hostel Chiang Rai</title>
+        <title>Activities | Secret Corner Boutique Stay Chiang Rai</title>
         <meta name="description" content="Join weekly hostel activities: Secret Supper Night, Morning Walking Tour, Global Card Game Night and more. Social hostel vibes in Chiang Rai." />
       </Helmet>
       <div className="activities-container">

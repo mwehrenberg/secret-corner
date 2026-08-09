@@ -15,7 +15,7 @@ const Facilities = () => {
     return (
         <main className="facilities-page">
             <Helmet>
-                <title>Rooms & Facilities | Secret Corner Hostel Chiang Rai</title>
+                <title>Rooms & Facilities | Secret Corner Boutique Stay Chiang Rai</title>
                 <meta name="description" content="Female dorm, mixed dorms & private rooms with privacy curtains, A/C & premium beds. Rooftop bar, coworking space & fast WiFi. Book direct for exclusive rates!" />
             </Helmet>
             <section className="rooms-section">
