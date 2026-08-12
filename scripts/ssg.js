@@ -66,6 +66,12 @@ const routes = [
     ogImage: { src: 'activities/doiChang.png', dest: 'og/pong-phra-bat.jpg' },
   },
   {
+    path: 'guides/chiang-rai-no-scooter',
+    title: 'Things to Do in Chiang Rai Without a Scooter | Secret Corner',
+    description: '13 recommended attractions in and around Chiang Rai city that are easy to reach on foot or by Grab — temples, markets, art, and more.',
+    ogImage: { src: 'activities/bluetemple.webp', dest: 'og/chiang-rai-no-scooter.jpg' },
+  },
+  {
     path: 'guides/two-days-chiangrai',
     title: 'How to Spend Two Days in Chiang Rai',
     description: 'The perfect 2-day Chiang Rai itinerary writtenby the team at Secret Corner Hostel.',

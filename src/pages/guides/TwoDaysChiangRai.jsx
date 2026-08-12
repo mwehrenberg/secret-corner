@@ -277,8 +277,9 @@ const TwoDaysChiangRai = () => {
       </div>
 
       {/* Related Guides */}
-      <nav className="guide-related">
-        <h3>More Chiang Rai Travel Guides</h3>
+      <nav className="guide-related guide-related--more">
+        <p className="guide-kicker">Keep exploring</p>
+        <h3>More Chiang Rai travel guides</h3>
         <ul>
           <li>
             <Link to="/guides/best-day-trips-chiang-rai">
@@ -293,6 +294,11 @@ const TwoDaysChiangRai = () => {
           <li>
             <Link to="/guides/pong-phra-bat">
               Pong Phra Bat District Itinerary
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/chiang-rai-no-scooter">
+              Things to Do Without a Scooter
             </Link>
           </li>
           <li>

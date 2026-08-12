@@ -533,3 +533,516 @@
     font-size: 1.15rem;
   }
 }
+
+/* ===== No-scooter guide: Secret Corner editorial treatment ===== */
+.no-scooter-guide {
+  max-width: none;
+  padding: 0 0 72px;
+  color: #40382f;
+  background: #fbfaf7;
+}
+
+.no-scooter-guide .guide-hero {
+  box-sizing: border-box;
+  margin: 0 0 clamp(42px, 7vw, 76px);
+  padding: clamp(64px, 9vw, 108px) 24px clamp(54px, 8vw, 92px);
+  background: #f1eadf;
+  border-bottom: 1px solid rgba(112, 79, 45, 0.18);
+}
+
+.no-scooter-guide .guide-eyebrow {
+  margin: 0 0 18px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.no-scooter-guide .guide-hero h1 {
+  max-width: 840px;
+  margin: 0 auto 20px;
+  color: #2f281f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(2.9rem, 7vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+.no-scooter-guide .guide-hero .guide-subtitle {
+  max-width: 650px;
+  color: #655b50;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.82rem, 1.6vw, 0.95rem);
+  line-height: 1.7;
+}
+
+.no-scooter-guide .guide-section {
+  max-width: 760px;
+  margin-bottom: 52px;
+  padding: 0 24px;
+}
+
+.no-scooter-guide .no-scooter-intro {
+  max-width: 680px;
+  margin-bottom: clamp(60px, 9vw, 96px);
+}
+
+.no-scooter-guide .no-scooter-intro p {
+  color: #4f473f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  line-height: 1.65;
+}
+
+.no-scooter-guide .no-scooter-stop {
+  border-top: 1px solid rgba(112, 79, 45, 0.24);
+  padding-top: 34px;
+}
+
+.no-scooter-guide .stop-heading {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.no-scooter-guide .stop-number {
+  padding-top: 6px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.no-scooter-guide .guide-section h2 {
+  margin: 0;
+  padding: 0;
+  color: #2f281f;
+  border: 0;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+}
+
+.no-scooter-guide .stop-thai {
+  margin: 8px 0 0;
+  color: #877b6e;
+  font-size: 0.88rem;
+}
+
+.no-scooter-guide .stop-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 34px;
+  margin: 0 0 18px 60px;
+}
+
+.no-scooter-guide .stop-details div {
+  min-width: 130px;
+}
+
+.no-scooter-guide .stop-details dt,
+.no-scooter-guide .stop-address span {
+  margin-bottom: 3px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.no-scooter-guide .stop-details dd {
+  margin: 0;
+  color: #574e45;
+  font-size: 0.9rem;
+}
+
+.no-scooter-guide .stop-address {
+  margin: 0 0 24px 60px;
+}
+
+.no-scooter-guide .stop-map-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 16px;
+}
+
+.no-scooter-guide .map-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0.48rem 1.1rem;
+  color: #6d4827;
+  border: 1px solid rgba(109, 72, 39, 0.4);
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.no-scooter-guide .map-link::after { content: none; }
+
+.no-scooter-guide .map-link:hover,
+.no-scooter-guide .map-link:focus-visible {
+  color: #4a2f14;
+  background: rgba(109, 72, 39, 0.07);
+  border-color: rgba(109, 72, 39, 0.7);
+  outline: none;
+}
+
+.no-scooter-guide .stop-address {
+  color: #655b50;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.no-scooter-guide .stop-address span {
+  display: block;
+}
+
+.no-scooter-guide .guide-image-block {
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 14px 36px rgba(73, 50, 29, 0.12);
+}
+
+.no-scooter-guide .guide-image-block img { border-radius: 4px; }
+
+.no-scooter-guide .guide-section > p:last-child {
+  color: #4f473f;
+  font-size: 1.03rem;
+  line-height: 1.78;
+}
+
+.no-scooter-guide .guide-cta,
+.no-scooter-guide .guide-related {
+  box-sizing: border-box;
+  max-width: 920px;
+}
+
+.guide-related--more {
+  box-sizing: border-box;
+  max-width: 920px;
+  margin: 68px auto 0;
+  padding: 38px 24px 0;
+  border-top: 1px solid rgba(112, 79, 45, 0.24);
+}
+
+.guide-related--more .guide-kicker {
+  margin: 0 0 10px;
+  color: #8c6239;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.guide-related--more h3 {
+  margin: 0 0 22px;
+  color: #2f281f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 400;
+}
+
+.guide-related--more ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 32px;
+  margin: 0;
+}
+
+.guide-related--more li {
+  margin: 0;
+}
+
+.guide-related--more a {
+  color: #6d4827;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-color: rgba(109, 72, 39, 0.35);
+  text-underline-offset: 4px;
+}
+
+.guide-related--more a:hover,
+.guide-related--more a:focus-visible {
+  color: #4a2f14;
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 600px) {
+  .no-scooter-guide .guide-hero h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
+  .no-scooter-guide .guide-section { padding: 0 20px; }
+  .no-scooter-guide .stop-details,
+  .no-scooter-guide .stop-address { margin-left: 0; }
+  .guide-related--more ul { grid-template-columns: 1fr; }
+}
+
+/* ===== Shared editorial style for feature guides ===== */
+.editorial-guide {
+  max-width: none;
+  padding: 0 0 72px;
+  color: #40382f;
+  background: #fbfaf7;
+}
+
+.editorial-guide .guide-hero {
+  box-sizing: border-box;
+  margin: 0 0 clamp(42px, 7vw, 76px);
+  padding: clamp(64px, 9vw, 108px) 24px clamp(54px, 8vw, 92px);
+  background: #f1eadf;
+  border-bottom: 1px solid rgba(112, 79, 45, 0.18);
+}
+
+.editorial-guide .guide-eyebrow {
+  margin: 0 0 18px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.editorial-guide .guide-hero h1 {
+  max-width: 880px;
+  margin: 0 auto 20px;
+  color: #2f281f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(2.9rem, 7vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+.editorial-guide .guide-hero .guide-subtitle {
+  max-width: 650px;
+  color: #655b50;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.82rem, 1.6vw, 0.95rem);
+  line-height: 1.7;
+}
+
+.editorial-guide .guide-section {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  padding: 0 24px;
+}
+
+.editorial-guide .editorial-intro {
+  max-width: 680px;
+  margin-bottom: clamp(60px, 9vw, 96px);
+}
+
+.editorial-guide .editorial-intro > p {
+  color: #4f473f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.18rem, 2.2vw, 1.45rem);
+  line-height: 1.65;
+}
+
+.editorial-guide .guide-section > h2,
+.editorial-guide .editorial-entry-heading h2 {
+  margin: 0 0 22px;
+  padding: 0;
+  color: #2f281f;
+  border: 0;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+}
+
+.day-trips-guide .guide-section:not(.editorial-intro) {
+  padding-top: 34px;
+  border-top: 1px solid rgba(112, 79, 45, 0.24);
+}
+
+.editorial-guide .guide-section > p {
+  color: #4f473f;
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.editorial-guide .guide-section > p a:not(.map-link) {
+  color: #6d4827;
+  text-decoration-color: rgba(109, 72, 39, 0.35);
+  text-underline-offset: 3px;
+}
+
+.day-trips-guide .guide-section .map-link {
+  color: #6d4827;
+  font-weight: 600;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-color: rgba(109, 72, 39, 0.35);
+  text-underline-offset: 3px;
+}
+
+.day-trips-guide .guide-section .map-link::after { content: " ↗"; }
+
+.day-trips-guide .guide-section .map-link:hover,
+.day-trips-guide .guide-section .map-link:focus-visible {
+  color: #4a2f14;
+  text-decoration-color: currentColor;
+}
+
+.editorial-guide .guide-author-photo img {
+  width: min(100%, 360px);
+  border-radius: 4px;
+  box-shadow: 0 14px 36px rgba(73, 50, 29, 0.12);
+}
+
+.editorial-guide .guide-photo-grid {
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.editorial-guide .guide-photo-grid-item,
+.editorial-guide .guide-photo-grid-item img {
+  border-radius: 4px;
+}
+
+.editorial-guide .guide-photo-grid-item {
+  background: #f1eadf;
+  box-shadow: 0 10px 28px rgba(73, 50, 29, 0.1);
+}
+
+.editorial-guide .guide-photo-grid-item figcaption {
+  margin: 0;
+  padding: 9px 12px 11px;
+  color: #655b50;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-style: normal;
+}
+
+.editorial-entry-heading {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.editorial-guide .editorial-entry-heading h2 { margin-bottom: 0; }
+
+.editorial-entry-number {
+  padding-top: 6px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.editorial-entry-alt {
+  margin: 8px 0 0;
+  color: #877b6e;
+  font-size: 0.88rem;
+}
+
+.cafes-guide .cafe-entry {
+  padding-top: 34px;
+  border-top: 1px solid rgba(112, 79, 45, 0.24);
+}
+
+.editorial-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 34px;
+  margin: 0 0 20px 60px;
+}
+
+.editorial-details dt {
+  margin-bottom: 3px;
+  color: #8a5b2f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.editorial-details dd {
+  margin: 0;
+  color: #574e45;
+  font-size: 0.9rem;
+}
+
+.editorial-map-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: -18px 0 0 !important;
+}
+
+.editorial-map-wrap .map-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0.48rem 1.1rem;
+  color: #6d4827;
+  border: 1px solid rgba(109, 72, 39, 0.4);
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.editorial-map-wrap .map-link::after { content: none; }
+
+.editorial-map-wrap .map-link:hover,
+.editorial-map-wrap .map-link:focus-visible {
+  color: #4a2f14;
+  background: rgba(109, 72, 39, 0.07);
+  border-color: rgba(109, 72, 39, 0.7);
+}
+
+.editorial-guide .guide-route-links {
+  box-sizing: border-box;
+  max-width: 760px;
+  margin: 0 auto 48px;
+  padding: 30px 24px;
+  background: #f1eadf;
+  border: 1px solid rgba(112, 79, 45, 0.18);
+  border-radius: 4px;
+}
+
+.editorial-guide .guide-route-links h3 {
+  margin: 0 0 18px;
+  color: #2f281f;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+}
+
+.editorial-guide .guide-route-links a {
+  color: #6d4827;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(109, 72, 39, 0.35);
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .editorial-guide .guide-hero h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
+  .editorial-guide .guide-section { padding-right: 20px; padding-left: 20px; }
+  .editorial-details { margin-left: 0; }
+  .editorial-map-wrap { margin-top: -14px !important; }
+}

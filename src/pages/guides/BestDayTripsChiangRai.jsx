@@ -99,13 +99,14 @@ const BestDayTripsChiangRai = () => {
   }, [lightbox.open, nextImage, prevImage, closeLightbox]);
 
   return (
-    <article className="guide-page">
+    <article className="guide-page editorial-guide day-trips-guide">
       <Helmet>
         <title>Best Day Trips from Chiang Rai</title>
         <meta name="description" content="A local's guide to Chiang Rai — adventure itineraries, mountain tea villages, temples, markets, and hidden gems. Written by someone who has lived here for years." />
       </Helmet>
       {/* Hero */}
       <header className="guide-hero">
+        <p className="guide-eyebrow">Secret Corner road guide</p>
         <h1>Best Day Trips from Chiang Rai</h1>
         <p className="guide-subtitle">
           Trust me, visiting Chiang Rai is worth it. Here are itinerary ideas for your next trip up north. 
@@ -113,7 +114,7 @@ const BestDayTripsChiangRai = () => {
       </header>
 
       {/* Intro */}
-      <section className="guide-section">
+      <section className="guide-section editorial-intro">
         <p>
           Hi, I'm John. I've lived in Bangkok since 1990 and, as of recently, have been spending lots of 
           time up north in Chiang Rai. In the last three years, I've split my time between the two places and 
@@ -348,7 +349,8 @@ const BestDayTripsChiangRai = () => {
       )}
 
       {/* Google Maps Driving Routes */}
-      <nav className="guide-related">
+      <nav className="guide-related guide-route-links">
+        <p className="guide-kicker">Plan your drive</p>
         <h3>Google Maps Driving Routes</h3>
         <ul>
           <li>
@@ -382,8 +384,9 @@ const BestDayTripsChiangRai = () => {
       </div>
 
       {/* Related Guides */}
-      <nav className="guide-related">
-        <h3>More Chiang Rai Travel Guides</h3>
+      <nav className="guide-related guide-related--more">
+        <p className="guide-kicker">Keep exploring</p>
+        <h3>More Chiang Rai travel guides</h3>
         <ul>
           <li>
             <Link to="/guides/things-to-do-chiang-rai">
@@ -393,6 +396,11 @@ const BestDayTripsChiangRai = () => {
           <li>
             <Link to="/guides/pong-phra-bat">
               Pong Phra Bat District Itinerary
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/chiang-rai-no-scooter">
+              Things to Do Without a Scooter
             </Link>
           </li>
           <li>

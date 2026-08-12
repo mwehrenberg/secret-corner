@@ -19,6 +19,7 @@ import FAQ from "./pages/guides/FAQ.jsx"
 import ThingsToDoChiangRai from "./pages/guides/ThingsToDoChiangRai.jsx"
 import BestCafesChiangRai from "./pages/guides/BestCafesChiangRai.jsx"
 import PongPhraBat from "./pages/guides/PongPhraBat.jsx"
+import NoScooterChiangRai from "./pages/guides/NoScooterChiangRai.jsx"
 import Footer from "./components/Footer/footer.jsx"
 
 const RedirectToBooking = () => {
@@ -70,6 +71,7 @@ function NavigationBar() {
           <Route path="/guides/things-to-do-chiang-rai" element={<ThingsToDoChiangRai />} />
           <Route path="/guides/best-cafes-chiang-rai" element={<BestCafesChiangRai />} />
           <Route path="/guides/pong-phra-bat" element={<PongPhraBat />} />
+          <Route path="/guides/chiang-rai-no-scooter" element={<NoScooterChiangRai />} />
           <Route path="/book" element={<RedirectToBooking />} />
       </Routes>
   </Router>

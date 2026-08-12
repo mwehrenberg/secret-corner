@@ -158,7 +158,7 @@ const BestCafesChiangRai = () => {
   }, [lightbox.open, nextImage, prevImage, closeLightbox]);
 
   return (
-    <article className="guide-page">
+    <article className="guide-page editorial-guide cafes-guide">
       <Helmet>
         <title>Best Cafes in Chiang Rai</title>
         <meta name="description" content="The best cafes in Chiang Rai — from specialty coffee roasters to mountain-view terraces and hidden local gems." />
@@ -166,6 +166,7 @@ const BestCafesChiangRai = () => {
 
       {/* Hero */}
       <header className="guide-hero">
+        <p className="guide-eyebrow">Secret Corner coffee guide</p>
         <h1>Best Cafes in Chiang Rai</h1>
         <p className="guide-subtitle">
           Where to Find Great Coffee in the City and Beyond
@@ -173,7 +174,7 @@ const BestCafesChiangRai = () => {
       </header>
 
       {/* Intro */}
-      <section className="guide-section">
+      <section className="guide-section editorial-intro">
         <p>
           Chiang Rai has quietly become one of the best coffee destinations in
           Thailand. Sitting at the heart of the country's northern growing
@@ -202,16 +203,17 @@ const BestCafesChiangRai = () => {
 
       {/* Cafe Cards */}
       {cafes.map((cafe, i) => (
-        <section className="guide-section" id={`cafe-${i}`} key={i}>
-          <h2>{cafe.name}</h2>
-          {cafe.thaiName && (
-            <p style={{ fontSize: "0.95rem", color: "#888", marginTop: "-10px", marginBottom: "8px" }}>
-              {cafe.thaiName}
-            </p>
-          )}
-          <p style={{ fontSize: "0.9rem", color: "#888", marginBottom: "6px" }}>
-            🕐 {cafe.hours}
-          </p>
+        <section className="guide-section cafe-entry" id={`cafe-${i}`} key={i}>
+          <header className="editorial-entry-heading">
+            <span className="editorial-entry-number">{String(i + 1).padStart(2, "0")}</span>
+            <div>
+              <h2>{cafe.name}</h2>
+              {cafe.thaiName && <p className="editorial-entry-alt">{cafe.thaiName}</p>}
+            </div>
+          </header>
+          <dl className="editorial-details">
+            <div><dt>Opening hours</dt><dd>{cafe.hours}</dd></div>
+          </dl>
           <p>{cafe.description}</p>
           <div className="guide-photo-grid">
             {cafe.images.map((img, j) => (
@@ -220,9 +222,11 @@ const BestCafesChiangRai = () => {
               </figure>
             ))}
           </div>
-          <div className="guide-tip">
-            <a className="map-link" href={cafe.map} {...newTab}>Open in Google Maps</a>
-          </div>
+          <p className="editorial-map-wrap">
+            <a className="map-link" href={cafe.map} {...newTab}>
+              Open in Google Maps <span aria-hidden="true">↗</span>
+            </a>
+          </p>
         </section>
       ))}
 
@@ -260,8 +264,9 @@ const BestCafesChiangRai = () => {
       </div>
 
       {/* Related Guides */}
-      <nav className="guide-related">
-        <h3>More Chiang Rai Travel Guides</h3>
+      <nav className="guide-related guide-related--more">
+        <p className="guide-kicker">Keep exploring</p>
+        <h3>More Chiang Rai travel guides</h3>
         <ul>
           <li>
             <Link to="/guides/best-day-trips-chiang-rai">
@@ -276,6 +281,11 @@ const BestCafesChiangRai = () => {
           <li>
             <Link to="/guides/pong-phra-bat">
               Pong Phra Bat District Itinerary
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/chiang-rai-no-scooter">
+              Things to Do Without a Scooter
             </Link>
           </li>
           <li>
