@@ -3,9 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
-import hotSpringImg  from "../../images/activities/maeFah.webp";
-import waterfallImg  from "../../images/activities/waterfall.jpg";
-import cafeImg       from "../../images/activities/doiChang.png";
+import hotSpringImg  from "../../images/blog/ppb/ppbHotSprings.jpg";
+import waterfallImg  from "../../images/blog/ppb/ppbWaterfall.webp";
 import ppbRoute      from "../../images/blog/ppb/ppbRoute.png";
 
 const MAP_LINKS = {
@@ -52,7 +51,7 @@ const stops = [
     distance: "Up in the mountains, Pong Phra Bat District",
     tag: "Coffee & Views",
     hours: null,
-    mapLink: MAP_LINKS.idrinCafe,    image: cafeImg,
+    mapLink: MAP_LINKS.idrinCafe,
     alt: "Mountain village coffee shop with panoramic views near Chiang Rai",    description:
       "The drive climbs up into the mountains to a wonderfully simple little café tucked inside an ethnic village of the province. Idrin Café serves both coffee and food, and the views from up here are simply fantastic. You will almost certainly be the only tourist — this is as local as it gets.",
   },
