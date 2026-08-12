@@ -48,16 +48,22 @@ const routes = [
     ogImage: { src: 'activities/slowboat.webp', dest: 'og/local-attractions.webp' },
   },
   {
-    path: 'guides/why-chiang-rai',
-    title: 'Why Chiang Rai is Absolutely Worth Visiting',
-    description: "My Favorite Day Trips in Chiang Rai — written by someone who has lived here for years.",
-    ogImage: { src: 'blog/whyChiangRai/homPahDinVineyard.png', dest: 'og/why-chiang-rai.jpeg' },
-  },
-  {
     path: 'guides/best-day-trips-chiang-rai',
     title: 'Best Day Trips from Chiang Rai',
+    description: "My Favorite Day Trips in Chiang Rai — written by someone who has lived here for years.",
+    ogImage: { src: 'blog/whyChiangRai/homPahDinVineyard.png', dest: 'og/best-day-trips-chiang-rai.jpeg' },
+  },
+  {
+    path: 'guides/things-to-do-chiang-rai',
+    title: 'Things to Do in Chiang Rai',
     description: "Where to go when you've seen the White Temple...",
-    ogImage: { src: 'activities/doiChang.png', dest: 'og/best-day-trips.jpg' },
+    ogImage: { src: 'activities/doiChang.png', dest: 'og/things-to-do-chiang-rai.jpg' },
+  },
+  {
+    path: 'guides/pong-phra-bat',
+    title: 'Pong Phra Bat District Itinerary | Secret Corner Chiang Rai',
+    description: 'Hot springs, a jungle waterfall hike, and a mountain café with views. An easy half-day from Chiang Rai city.',
+    ogImage: { src: 'activities/doiChang.png', dest: 'og/pong-phra-bat.jpg' },
   },
   {
     path: 'guides/two-days-chiangrai',

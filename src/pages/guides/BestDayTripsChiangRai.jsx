@@ -1,193 +1,368 @@
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
-import teaplant from "../../images/activities/teaplant.jpg";
-import doiChang from "../../images/activities/doiChang.png";
-import trek1 from "../../images/activities/trek1.jpg";
-import slowboat from "../../images/activities/slowboat.webp";
-import goldentriangle from "../../images/activities/goldentriangle.jpg";
-import waterfall from "../../images/activities/waterfall.jpg";
+import cafeHopping from "../../images/blog/whyChiangRai/cafeHopping.jpeg";
+import chuiFongCafe from "../../images/blog/whyChiangRai/chuiFongCafe.jpeg";
+import chuiFongTeaPlantation from "../../images/blog/whyChiangRai/chuiFongTeaPLantation.jpeg";
+import doiMaeSalongLunch from "../../images/blog/whyChiangRai/doiMaeSalongLunch.jpeg";
+import flowerFestival from "../../images/blog/whyChiangRai/flowerFestival.webp";
+import freshMarket from "../../images/blog/whyChiangRai/freshMarket.jpeg";
+import whiteTemple from "../../images/blog/whyChiangRai/whiteTemple.jpeg";
+import royalGarden from "../../images/blog/whyChiangRai/doiTungRoyalVillaGarden.webp";
+import papaEatery from "../../images/blog/whyChiangRai/papaEatery.png";
+import homPanDinVineyard from "../../images/blog/whyChiangRai/homPahDinVineyard.png";
+import doiChangRoute from "../../images/blog/whyChiangRai/doiChangRoute.png";
+import doiMaeSalongRoute from "../../images/blog/whyChiangRai/doiMaeSalongRoute.png";
+import goldenTriangleRoute from "../../images/blog/whyChiangRai/goldenTriangleRoute.png";
+import maeSaiRoute from "../../images/blog/whyChiangRai/maeSaiRoute.png";
+import john from "../../images/blog/whyChiangRai/john.jpeg";
+import watPrathat from "../../images/blog/whyChiangRai/watPrathat.jpg";
+import atTheBorder from "../../images/blog/whyChiangRai/atTheBorder.jpeg";
+import dancingAtMarket from "../../images/blog/whyChiangRai/dancingAtMarket.jpg";
+import relaxHotSpring from "../../images/blog/whyChiangRai/relaxHotSpring.jpg";
 
-const dayTrips = [
-  {
-    title: "The Golden Triangle & Chiang Saen",
-    distance: "~1.5 hours from city center",
-    tag: "History & Culture",
-    description:
-      "Stand where Thailand, Laos, and Myanmar meet at the confluence of the Ruak and Mekong rivers. The Golden Triangle was once the heart of the global opium trade, and the area's fascinating history is brought to life at the Hall of Opium museum nearby. Combine it with a stroll through the ancient ruins of Chiang Saen, one of the oldest settlements in northern Thailand, and a boat ride along the Mekong for views into Laos.",
-    tips: "Go early to beat the tour buses. The Hall of Opium is worth the 200 THB entry fee. A longboat ride on the Mekong (around 300–500 THB) gives you a unique perspective of three countries from the water.",
-    image: goldentriangle,
-    alt: "Golden Triangle viewpoint where Thailand Laos and Myanmar meet near Chiang Rai",
-  },
-  {
-    title: "Doi Mae Salong Tea Villages",
-    distance: "~1.5 hours northwest of the city",
-    tag: "Tea & Mountains",
-    description:
-      "Perched high in the mountains, Doi Mae Salong is a former Chinese Nationalist settlement that feels like a slice of Yunnan dropped into Thailand. The hillsides are blanketed in tea and coffee plantations, and the village streets are lined with tea shops, Chinese restaurants, and small markets. On a clear morning, the sunrise views from the ridgeline are otherworldly. Winding roads through lush green hills make the journey itself part of the experience.",
-    tips: "Best enjoyed by motorbike if you're comfortable on mountain roads. Visit one of the hilltop tea plantations for a tasting — Choui Fong Tea is popular, but smaller local shops offer a more authentic experience. Stay for lunch and try the Yunnan-style noodles.",
-    image: teaplant,
-    alt: "Doi Mae Salong tea plantations and mountain views near Chiang Rai Thailand",
-  },
-  {
-    title: "Doi Chang Coffee Mountain",
-    distance: "~1.5 hours southwest of the city",
-    tag: "Coffee & Scenery",
-    description:
-      "Thailand's premier coffee-growing region sits high in the mountains southwest of Chiang Rai. The drive up is winding but rewarding, with sweeping panoramic views at every turn. Once you arrive, the village is dotted with hillside cafés serving single-origin coffee grown just meters away. The air is cool, the pace is slow, and the scenery is incredible. It's the perfect escape from the heat of the lowlands.",
-    tips: "The road is steep and winding — confident motorbike riders will love it, but a car is easier if you're not experienced. Bring a light jacket — it's noticeably cooler at altitude. Several viewpoint cafés have terraces overlooking the valley.",
-    image: doiChang,
-    alt: "Doi Chang coffee mountain cafes and viewpoints near Chiang Rai Thailand",
-  },
-  {
-    title: "Trekking to Hill Tribe Villages",
-    distance: "Pickup from city center",
-    tag: "Adventure & Culture",
-    description:
-      "A guided trek into the mountains surrounding Chiang Rai is one of the most rewarding experiences in northern Thailand. Full-day and two-day treks take you through dense jungle trails to visit Akha, Lahu, and Lisu communities. Along the way, your guide will forage ingredients for a jungle-cooked lunch, point out medicinal plants, and lead you to hidden waterfalls. It's an authentic cultural exchange that goes far beyond sightseeing.",
-    tips: "Minimum two people for most treks. Wear sturdy shoes and bring insect repellent. We organize treks directly from our hostel — a full-day trek is around 1,500 THB per person including lunch and transport. Two-day treks with an overnight village stay are also available.",
-    image: trek1,
-    alt: "Trekking to Akha and Lahu hill tribe villages near Chiang Rai",
-  },
-  {
-    title: "Khun Korn Waterfall & National Park",
-    distance: "~30 minutes south of the city",
-    tag: "Nature & Hiking",
-    description:
-      "Tucked inside a lush national park just south of the city, Khun Korn is Chiang Rai's most impressive waterfall — a 70-meter cascade surrounded by dense tropical forest. A well-maintained jungle trail (about 1.5 km each way) winds through towering trees and across small streams before revealing the falls. In the rainy season it's thunderously powerful; in the cool season the pool at the base is calm enough for a swim.",
-    tips: "The trail is easy to moderate — trainers or sandals with grip are fine. Bring water and a swimsuit. It's rarely crowded, especially on weekdays. Entry is 100 THB for foreign visitors. Combine it with a stop at one of the local restaurants along the road back to town.",
-    image: waterfall,
-    alt: "Khun Korn Waterfall jungle hike near Chiang Rai Thailand",
-  },
-  {
-    title: "Slow Boat to Luang Prabang",
-    distance: "2-day journey via Chiang Khong border",
-    tag: "Epic Journey",
-    description:
-      "One of Southeast Asia's most legendary journeys begins right from Chiang Rai. Board a traditional wooden boat on the Mekong River and drift through dramatic mountain gorges, past riverside villages and lush jungle, arriving in the UNESCO-listed town of Luang Prabang two days later. It's less a day trip and more a life experience — and the departure point in Chiang Khong is just a couple of hours from the city.",
-    tips: "We organize the full trip from our hostel: 1,600 THB per person includes taxi to the pier, bus for the border crossing, slow boat ticket, and lunch on day one. Lao visa fees and the overnight in Pak Beng are not included. Departure is around 05:00. Bring a book, snacks, and a sense of adventure.",
-    image: slowboat,
-    alt: "Slow boat journey on the Mekong River from Chiang Rai to Luang Prabang Laos",
-  },
+const MAP_LINKS = {
+  doiChangRoute:     "https://www.google.com/maps/dir/Secret+Corner+Boutique+Stay+40,+1+Sanpanard+Soi+2,+Wiang,+Mueang+Chiang+Rai+District,+Chiang+Rai+57000,+Thailand/Mae+Suai+Dam,+Unnamed+Rd,+Mae+Suai,+Mae+Suai+District,+Chiang+Rai+57180,+Thailand/PAPA+Eatery+283+Mae+Suai+District,+Chiang+Rai+57180,+Thailand/Baan+Suan+Doi+Chang,+Baansuan+Road,+Wa+Wi,+Mae+Suai+District,+Chiang+Rai+57180,+Thailand/Ban+Huai+Khrai+School,+RF9X%2B2QJ,+Wa+Wi,+Mae+Suai+District,+Chiang+Rai+57180,+Thailand/Doi+Wawee+International+Vipassana+Center,+%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%B5,+%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%9B%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%81%E0%B8%A5+%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%A7%E0%B8%B2%E0%B8%A7%E0%B8%B5+(%E0%B9%84%E0%B8%A3%E0%B9%88%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%8D%E0%B8%95%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2+2,+Wa+Wi,+Mae+Suai+District,+Chiang+Rai+57180,+Thailand/Hom+Pan+Din+Vineyard,+Wine,+Coffee,+Food+N+More,+3FC6%2BW27,+Tha+Ton,+Mae+Ai+District,+Chiang+Mai+50280,+Thailand/Pa+Tueng+Hot+Springs,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+11,+Pa+Tueng,+Mae+Chan+District,+Chiang+Rai+57110,+Thailand/@19.8952386,99.3138962,10z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x30d707dc0b08b67f:0xe5ee37f41d22b7c1!2m2!1d99.8376047!2d19.9031236!1m5!1m1!1s0x30d7401b1ffa339d:0x9bcc7958eb9213ab!2m2!1d99.5367883!2d19.6820303!1m5!1m1!1s0x30d70780f61d9807:0x64960244712a4318!2m2!1d99.5472431!2d19.7560828!1m5!1m1!1s0x30d71616b07d3427:0x3569e115b4f0e0!2m2!1d99.5609073!2d19.806343!1m5!1m1!1s0x30d73c4adc4b27f5:0x7dc07e6b1645513d!2m2!1d99.4994047!2d19.8175921!1m5!1m1!1s0x30d723ef095eae01:0xbc8ad9563b36f726!2m2!1d99.4964324!2d19.9627962!1m5!1m1!1s0x30d720abbed51465:0x1e63e2e987e3a9ea!2m2!1d99.4600284!2d20.0723304!1m5!1m1!1s0x30d6fc3a80bcf81b:0x65cd90b165266f38!2m2!1d99.7998179!2d20.1200186!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D",
+  doiMaeSalong:      "https://maps.app.goo.gl/aXmm6MZaHvh2NJjY7",
+  doiMaeSalongMuseum:"https://maps.app.goo.gl/oDexWBQ5dVYj1xdg9",
+  papaEatery:        "https://maps.app.goo.gl/tpinrBF9woXAzyCYA",
+  laoLiPlantation:   "https://maps.app.goo.gl/gXsE5ZmMZk8GeyBy8",
+  waweeMainRoad:     "https://maps.app.goo.gl/gvrVVixCc8f4yjED6",
+  homPanDinVineyard: "https://maps.app.goo.gl/UyLFUmrPFa9hcLSr7",
+  hotSprings:        "https://maps.app.goo.gl/Y8tbg3gqMyHFMu3dA",
+  royalVilla:        "https://maps.app.goo.gl/d4rxBg69mm2WsWtAA",
+  ozonePahmee:       "https://maps.app.goo.gl/g8vwoJEjphppBud68",
+  pahHeeVillage:     "https://maps.app.goo.gl/kbymJ5a2pzjFF9y76",
+  giantSwing:        "https://maps.app.goo.gl/w7czQD5EJG1kAjKv8",
+  watPraThatDoiWao:  "https://maps.app.goo.gl/c945nrRwQuZjhAK59",
+  houseOfOpium:      "https://maps.app.goo.gl/tEyjVUfqaHCTr6Mb6",
+  chiangRaiBeach:    "https://maps.app.goo.gl/QBJHGhaT2q6enzYx7",
+  nightBazaar:       "https://maps.app.goo.gl/ynvYJTPeNG8gJwUD9",
+  saturdayMarket:    "https://maps.app.goo.gl/5GtDNwcCg4QRw2BdA",
+  goldenTriangleReturn: "https://www.google.com/maps/dir/The+Northern+Most+of+Thailand,+361+Phahonyothin+Rd,+Mae+Sai,+Mae+Sai+District,+Chiang+Rai+57130,+Thailand/House+of+Opium+Museum,+212,+Moo1,+Tambon+Wiang,+Chiang+Saen+District,+Chiang+Rai+57150,+Thailand/Wat+Pha+Khao+Pan,+73HQ%2B358,+Wiang,+Chiang+Saen+District,+Chiang+Rai+57150,+Thailand/Wat+Pa+Sak,+Wiang,+Chiang+Saen+District,+Chiang+Rai+57150,+Thailand/Wat+Phra+That+Pha+Ngao,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88+5+391+Wiang,+Chiang+Saen+District,+Chiang+Rai+57150,+Thailand/Secret+Corner+Boutique+Stay+40,+1+Sanpanard+Soi+2,+Wiang,+Mueang+Chiang+Rai+District,+Chiang+Rai+57000,+Thailand/@20.2325181,99.9112872,39446m/data=!3m1!1e3!4m38!4m37!1m5!1m1!1s0x30d68ab869085e47:0x488d9b99a981860e!2m2!1d99.8805932!2d20.4443892!1m5!1m1!1s0x30d64334d8dbfd39:0x3575cd133c63bce1!2m2!1d100.0816579!2d20.3514443!1m5!1m1!1s0x30d644d621430197:0x1636939c6f963b17!2m2!1d100.0879338!2d20.2775767!1m5!1m1!1s0x30d65ad4ef955fc9:0xb9831c1c4ea235cd!2m2!1d100.0771008!2d20.2742824!1m5!1m1!1s0x30d6456eca1231eb:0x1f63d677c3de511f!2m2!1d100.1082809!2d20.2441407!1m5!1m1!1s0x30d707dc0b08b67f:0xe5ee37f41d22b7c1!2m2!1d99.8376047!2d19.9031236!3e0?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D"
+};
+
+const newTab = { target: "_blank", rel: "noopener noreferrer" };
+
+const ADVENTURE_I_IMAGES = [
+  { src: doiMaeSalongLunch,    alt: "Lunch at Doi Mae Salong",                  caption: "Lunch at Doi Mae Salong" },
+  { src: papaEatery,           alt: "Papa Eatery",                              caption: "Papa Eatery" },
+  { src: royalGarden,         alt: "Royal Garden at Doi Tung",                 caption: "Royal Garden at Doi Tung" },
+  { src: homPanDinVineyard,    alt: "Hom Pan Din Vineyard",                     caption: "Hom Pan Din Vineyard" },
+  { src: relaxHotSpring,       alt: "Relaxing in a hot spring",                 caption: "Relaxing in a hot spring" },
+];
+
+const ADVENTURE_I_ROUTES = [
+  { src: doiChangRoute,        alt: "Doi Chang route map",                      caption: "Doi Chang Route" },
+  { src: doiMaeSalongRoute,    alt: "Doi Mae Salong route map",                 caption: "Doi Mae Salong Route" },
+];
+
+const ADVENTURE_II_IMAGES = [
+  { src: chuiFongTeaPlantation,alt: "Chui Fong tea plantation",                 caption: "Chui Fong Tea Plantation (Another possible stop)" },
+  { src: chuiFongCafe,         alt: "Chui Fong Tea Plantation cafe",            caption: "Chui Fong Tea Plantation Cafe" },
+  { src: atTheBorder,          alt: "At the border",                            caption: "At the border" },
+  { src: watPrathat,           alt: "Wat Prathat Doi Wao",                       caption: "Wat Prathat Doi Wao" },
+];
+
+const ADVENTURE_II_ROUTES = [
+  { src: maeSaiRoute,          alt: "Mae Sai route map",                       caption: "Mae Sai Route" },
+  { src: goldenTriangleRoute,  alt: "Golden Triangle route map",               caption: "Golden Triangle Route" },
+];
+
+const ADVENTURE_III_IMAGES = [
+  { src: whiteTemple,          alt: "White Temple Wat Rong Khun in Chiang Rai", caption: "White Temple (Wat Rong Khun)" },
+  { src: dancingAtMarket,      alt: "Locals Dancing at the Night Market",       caption: "Locals Dancing at the Night Market" },
+  { src: freshMarket,          alt: "Fresh local market in Chiang Rai",         caption: "Fresh local market" },
+  { src: flowerFestival,       alt: "Chiang Rai flower festival season",        caption: "Flower festival season" },
+  { src: cafeHopping,          alt: "Cafe hopping in Chiang Rai",               caption: "Cafe hopping in the city (Pasom - Art cafe and activity)" },
 ];
 
 const BestDayTripsChiangRai = () => {
+  const [lightbox, setLightbox] = useState({ open: false, images: [], index: 0 });
+
+  const openLightbox = (images, index) => setLightbox({ open: true, images, index });
+  const closeLightbox = useCallback(() => setLightbox(lb => ({ ...lb, open: false })), []);
+  const prevImage = useCallback(() => setLightbox(lb => ({ ...lb, index: (lb.index - 1 + lb.images.length) % lb.images.length })), []);
+  const nextImage = useCallback(() => setLightbox(lb => ({ ...lb, index: (lb.index + 1) % lb.images.length })), []);
+
+  useEffect(() => {
+    if (!lightbox.open) return;
+    const onKey = (e) => {
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft")  prevImage();
+      if (e.key === "Escape")     closeLightbox();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox.open, nextImage, prevImage, closeLightbox]);
+
   return (
     <article className="guide-page">
       <Helmet>
         <title>Best Day Trips from Chiang Rai</title>
-        <meta name="description" content="Where to go when you’ve seen the White Temple — the Golden Triangle, Doi Mae Salong tea villages, Doi Chang coffee mountain, waterfalls and more." />
+        <meta name="description" content="A local's guide to Chiang Rai — adventure itineraries, mountain tea villages, temples, markets, and hidden gems. Written by someone who has lived here for years." />
       </Helmet>
       {/* Hero */}
       <header className="guide-hero">
         <h1>Best Day Trips from Chiang Rai</h1>
         <p className="guide-subtitle">
-          Where to Go When You’ve Seen the White Temple
+          Trust me, visiting Chiang Rai is worth it. Here are itinerary ideas for your next trip up north. 
         </p>
       </header>
-
-      {/* Table of Contents */}
-      <nav className="guide-toc">
-        <h4>In This Guide</h4>
-        <ul>
-          {dayTrips.map((trip, i) => (
-            <li key={i}>
-              <a href={`#trip-${i}`}>{trip.title}</a>
-            </li>
-          ))}
-          <li><a href="#planning">Planning Tips &amp; Getting Around</a></li>
-          <li><a href="#where-to-stay">Where to Stay</a></li>
-        </ul>
-      </nav>
 
       {/* Intro */}
       <section className="guide-section">
         <p>
-          Chiang Rai city has plenty to keep you busy, but the real magic lies in
-          the province that surrounds it. Within an hour or two you can be sipping
-          freshly picked tea on a misty mountaintop, trekking through jungle to a
-          remote hill tribe village, or staring out across three countries at the
-          Golden Triangle.
+          Hi, I'm John. I've lived in Bangkok since 1990 and, as of recently, have been spending lots of 
+          time up north in Chiang Rai. In the last three years, I've split my time between the two places and 
+          discovered a whole new world of culture and natural beauty right here at home. Here are my favorite 
+          ways to experience the beauty of Chiang Rai– all of which I've personally experienced.
         </p>
         <p>
-          As locals running a hostel in the heart of town, these are the trips
-          we actually send our guests on — the ones they come back raving about.
-          Each one can be done in a single day (with one epic exception), by
-          motorbike, private car, or organized tour.
+            It's important to note, there are <u>two</u> "adventure" itineraries provided in this guide. <u>Each of which
+            may take a full day or two to complete</u>, depending on your pace and interests. I hope these ideas help you plan your own trip to this amazing place!
+        </p>
+        <figure className="guide-author-photo">
+          <img src={john} alt="John, author" loading="lazy" />
+        </figure>
+      </section>
+
+      {/* Section 1 */}
+      <section className="guide-section">
+        <h2>A bit about Chiang Rai...</h2>
+        <p>
+          Chiang Rai is much more than just the city.  The Province of Chaing Rai belongs on a curious traveler’s 
+          itinerary who has a bit of time to explore the ethnic diversity of the Northern Kingdom. 
+           While Chiang Rai is no longer a kingdom it is certainly a unique place and culture.  
+           Chiang Rai province includes many ethnic groups.  You will hear many different 
+           languages on the street in the city and in the market the local Northern language 
+           – which until 1932 was the language of the kingdom.  It was only in 1932 that 
+           Lanna was incorporated into the Kingdom of Siam.  
         </p>
       </section>
 
-      {/* Day Trip Cards */}
-      {dayTrips.map((trip, i) => (
-        <section className="guide-section" id={`trip-${i}`} key={i}>
-          <h2>{trip.title}</h2>
-          <p style={{ fontSize: "0.9rem", color: "#888", marginBottom: "6px" }}>
-            📍 {trip.distance}
-          </p>
-          <figure className="guide-image-block">
-            <img src={trip.image} alt={trip.alt} loading="lazy" />
-          </figure>
-          <p>{trip.description}</p>
-          <div className="guide-tip">
-            <strong>💡 Insider Tip</strong>
-            {trip.tips}
-          </div>
-        </section>
-      ))}
-
-      {/* Planning Tips */}
-      <section className="guide-section" id="planning">
-        <h2>Planning Tips &amp; Getting Around</h2>
-
-        <h3>By Motorbike</h3>
+      {/* Section 2 */}
+      <section className="guide-section">
+        <h2>Adventure I - Exploring Hilltribe Villages</h2>
         <p>
-          Renting a motorbike (200–300 THB/day) is the most flexible and
-          rewarding way to explore. The mountain roads to Doi Mae Salong and Doi
-          Chang are winding but beautiful — confident riders will love them. We
-          can arrange rentals at the hostel.
+            Today, the province hosts more than a dozen different ethnic groups who 
+            make up roughly 20% of the population.  You can experience an Akha hilltribe
+             village on a <u><a href="/localAttractions#:~:text=TREKKING%20TO%20MINORITY%20VILLAGES">trekking adventure</a></u> or
+              take a car or scooter to <a href={MAP_LINKS.doiMaeSalong} className="map-link" {...newTab}>Doi Mae Salong District</a> for incredible 
+             views of tea plantations while listening to the 
+              locals speak among themselves in Mandarin.  They have a story that carries
+               back to the civil war in China when they fled first to Burma and then 
+               later to Chiang Rai.  It is worth exploring at this 
+               local <a href={MAP_LINKS.doiMaeSalongMuseum} className="map-link" {...newTab}>museum</a>.  
         </p>
-
-        <h3>By Tour or Private Car</h3>
+        <div className="guide-photo-grid">
+          {ADVENTURE_I_ROUTES.map((img, i) => (
+            <figure key={i} className="guide-photo-grid-item" onClick={() => openLightbox(ADVENTURE_I_ROUTES, i)}>
+              <img src={img.src} alt={img.alt} loading="lazy" />
+              <figcaption>{img.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
         <p>
-          If you'd rather sit back and enjoy the views, we can help organize
-          private day tours or small group trips to most of these destinations.
-          Ask at reception for current pricing and availability.
+            If coffee is more your thing, drive or scooter southwest to <a href={MAP_LINKS.doiChangRoute} className="map-link" {...newTab}><b>Doi Chang Valley</b></a>. 
+            Drive road # 5047 from south at junction of road # 3037 to the north. 
+            The views alone are worth the trip.  
+            You will stop in awe dozens of times.  Of course, there are plenty 
+            of spots to stop for local coffee, dessert, noodles, and even homemade 
+            Napolitan style pizza with a million dollar view (Check out <a href={MAP_LINKS.papaEatery} className="map-link" {...newTab}>Papa Eatery</a>).
+            For those with a bit more time, take the road less traveled from 
+            Doi Chang area further north and northwest along mountain road #3037 
+            for breathtaking views with no tourists.  
+            Travel west from Baan Doi Chang village on the only road that goes through to road # 3037.  Turn north on # 3037 toward Wawee Village.  
         </p>
-
-        <h3>Best Time of Year</h3>
         <p>
-          The cool season (November–February) is ideal — clear skies, comfortable
-          temperatures, and lush green scenery. The rainy season (June–October)
-          makes waterfalls more dramatic but mountain roads slippery. March–May
-          is hot and can be hazy from seasonal burning.
+            Villages perched on hillsides and an occasional 
+            tea plantation (like this one <a href={MAP_LINKS.laoLiPlantation} className="map-link" {...newTab}>Lao Li Plantation</a>) 
+            make good stopping points on your adventure.  Wawee Village is also a 
+            great spot to stop for lunch or a bowl of noodles on your drive north.
+            Park the car along the <a href={MAP_LINKS.waweeMainRoad} className="map-link" {...newTab}>main road</a> and 
+            walk in to explore more easily on foot.  
         </p>
-
-        <div className="guide-tip">
-          <strong>💰 Budget Tip</strong>
-          Most of these day trips cost very little beyond fuel or a tour fee.
-          Pack water, sunscreen, and a light jacket for mountain trips. Bring cash
-          — card payments are rare outside the city.
+        <p>
+            Finish at the north end by turning right on road # 1089 and head back east 
+            passing <a href={MAP_LINKS.homPanDinVineyard} className="map-link" {...newTab}>Hom Pan Din Vineyard</a> – 
+            another great spot for a break.  Then back 
+            up over the hills toward the <a href={MAP_LINKS.hotSprings} className="map-link" {...newTab}>hot springs</a> operated 
+            by the local government 
+            in Pa Tueng where on a sunny day you can enjoy not only the hot spring but 
+            also lunch served while sitting knee-deep in the river under sun shades – 
+            simply classic Thailand and just lovely.  
+        </p>
+        <p>
+            From Pa Tueng, the drive back to Chiang Rai City is about 45 minutes. 
+             There are still places to stop along the way, but it is likely you will
+              be out of energy and out of daylight by this time in the trip.  
+        </p>
+        <p>
+            The above is only 1/2 days in Chiang Rai Province – there is so much more to do!  
+        </p>
+        <div className="guide-photo-grid">
+          {ADVENTURE_I_IMAGES.map((img, i) => (
+            <figure key={i} className="guide-photo-grid-item" onClick={() => openLightbox(ADVENTURE_I_IMAGES, i)}>
+              <img src={img.src} alt={img.alt} loading="lazy" />
+              <figcaption>{img.caption}</figcaption>
+            </figure>
+          ))}
         </div>
       </section>
 
-      {/* Where to Stay */}
-      <section className="guide-section" id="where-to-stay">
-        <h2>Where to Stay in Chiang Rai</h2>
+      {/* Section 3 */}
+      <section className="guide-section">
+        <h2>Adventure II - Myanmar Border Road</h2>
         <p>
-          The best base for day trips is the city center — close to motorbike
-          rental shops, tour agencies, and easy access to the main roads heading
-          north, south, and west.
+          Another great driving experience is the border road in the NW of the province. Start this day
+          of adventure by visiting the{" "}
+          <a href={MAP_LINKS.royalVilla} className="map-link" {...newTab}>
+            Doi Tung Royal Villa
+          </a>{" "}
+          and its beautiful gardens. You will see all kinds of nurseries growing flowers and plants
+          lining the curvy mountain roads and ethnic villages clinging to the mountain sides.
         </p>
         <p>
-          <strong>Secret Corner Hostel</strong> is right in the heart of it all.
-          We help our guests plan day trips every day — from organizing treks and
-          the slow boat to Laos, to lending out maps and sharing the best routes
-          for motorbike rides. Comfortable beds, a rooftop hangout, and a team
-          that genuinely loves this province.
+          Follow road #1149 as it winds NW and then runs along the border itself all the way to Mae Sai.
+          Stop in{" "}
+          <a href={MAP_LINKS.pahHeeVillage} className="map-link" {...newTab}>
+            Pah Hee Village
+          </a>{" "}
+          for a glimpse of Akha culture and divine coffee and views. Park above the village in the large
+          lot just below the main road (20.352042, 99.825378) and above the giant swing to explore the
+          village community. Back headed north along the border road, another 20-minute drive will bring
+          you to Pahmee Village where the road turns left — check out the great food and views at{" "}
+          <a href={MAP_LINKS.ozonePahmee} className="map-link" {...newTab}>
+            Ozone Pahmee
+          </a>. Look
+          out for the{" "}
+          <a href={MAP_LINKS.giantSwing} className="map-link" {...newTab}>
+            Pha Hami Village Giant Swing
+          </a>.
         </p>
+        <p>
+          The road will then lead you all the way into Mae Sai and rejoin the main road just south of
+          the border bridge. Park the car or bike and walk the fantastic local market with traders moving
+          in both directions across the small border bridge. It is also recommended to climb up{" "}
+          <a href={MAP_LINKS.watPraThatDoiWao} className="map-link" {...newTab}>
+            Wat Phra That Doi Wao
+          </a>{" "}
+          at the NW edge of the market for great views into Myanmar.
+        </p>
+        <div className="guide-photo-grid">
+          {ADVENTURE_II_ROUTES.map((img, i) => (
+            <figure key={i} className="guide-photo-grid-item" onClick={() => openLightbox(ADVENTURE_II_ROUTES, i)}>
+              <img src={img.src} alt={img.alt} loading="lazy" />
+              <figcaption>{img.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <p>
+          If one had more hours of daylight – or a second day, it is easy to continue from Mae Sai to
+          the SE to the Golden Triangle along Road #1290. The road is again in good condition and takes
+          just 35' to reach the Triangle. However, this jaunt could be your fourth day of activity in
+          Chiang Rai as the drive from Secret Corner is just an hour and ten minutes. Don't miss the{" "}
+          <a href={MAP_LINKS.houseOfOpium} className="map-link" {...newTab}>
+            House of Opium Museum
+          </a>{" "}
+          at the Golden Triangle. It is not large but absolutely worth an hour of your time to explore
+          the stories and history. Open every day of the week.
+        </p>
+        <p>
+          Drive another 20' South along the river (still Road 1290) to visit Chiang Saen on your way
+          back and explore the temples and ruins of the original capital of the Lanna Kingdom. Wat Pa
+          Sak area contains some of the ruins. Dating from the 13<sup>th</sup> and 14<sup>th</sup>{" "}
+          centuries, the site is very peaceful and a great archeological wonder – more of an
+          archeological site than a temple really. Surrounded by giant teak trees so also a pleasant
+          place to stop and take a break while immersed in Lanna history. Does not require long to
+          visit and absorb.
+        </p>
+        <p>
+          Another 20' drive south from Chiang Saen and you can stop at Wat Phra That Pha Ngao, a
+          spectacular temple but more than just a photo spot. Rich cultural heritage back to the Lanna
+          time along with modern world amenities like a lovely coffee shop. Parts of the complex
+          reportedly date back to the 10<sup>th</sup> century. Skywalk views of all three countries.
+          There is even ride service up to the top of the giant rock if you don't want to climb all
+          the stairs! Not overly commercial and pleasant. From there it will be about a{" "}
+          <a href={MAP_LINKS.goldenTriangleReturn} className="map-link" {...newTab}>
+            one hour drive back to Secret Corner
+          </a>.
+        </p>
+        <div className="guide-photo-grid">
+          {ADVENTURE_II_IMAGES.map((img, i) => (
+            <figure key={i} className="guide-photo-grid-item" onClick={() => openLightbox(ADVENTURE_II_IMAGES, i)}>
+              <img src={img.src} alt={img.alt} loading="lazy" />
+              <figcaption>{img.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
+
+      {/* Section 4 */}
+      <section className="guide-section">
+        <h2>Adventure III - Chiang Rai City</h2>
+        <p>
+          Of course, another day in Chiang Rai should be reserved for exploring within and near
+          the city center which could include the various fabulous temples,{" "}
+          <a href={MAP_LINKS.chiangRaiBeach} className="map-link" {...newTab}>
+            Chiang Rai Beach
+          </a>{" "}
+          — especially if it is winter season and the flower show is taking place — the{" "}
+          <a href={MAP_LINKS.nightBazaar} className="map-link" {...newTab}>
+            Night Bazaar
+          </a>
+          , the main local fresh market, and if you visit on a Saturday the{" "}
+          <a href={MAP_LINKS.saturdayMarket} className="map-link" {...newTab}>
+            full night market
+          </a>{" "}
+          which encompasses blocks of the city center for food, shopping, music, dancing, and so much more.
+        </p>
+        <p>
+            With five days, you'll have plenty of time to explore everything Chiang Rai has to offer!
+        </p>
+        <div className="guide-photo-grid">
+          {ADVENTURE_III_IMAGES.map((img, i) => (
+            <figure key={i} className="guide-photo-grid-item" onClick={() => openLightbox(ADVENTURE_III_IMAGES, i)}>
+              <img src={img.src} alt={img.alt} loading="lazy" />
+              <figcaption>{img.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* Adventure III - Lightbox */}
+      {lightbox.open && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <button className="lightbox-close" onClick={closeLightbox} aria-label="Close">&#x2715;</button>
+          <button className="lightbox-prev" onClick={e => { e.stopPropagation(); prevImage(); }} aria-label="Previous">&#x2039;</button>
+          <figure className="lightbox-content" onClick={e => e.stopPropagation()}>
+            <img src={lightbox.images[lightbox.index].src} alt={lightbox.images[lightbox.index].alt} />
+            <figcaption>{lightbox.images[lightbox.index].caption}</figcaption>
+            <p className="lightbox-counter">{lightbox.index + 1} / {lightbox.images.length}</p>
+          </figure>
+          <button className="lightbox-next" onClick={e => { e.stopPropagation(); nextImage(); }} aria-label="Next">&#x203a;</button>
+        </div>
+      )}
+
+      {/* Google Maps Driving Routes */}
+      <nav className="guide-related">
+        <h3>Google Maps Driving Routes</h3>
+        <ul>
+          <li>
+            <a href={MAP_LINKS.doiChangRoute} {...newTab}>
+              Adventure I – Doi Chang Valley Loop
+            </a>
+          </li>
+          <li>
+            <a href={MAP_LINKS.goldenTriangleReturn} {...newTab}>
+              Adventure II – Golden Triangle to Secret Corner
+            </a>
+          </li>
+        </ul>
+      </nav>
 
       {/* CTA */}
       <div className="guide-cta">
@@ -211,19 +386,26 @@ const BestDayTripsChiangRai = () => {
         <h3>More Chiang Rai Travel Guides</h3>
         <ul>
           <li>
-            <Link to="/guides/two-days-chiangrai">
-              2 Days in Chiang Rai: A Local’s Itinerary
+            <Link to="/guides/things-to-do-chiang-rai">
+              Things to Do in Chiang Rai
             </Link>
           </li>
           <li>
-            <Link to="/guides/why-chiang-rai">
-              Why Chiang Rai is Absolutely Worth Visiting
+            <Link to="/guides/pong-phra-bat">
+              Pong Phra Bat District Itinerary
             </Link>
-          </li>          <li>
+          </li>
+          <li>
+            <Link to="/guides/two-days-chiangrai">
+              2 Days in Chiang Rai: A Local's Itinerary
+            </Link>
+          </li>
+          <li>
             <Link to="/guides/best-cafes-chiang-rai">
               Best Cafes in Chiang Rai
             </Link>
-          </li>        </ul>
+          </li>
+        </ul>
       </nav>
     </article>
   );

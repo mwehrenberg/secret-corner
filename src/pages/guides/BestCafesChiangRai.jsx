@@ -274,8 +274,13 @@ const BestCafesChiangRai = () => {
             </Link>
           </li>
           <li>
-            <Link to="/guides/why-chiang-rai">
-              Why Chiang Rai is Absolutely Worth Visiting
+            <Link to="/guides/pong-phra-bat">
+              Pong Phra Bat District Itinerary
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/things-to-do-chiang-rai">
+              Things to Do in Chiang Rai
             </Link>
           </li>
         </ul>

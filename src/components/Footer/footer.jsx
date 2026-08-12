@@ -39,7 +39,8 @@ const Footer = () => (
       <div className="column links travel-guides">
         <h4>Travel Guides</h4>
         <ul>
-          <li><a href="/guides/why-chiang-rai">Why Chiang Rai is Absolutely Worth Visiting</a></li>
+          <li><a href="/guides/things-to-do-chiang-rai">Things to Do in Chiang Rai</a></li>
+          <li><a href="/guides/pong-phra-bat">Pong Phra Bat District Itinerary</a></li>
           <li><a href="/guides/best-day-trips-chiang-rai">Best Day Trips from Chiang Rai</a></li>
           <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>          <li><a href="/guides/best-cafes-chiang-rai">Best Cafes in Chiang Rai</a></li>        </ul>
       </div>

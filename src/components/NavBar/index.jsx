@@ -12,11 +12,12 @@ import logo from "../../images/logo.png";
 import "./NavBar.css";
 
 const travelGuideLinks = [
-    { to: "/localAttractions", label: "Local Attractions" },
     { to: "/guides/best-day-trips-chiang-rai", label: "Best Day Trips" },
-    { to: "/guides/two-days-chiangrai", label: "Two Days in Chiang Rai" },
-    { to: "/guides/why-chiang-rai", label: "Why Chiang Rai" },
     { to: "/guides/best-cafes-chiang-rai", label: "Best Cafes" },
+    { to: "/guides/two-days-chiangrai", label: "Two Days in Chiang Rai" },
+    { to: "/localAttractions", label: "Local Attractions" },
+    { to: "/guides/things-to-do-chiang-rai", label: "Things to Do" },
+    { to: "/guides/pong-phra-bat", label: "Pong Phra Bat" },
     { to: "/guides/faq", label: "FAQ" },
 ];
 

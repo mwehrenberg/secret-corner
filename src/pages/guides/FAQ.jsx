@@ -172,13 +172,18 @@ const FAQ = () => {
         <h3>More Chiang Rai Travel Guides</h3>
         <ul>
           <li>
-            <Link to="/guides/why-chiang-rai">
-              Why Chiang Rai is Absolutely Worth Visiting
+            <Link to="/guides/best-day-trips-chiang-rai">
+              Best Day Trips from Chiang Rai
             </Link>
           </li>
           <li>
-            <Link to="/guides/best-day-trips-chiang-rai">
-              Best Day Trips from Chiang Rai
+            <Link to="/guides/things-to-do-chiang-rai">
+              Things to Do in Chiang Rai
+            </Link>
+          </li>
+          <li>
+            <Link to="/guides/pong-phra-bat">
+              Pong Phra Bat District Itinerary
             </Link>
           </li>
           <li>
