@@ -3,17 +3,19 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import "./guides.css";
 
-import watPhrKaewImg  from "../../images/blog/whyChiangRai/whiteTemple.jpeg";
-import maeFahImg      from "../../images/activities/maeFah.webp";
+import watPhrKaewImg  from "../../images/blog/noScooter/watPhraKaew.jpg";
+import maeFahImg      from "../../images/blog/noScooter/maeFahLuang.jpg";
 import satMarketImg   from "../../images/blog/whyChiangRai/dancingAtMarket.jpg";
 import sunMarketImg   from "../../images/blog/whyChiangRai/freshMarket.jpeg";
-import clockTowerImg  from "../../images/blog/whyChiangRai/chiangRaiNightMarket.jpg";
+import clockTowerImg  from "../../images/blog/noScooter/clock-tower.jpg";
 import blueTempleImg  from "../../images/activities/bluetemple.webp";
-import templeImg      from "../../images/blog/whyChiangRai/whiteTemple.jpeg";
+import templeImg      from "../../images/blog/noScooter/watMingMuang.jpg";
 import nightBazaarImg from "../../images/activities/nightbazaar.jpg";
-import hillTempleImg  from "../../images/activities/singhapark.jpg";
-import artMuseumImg   from "../../images/activities/baanDam.jpg";
-import hotSpringImg   from "../../images/blog/whyChiangRai/relaxHotSpring.jpg";
+import hillTempleImg  from "../../images/blog/noScooter/watPhraThat.jpg";
+import watPTDoiChomImg from "../../images/blog/noScooter/watPTDoiChom.jpg";
+import watHuayImg     from "../../images/blog/noScooter/watHuay.webp";
+import artMuseumImg   from "../../images/blog/noScooter/crcam.jpg";
+import hotSpringImg   from "../../images/blog/ppb/ppbHotSprings.jpg";
 
 const newTab = { target: "_blank", rel: "noopener noreferrer" };
 
@@ -145,7 +147,7 @@ const stops = [
     hours: "06:00 – 17:00",
     ticket: null,
     mapLink: "https://maps.app.goo.gl/UZrhKJcxxVmPbaLH6",
-    image: hillTempleImg,
+    image: watPTDoiChomImg,
     alt: "Wat Phra That Doi Chom Thong temple Chiang Rai city pillar",
     description:
       "Authentic local people's temple complex located near the Chiang Rai City Pillar. Lovely to visit and explore. Easy to combine on the same journey as Wat Phra Kaew.",
@@ -160,7 +162,7 @@ const stops = [
     ticket: null,
     mapLink: null,
     mapAddress: "553, Ban Du, Mueang Chiang Rai District, Chiang Rai 57100",
-    image: hillTempleImg,
+    image: watHuayImg,
     alt: "Wat Huay Pla Kang large temple complex Chiang Rai",
     description:
       "Large complex with stunning views looking back to the city and across the river valley. Many cafés in the surrounding area. Grab transport is needed from the city centre.",
@@ -260,6 +262,7 @@ const NoScooterChiangRai = () => {
               <span>Address</span> {stop.mapAddress}
             </p>
           )}
+          {stop.description && <p>{stop.description}</p>}
           <figure className="guide-image-block">
             <img src={stop.image} alt={stop.alt} loading="lazy" />
           </figure>
@@ -270,7 +273,6 @@ const NoScooterChiangRai = () => {
               </a>
             </p>
           )}
-          {stop.description && <p>{stop.description}</p>}
         </section>
       ))}
 
