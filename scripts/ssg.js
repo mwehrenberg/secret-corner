@@ -89,6 +89,11 @@ const routes = [
     description: 'The best cafes in Chiang Rai — from specialty coffee roasters to mountain-view terraces and hidden local gems.',
     ogImage: { src: 'blog/bestCafes/cafe100.webp', dest: 'og/best-cafes-chiang-rai.webp' },
   },
+  {
+    path: 'guides/elephants-chiang-rai',
+    title: 'An Elephant Experience in Chiang Rai | Secret Corner',
+    description: 'Learn about Elephant Peace Project, a Karen family caring for elephants for generations, and its half-day elephant experience near Chiang Rai.',
+  },
 ];
 
 const baseHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');

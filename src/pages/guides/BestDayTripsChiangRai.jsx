@@ -51,7 +51,7 @@ const ADVENTURE_I_IMAGES = [
   { src: papaEatery,           alt: "Papa Eatery",                              caption: "Papa Eatery" },
   { src: royalGarden,         alt: "Royal Garden at Doi Tung",                 caption: "Royal Garden at Doi Tung" },
   { src: homPanDinVineyard,    alt: "Hom Pan Din Vineyard",                     caption: "Hom Pan Din Vineyard" },
-  { src: relaxHotSpring,       alt: "Relaxing in a hot spring",                 caption: "Relaxing in a hot spring" },
+  { src: relaxHotSpring,       alt: "Lunch in stream at Pa Tung Hot Spring", caption: "Lunch in stream at Pa tung Hot Spring" },
 ];
 
 const ADVENTURE_I_ROUTES = [
