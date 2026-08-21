@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./landingPage.css";
 import Booking from "../images/utils/booking.png";
 import Expedia from "../images/utils/expedia.png";
@@ -239,6 +240,32 @@ const LandingPage = () => {
                 <p>{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ & SUPPORT */}
+      <section className="landing-help" aria-labelledby="landing-help-title">
+        <div className="landing-help-content">
+          <p className="section-kicker">Questions before your stay?</p>
+          <h2 id="landing-help-title">Everything you need to know</h2>
+          <p>
+            Visit our FAQ for helpful information about rooms, check-in, getting here, facilities,
+            activities, and exploring Chiang Rai. If you don’t find what you’re looking for there,
+            our staff are happy to help via WhatsApp.
+          </p>
+          <div className="landing-help-actions">
+            <Link className="landing-help-link landing-help-link--primary" to="/guides/faq">
+              Visit our FAQ
+            </Link>
+            <a
+              className="landing-help-link"
+              href="https://wa.me/66613326191"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message us on WhatsApp
+            </a>
           </div>
         </div>
       </section>

@@ -438,7 +438,6 @@ body, html {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    font-style: italic;
     margin-bottom: 1rem;
     white-space: pre-line; /* preserves newlines in your text */
   }  
@@ -453,4 +452,66 @@ body, html {
     height: 16px;
     margin-left: 4px;
     vertical-align: middle;
-  } 
+  }
+
+  /* FAQ & SUPPORT */
+  .landing-help {
+    background: #f1eadf;
+    padding: clamp(64px, 9vw, 96px) 20px;
+  }
+
+  .landing-help-content {
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .landing-help-content h2 {
+    color: #2f281f;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+  }
+
+  .landing-help-content > p:not(.section-kicker) {
+    color: #574e45;
+    line-height: 1.75;
+    margin: 0 auto;
+    max-width: 640px;
+  }
+
+  .landing-help-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.75rem;
+  }
+
+  .landing-help-link {
+    border: 1px solid rgba(109, 72, 39, 0.55);
+    border-radius: 999px;
+    color: #6d4827;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.7rem 1.35rem;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .landing-help-link--primary,
+  .landing-help-link:hover,
+  .landing-help-link:focus-visible {
+    background: #6d4827;
+    border-color: #6d4827;
+    color: #fff;
+  }
+
+  .landing-help-link--primary:hover,
+  .landing-help-link--primary:focus-visible {
+    background: #4a2f14;
+    border-color: #4a2f14;
+  }

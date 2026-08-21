@@ -137,4 +137,20 @@ for (const route of routes) {
   console.log(`✓  /${routePath}`);
 }
 
+const sitemapUrls = routes.map(({ path: routePath }) => {
+  const url = routePath ? `${BASE_URL}/${routePath}` : `${BASE_URL}/`;
+  return `  <url>\n    <loc>${url}</loc>\n  </url>`;
+});
+
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...sitemapUrls,
+  '</urlset>',
+  '',
+].join('\n');
+
+fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemap);
+console.log(`✓  /sitemap.xml (${routes.length} URLs)`);
+
 console.log(`\nSSG complete — ${routes.length} routes generated.`);
