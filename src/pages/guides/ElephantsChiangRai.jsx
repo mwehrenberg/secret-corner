@@ -3,6 +3,22 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import "./guides.css";
 
+import elephant3948 from "../../images/blog/elephants/IMG_3948.jpeg";
+import elephant3962 from "../../images/blog/elephants/IMG_3962.jpeg";
+import elephant4061 from "../../images/blog/elephants/IMG_4061.jpeg";
+import elephant4094 from "../../images/blog/elephants/IMG_4094.jpeg";
+import elephant4104 from "../../images/blog/elephants/IMG_4104.jpeg";
+import elephant4164 from "../../images/blog/elephants/IMG_4164.jpeg";
+
+const ELEPHANT_PHOTOS = [
+  { src: elephant4094, alt: "Elephant cuddles" },
+  { src: elephant3948, alt: "A walk with the elephants" },
+  { src: elephant3962, alt: "A shaky start while walking with the elephants" },
+  { src: elephant4061, alt: "Bathing the elephants" },
+  { src: elephant4104, alt: "More elephant cuddles" },
+  { src: elephant4164, alt: "Elephants and their carers at Elephant Peace Project" },
+];
+
 const ElephantsChiangRai = () => {
   return (
     <article className="guide-page editorial-guide elephants-guide">
@@ -29,6 +45,14 @@ const ElephantsChiangRai = () => {
         <p>
           Researching local options led us to <strong>Elephant Peace Project</strong> and a fascinating conversation with its owner.
         </p>
+        <div className="guide-photo-grid blog-three-photo-grid">
+          {ELEPHANT_PHOTOS.slice(0, 3).map((photo) => (
+            <figure key={photo.src} className="guide-photo-grid-item">
+              <img className="blog-photo-fill" src={photo.src} alt={photo.alt} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+        <p className="blog-photo-section-caption">Meeting the elephants at Elephant Peace Project and going for a walk.</p>
       </section>
 
       <section className="guide-section elephant-story">
@@ -75,6 +99,14 @@ const ElephantsChiangRai = () => {
         <p>
           We also appreciated hearing a local Karen perspective — one that visitors to Thailand may not always encounter in their daily activity.
         </p>
+        <div className="guide-photo-grid blog-three-photo-grid">
+          {ELEPHANT_PHOTOS.slice(3).map((photo) => (
+            <figure key={photo.src} className="guide-photo-grid-item">
+              <img className="blog-photo-fill" src={photo.src} alt={photo.alt} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+        <p className="blog-photo-section-caption">Bathing the elephants and cuddles.</p>
       </section>
 
       <section className="guide-section">

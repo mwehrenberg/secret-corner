@@ -1095,3 +1095,20 @@
   font-size: clamp(1.25rem, 2.5vw, 1.55rem);
   text-align: center;
 }
+
+.blog-three-photo-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.guide-photo-grid-item .blog-photo-fill {
+  height: clamp(150px, 28vw, 320px);
+  object-fit: cover;
+}
+
+.blog-photo-section-caption {
+  margin: -14px 0 0;
+  color: #655b50;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  text-align: center;
+}
