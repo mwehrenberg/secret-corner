@@ -32,7 +32,7 @@ const routes = [
   {
     path: 'facilities',
     title: 'Rooms & Facilities | Clean Comfy Affordable Dorms',
-    description: 'Book direct for the lowest rates guaranteed.',
+    description: 'Support our small business & get our best direct rate.',
     ogImage: { src: 'attachments/xroom1.1.jpeg', dest: 'og/facilities.jpeg' },
   },
   {

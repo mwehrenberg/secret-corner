@@ -84,7 +84,7 @@ function PromoBanner() {
   return (
     <div className="promo-banner" role="banner" aria-label="Special offer">
       <p>
-        <strong>Best Price Guarantee:</strong> Book direct for the best deal! Use code{" "}
+        Support our small business & get our <strong>best direct rate</strong>. Use code{" "}
         <span className="promo-code">SECRETDEAL</span> for 10% off your stay.
       </p>
       <script
@@ -94,7 +94,7 @@ function PromoBanner() {
             "@context": "https://schema.org",
             "@type": "Offer",
             "name": "Book Direct & Save 10%",
-            "description": "Book directly with Secret Corner Boutique Stay Chiang Rai for the best price guaranteed. Use promo code SECRETDEAL for 10% off. No middleman fees — booking direct always gives you the lowest rate.",
+            "description": "Support our small business & get our best direct rate! Use promo code SECRETDEAL for 10% off.",
             "discount": "10%",
             "discountCode": "SECRETDEAL",
             "availability": "https://schema.org/InStock",
