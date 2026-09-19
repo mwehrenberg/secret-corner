@@ -73,7 +73,7 @@ const About = () => {
                         ))}
                         <div className="founder-signature" aria-label="Letter signature">
                             <span>— Ying</span>
-                            <span>Founder of Secret Corner Boutique Hostel</span>
+                            <span>Founder of Secret Corner Boutique Stay</span>
                         </div>
                     </article>
                 </div>

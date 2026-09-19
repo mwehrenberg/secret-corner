@@ -104,17 +104,18 @@ export const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   background: #fff;
-  position: fixed;   /* keep anchored under navbar */
-  top: 85px;         /* match navbar height */
+  position: absolute;
+  top: 100%;
   left: 0;
-  width: 100%;
-    max-height: calc(100dvh - 85px);
-    overflow-y: auto;
+  right: 0;
+  max-height: calc(100dvh - 85px);
+  overflow-y: auto;
   padding: 1rem 0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   z-index: 999;
 
   a {
+    height: auto;
     padding: 0.75rem 1.5rem;
     color: #333;
     text-decoration: none;

@@ -71,36 +71,35 @@ const Navbar = () => {
                         Make a Reservation
                     </NavBtnLink>
                 </NavBtn>
+
+                {/* Keep the mobile overlay anchored to the navbar as it becomes sticky. */}
+                {isOpen && <div className="menu-backdrop" onClick={closeMenu} />}
+
+                {isOpen && (
+                    <MobileMenu>
+                        <NavLink onClick={closeMenu} to="/about">Our Story</NavLink>
+                        <NavLink onClick={closeMenu} to="/facilities">Facilities</NavLink>
+                        <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
+                        <details className="mobile-guide-group">
+                            <summary>Travel Guides</summary>
+                            {travelGuideLinks.map((link) => (
+                                <NavLink onClick={closeMenu} to={link.to} key={link.to}>
+                                    {link.label}
+                                </NavLink>
+                            ))}
+                        </details>
+                        <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
+
+                        <NavLink
+                            className="mobile-reserve"
+                            to="/book"
+                            onClick={closeMenu}
+                        >
+                            Make a Reservation
+                        </NavLink>
+                    </MobileMenu>
+                )}
             </Nav>
-
-            {/* 🔲 Dark backdrop behind menu */}
-            {isOpen && <div className="menu-backdrop" onClick={closeMenu} />}
-
-            {/* 📱 Mobile Dropdown Menu */}
-            {isOpen && (
-                <MobileMenu>
-                    <NavLink onClick={closeMenu} to="/about">Our Story</NavLink>
-                    <NavLink onClick={closeMenu} to="/facilities">Facilities</NavLink>
-                    <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
-                    <details className="mobile-guide-group">
-                        <summary>Travel Guides</summary>
-                        {travelGuideLinks.map((link) => (
-                            <NavLink onClick={closeMenu} to={link.to} key={link.to}>
-                                {link.label}
-                            </NavLink>
-                        ))}
-                    </details>
-                    <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
-
-                    <NavLink 
-                    className="mobile-reserve" 
-                    to="/book"
-                    onClick={closeMenu}
-                    >
-                    Make a Reservation
-                    </NavLink>
-                </MobileMenu>
-            )}
         </>
     );
 };

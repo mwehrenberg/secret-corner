@@ -89,7 +89,7 @@ const Gallery = () => {
         <title>Gallery | Secret Corner Boutique Stay Chiang Rai</title>
         <meta
           name="description"
-          content="Take a visual tour of Secret Corner Boutique Hostel in Chiang Rai, including shared spaces, dorm rooms, private rooms, bathrooms, rooftop, exterior, and warm design details."
+          content="Take a visual tour of Secret Corner Boutique Stay in Chiang Rai, including shared spaces, dorm rooms, private rooms, bathrooms, rooftop, exterior, and warm design details."
         />
       </Helmet>
 

@@ -9,7 +9,7 @@ const folderImages = (folder, altBase, largeIndexes = [0]) =>
     .sort(([pathA], [pathB]) => pathA.localeCompare(pathB))
     .map(([path, src], index) => ({
       src,
-      alt: `${altBase} at Secret Corner Boutique Hostel in Chiang Rai${index > 0 ? `, photo ${index + 1}` : ""}`,
+      alt: `${altBase} at Secret Corner Boutique Stay in Chiang Rai${index > 0 ? `, photo ${index + 1}` : ""}`,
       index,
       size: largeIndexes.includes(index) ? "large" : "standard",
       path,
