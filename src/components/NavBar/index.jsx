@@ -82,14 +82,14 @@ const Navbar = () => {
                     <NavLink onClick={closeMenu} to="/about">Our Story</NavLink>
                     <NavLink onClick={closeMenu} to="/facilities">Facilities</NavLink>
                     <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
-                    <div className="mobile-guide-group">
-                        <p>Travel Guides</p>
+                    <details className="mobile-guide-group">
+                        <summary>Travel Guides</summary>
                         {travelGuideLinks.map((link) => (
                             <NavLink onClick={closeMenu} to={link.to} key={link.to}>
                                 {link.label}
                             </NavLink>
                         ))}
-                    </div>
+                    </details>
                     <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
 
                     <NavLink 

@@ -97,6 +97,7 @@ export const NavBtnLink = styled(Link)`
         background: #6f4b2a;
         transform: translateY(-1px);
     }
+
 `;
 
 export const MobileMenu = styled.div`
@@ -107,6 +108,8 @@ export const MobileMenu = styled.div`
   top: 85px;         /* match navbar height */
   left: 0;
   width: 100%;
+    max-height: calc(100dvh - 85px);
+    overflow-y: auto;
   padding: 1rem 0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   z-index: 999;

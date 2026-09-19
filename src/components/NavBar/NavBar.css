@@ -141,41 +141,24 @@ h2 {
       text-decoration: none;
     }
   
-    /* Hide reservation button in top nav */
-    .NavBtn {
-      display: none;
-    }
-
-    .MobileMenu .NavBtnLink {
-      margin: auto 1rem 1rem 1rem;
-      padding: 0 24px;
-      border-radius: 999px;
-      background: #8c6239;
-      color: #fffaf2;
-      text-align: center;
-      font-size: 1rem;
-      position: sticky;
-      bottom: 1rem;
-    }
-
     .mobile-guide-group {
       padding: 0.25rem 0;
-      border-top: 1px solid rgba(196, 155, 99, 0.2);
-      border-bottom: 1px solid rgba(196, 155, 99, 0.2);
     }
 
-    .mobile-guide-group p {
+    .mobile-guide-group summary {
+      cursor: pointer;
+      list-style-position: inside;
       margin: 0;
-      padding: 0.75rem 1.5rem 0.35rem;
-      color: #8c6239;
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      padding: 0.75rem 1.5rem;
+      color: #333;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0;
       text-align: left;
-      text-transform: uppercase;
+      text-transform: none;
     }
 
-    .MobileMenu .mobile-guide-group a {
+    .mobile-guide-group a {
       padding-left: 2.25rem;
     }
   }
