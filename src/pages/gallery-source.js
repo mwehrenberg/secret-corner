@@ -17,18 +17,11 @@ const folderImages = (folder, altBase, largeIndexes = [0]) =>
 
 const galleryFolders = [
   {
-    folder: "outside",
-    id: "outside",
-    title: "All",
-    alt: "Exterior, entrance, and courtyard area",
-    largeIndexes: [4, 13],
-  },
-  {
-    folder: "roof",
-    id: "roof",
-    title: "Rooftop",
-    alt: "Rooftop lounge and shared space",
-    largeIndexes: [3, 7],
+    folder: "dormRooms",
+    id: "dorm-rooms",
+    title: "Dorm Rooms",
+    alt: "Four dorm rooms with privacy bunks",
+    largeIndexes: [1, 5],
   },
   {
     folder: "privateRooms",
@@ -38,11 +31,18 @@ const galleryFolders = [
     largeIndexes: [10, 2],
   },
   {
-    folder: "dormRooms",
-    id: "dorm-rooms",
-    title: "Dorm Rooms",
-    alt: "Four dorm rooms with privacy bunks",
-    largeIndexes: [1, 5],
+    folder: "roof",
+    id: "roof",
+    title: "Rooftop",
+    alt: "Rooftop lounge and shared space",
+    largeIndexes: [3, 7],
+  },
+  {
+    folder: "outside",
+    id: "outside",
+    title: "Exterior",
+    alt: "Exterior, entrance, and courtyard area",
+    largeIndexes: [5, 4],
   }
 ];
 
