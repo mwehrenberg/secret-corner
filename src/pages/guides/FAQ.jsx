@@ -13,7 +13,7 @@ const faqData = [
       },
       {
         q: "What are the check-in and check-out times?",
-        a: "Check-in is at 15:00 and check-out is by 11:00. Reception is open from 08:00 until 20:00. If you're arriving after 20:00, please arrange with us in advance and we'll leave your key and related information in the drop box at reception.",
+        a: "Check-in is at 15:00 and check-out is by 11:00. Reception is open from 08:00 until 19:00. If you're arriving after 19:00, please arrange with us in advance and we'll leave your key and related information in the drop box at reception.",
       },
       {
         q: "Can I store my luggage at the hostel?",
@@ -132,12 +132,12 @@ const FAQ = () => {
     <div className="guide-page">
       <Helmet>
         <title>FAQ | Secret Corner Boutique Stay Chiang Rai</title>
-        <meta name="description" content="Frequently asked questions about staying at Secret Corner Hostel — check-in times, booking, facilities, amenities, and local tips." />
+        <meta name="description" content="Frequently asked questions about staying at Secret Corner Boutique Stay — check-in times, booking, facilities, amenities, and local tips." />
       </Helmet>
       <header className="guide-hero">
         <h1>Traveler's FAQ</h1>
         <p className="guide-subtitle">
-          Everything you need to know before visiting Secret Corner Hostel &amp; Chiang Rai.
+          Everything you need to know before visiting Secret Corner Boutique Stay &amp; Chiang Rai.
         </p>
       </header>
 

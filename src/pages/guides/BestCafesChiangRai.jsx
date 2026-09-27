@@ -54,7 +54,7 @@ const cafes = [
   },
   {
     name: "Pasom – Art Cafe & Activity",
-    description: "Just a short walk from Secret Corner Hostel and the Chiang Rai Bus Terminal, Pasom – Art Cafe & Activity is a convenient spot to relax in the heart of the city. With its creative atmosphere, quality coffee, and unique art-inspired space, it's a great place to unwind between adventures.",
+    description: "Just a short walk from Secret Corner Boutique Stay and the Chiang Rai Bus Terminal, Pasom – Art Cafe & Activity is a convenient spot to relax in the heart of the city. With its creative atmosphere, quality coffee, and unique art-inspired space, it's a great place to unwind between adventures.",
     hours: "9:00 AM – 5:00 PM (Open Daily)",
     map: "https://maps.app.goo.gl/wq5Hpd82PBPm4xEd8",
     images: [

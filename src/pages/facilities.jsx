@@ -22,7 +22,7 @@ const Facilities = () => {
                 <h2>Our Rooms</h2>
                 <div className="room-grid">
                     <div className="room-card">
-                    <img src={DeluxeTv} alt="Deluxe king room with private bathroom at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={DeluxeTv} alt="Deluxe king room with private bathroom at Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Deluxe King Room with Private Bath</h3>
                         <p>Premium furnishings, in-room fridge & TV, ensuite with walk-in shower.</p>
@@ -31,7 +31,7 @@ const Facilities = () => {
 
                     {/* <!-- Repeat for other rooms --> */}
                     <div className="room-card">
-                    <img src={Standard} alt="Standard king room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={Standard} alt="Standard king room private bathroom accommodation Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Standard King Room with Private Bath</h3>
                         <p>Cozy layout, king-size bed, in-room fridge, ensuite.</p>
@@ -39,7 +39,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src={SuperiorQueen} alt="Superior queen room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={SuperiorQueen} alt="Superior queen room private bathroom accommodation Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Superior Queen Room</h3>
                         <p>A cozy and comfortable private room, with a comfortable L-shaped sofa seating area and private ensuite.</p>
@@ -47,7 +47,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={TwinRoom} alt="Superior twin room private bathroom accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={TwinRoom} alt="Superior twin room private bathroom accommodation Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Superior Twin Room with Private Bath</h3>
                         <p>Perfect for friends or travelers who prefer separate beds without compromising on comfort.</p>
@@ -55,7 +55,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={TripleRoom} alt="Triple room for groups and families at Secret Corner Hostel Chiang Rai with private bathroom" loading="lazy" decoding="async"></img>
+                    <img src={TripleRoom} alt="Triple room for groups and families at Secret Corner Boutique Stay Chiang Rai with private bathroom" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>Triple Room with Private Bath</h3>
                         <p>3 twin beds, private bathroom — great for groups or families.</p>
@@ -63,7 +63,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={FamilyRoom} alt="Family room connecting rooms accommodation Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={FamilyRoom} alt="Family room connecting rooms accommodation Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     {/* <div className="coming-soon-placeholder"><span>Coming soon</span></div> */}
                     <div className="room-info">
                         <h3>Family Room (Connecting Rooms)</h3>
@@ -72,7 +72,7 @@ const Facilities = () => {
                     </div>
 
                     <div className="room-card">
-                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and lockers" loading="lazy" decoding="async"></img>
+                    <img src={SixBedFemaleDorm} alt="6-bed female dormitory room at Secret Corner Boutique Stay Chiang Rai with privacy curtains and lockers" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>6-Bed Female Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -80,7 +80,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Hostel Chiang Rai with privacy curtains and reading lights" loading="lazy" decoding="async"></img>
+                    <img src={SixBedDorm} alt="6-bed mixed dormitory room at Secret Corner Boutique Stay Chiang Rai with privacy curtains and reading lights" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>6-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Privacy curtains, lockers, reading lights, shared bath.</p>
@@ -88,7 +88,7 @@ const Facilities = () => {
                     </div>
                     
                     <div className="room-card">
-                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Hostel Chiang Rai" loading="lazy" decoding="async"></img>
+                    <img src={EightBed} alt="8-bed mixed dormitory budget accommodation at Secret Corner Boutique Stay Chiang Rai" loading="lazy" decoding="async"></img>
                     <div className="room-info">
                         <h3>8-Bed Mixed Dormitory (Shared Bath)</h3>
                         <p>Most affordable option, same great design as our other dormitories.</p>

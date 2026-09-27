@@ -23,22 +23,22 @@ const founderStoryParagraphs = [
 const storyPhotos = [
     {
         src: welcome2,
-        alt: "Secret Corner Hostel exterior entrance in Chiang Rai Thailand",
+        alt: "Secret Corner Boutique Stay exterior entrance in Chiang Rai Thailand",
     },
     {
         src: aboutDorm,
-        alt: "Clean modern dormitory interior at Secret Corner Hostel Chiang Rai",
+        alt: "Clean modern dormitory interior at Secret Corner Boutique Stay Chiang Rai",
     },
     {
         src: welcome3,
-        alt: "Warm welcome area at Secret Corner Hostel Chiang Rai",
+        alt: "Warm welcome area at Secret Corner Boutique Stay Chiang Rai",
     },
 ];
 
 const AboutHeader = () => {
     return (
         <div className="about-header">
-            <img src={about0} alt="Secret Corner Hostel Chiang Rai boutique hostel interior and common areas" className="header-image" />
+            <img src={about0} alt="Secret Corner Boutique Stay Chiang Rai boutique hostel interior and common areas" className="header-image" />
             <p className="header-text">Our Story</p>
         </div>
     );
@@ -54,7 +54,7 @@ const About = () => {
             <AboutHeader />
             <main className="founder-story" aria-labelledby="founder-story-title">
                 <div className="letter-shell">
-                    <aside className="story-photo-rail" aria-label="Photos from Secret Corner Hostel">
+                    <aside className="story-photo-rail" aria-label="Photos from Secret Corner Boutique Stay">
                         {storyPhotos.map((photo, index) => (
                             <img
                                 key={photo.src}
@@ -78,61 +78,6 @@ const About = () => {
                     </article>
                 </div>
             </main>
-
-            {/*
-                Practical info sections preserved for reuse on another page.
-                Restore these image imports before moving the JSX:
-                import about1 from "../images/architecture/IMG_0286.JPG";
-                import about2 from "../images/architecture/IMG_0308.JPG";
-                import about3 from "../images/architecture/IMG_0279.JPG";
-
-                <div className="about-section">
-                    <div className="about-text-container">
-                        <h3>Directions</h3>
-                        <ul>
-                            <li>From Chiang Rai Bus Terminal 1 - 600m, 8-10 min walk.</li>
-                            <li>From Airport - 10 km, 15-20 min taxi or Grab.</li>
-                        </ul>
-                    </div>
-                    <div className="about-image-container">
-                        <img src={about1} alt="Secret Corner Hostel building architecture in Chiang Rai near bus station" className="about-image" />
-                    </div>
-                </div>
-
-                <div className="about-section">
-                    <div className="about-text-container">
-                        <h3>Getting Here</h3>
-                        <p>
-                            Arrival by <b>bus</b>- the walk from the bus station is about ten minutes.
-                        </p>
-                        <p>
-                            From the <b>airport</b>- it takes about 20 minutes. We provide airport transfer for THB250 one way per car. Alternatively, you can use a taxi, Grab, or Bolt service.
-                        </p>
-                    </div>
-                    <div className="about-image-container">
-                        <img src={about2} alt="Secret Corner Hostel Chiang Rai location near airport and bus terminal" className="about-image" />
-                    </div>
-                </div>
-
-                <div className="about-section">
-                    <div className="about-image-container">
-                        <img src={about3} alt="Boutique hostel architecture and design at Secret Corner Chiang Rai" className="about-image" />
-                    </div>
-                    <div className="about-text-container">
-                        <h3>House Rules</h3>
-                        <ul>
-                            <li><b>Check-in</b>: 15:00-20:00 | <b>Check-out</b>: 11:00</li>
-                            <li>Quiet hours: 22:00-07:00</li>
-                            <li>No smoking indoors (garden area provided)</li>
-                            <li>Keep shared spaces tidy (slippers provided)</li>
-                            <li>No eating in guest rooms</li>
-                            <li>Lockers for valuables (locks available at desk)</li>
-                            <li>No outside guests in rooms</li>
-                            <li>Be mindful & respectful — we are cozy & community-focused, not a party hostel</li>
-                        </ul>
-                    </div>
-                </div>
-            */}
         </div>
     );
 };

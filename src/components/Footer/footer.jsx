@@ -9,21 +9,21 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-top">
       <div>
-        <img src={logo} alt="Secret Corner Hostel Chiang Rai - Boutique Accommodation in Thailand" className="footer-logo" />
+        <img src={logo} alt="Secret Corner Boutique Stay Chiang Rai - Boutique Accommodation in Thailand" className="footer-logo" />
       </div>
       <div className="column address">
         <h4>Contact Us</h4>
-        <p>Reception Hours: 07:00 - 20:00</p>
+        <p>Reception Hours: 08:00–19:00</p>
         <p><u><a target="_blank" href="https://maps.app.goo.gl/YqgqUd35oBtrDMDP6" rel="noreferrer">40/1 Sanpanard Soi 2, Wiang, <br></br>Mueang Chiang Rai District, Chiang Rai 57000, Thailand</a></u></p>
         <p>
           <a href="https://wa.me/66613326191" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
-            <img src={whatsapp} alt="Contact Secret Corner Hostel Chiang Rai on WhatsApp" className="wa-icon" />
+            <img src={whatsapp} alt="Contact Secret Corner Boutique Stay Chiang Rai on WhatsApp" className="wa-icon" />
             WhatsApp (+66) 61 332 6191
           </a>
         </p>
         <p>
           <a>
-            <img src={line} alt="Contact Secret Corner Hostel Chiang Rai on Line" className="wa-icon" />
+            <img src={line} alt="Contact Secret Corner Boutique Stay Chiang Rai on Line" className="wa-icon" />
             Line (+66) 61 332 6191
             </a>
         </p>

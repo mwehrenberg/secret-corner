@@ -195,7 +195,7 @@ const LandingPage = () => {
               <article className="ota-rating-card" key={platform}>
                 <div className="ota-platform">
                   {logo ? (
-                    <img src={logo} alt={`${platform} rating for Secret Corner Hostel`} className="ota-logo" />
+                    <img src={logo} alt={`${platform} rating for Secret Corner Boutique Stay`} className="ota-logo" />
                   ) : (
                     <span className="ota-platform-name">{platform}</span>
                   )}
@@ -221,7 +221,7 @@ const LandingPage = () => {
             <div className="review-card" key={idx}>
               <p className="review-text">"{text}"</p>
               <p className="review-source">
-                — {name} <img src={platform} alt={`5-star review from ${platformText} for Secret Corner Hostel Chiang Rai`} className="review-logo" /> {"★".repeat(rating)}
+                — {name} <img src={platform} alt={`5-star review from ${platformText} for Secret Corner Boutique Stay Chiang Rai`} className="review-logo" /> {"★".repeat(rating)}
               </p>
             </div>
           ))}

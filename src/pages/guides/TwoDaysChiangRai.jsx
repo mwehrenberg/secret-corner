@@ -13,7 +13,7 @@ const TwoDaysChiangRai = () => {
     <article className="guide-page">
       <Helmet>
         <title>How to Spend Two Days in Chiang Rai</title>
-        <meta name="description" content="The perfect 2-day Chiang Rai itinerary — temples, night markets, mountain tea villages, and local food. Written by the team at Secret Corner Hostel." />
+        <meta name="description" content="The perfect 2-day Chiang Rai itinerary — temples, night markets, mountain tea villages, and local food. Written by the team at Secret Corner Boutique Stay." />
       </Helmet>
       {/* Hero */}
       <header className="guide-hero">
@@ -250,7 +250,7 @@ const TwoDaysChiangRai = () => {
         </p>
         <p>
           We run{" "}
-          <b><Link to="/about">Secret Corner Hostel</Link></b> right in the heart of
+          <b><Link to="/about">Secret Corner Boutique Stay</Link></b> right in the heart of
           town. We're a small, locally owned place and most of the tips in this
           guide come straight from what we tell our guests every day. No
           pressure — but if you're looking for somewhere with a rooftop hangout,

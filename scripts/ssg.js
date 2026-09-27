@@ -74,13 +74,13 @@ const routes = [
   {
     path: 'guides/two-days-chiangrai',
     title: 'How to Spend Two Days in Chiang Rai',
-    description: 'The perfect 2-day Chiang Rai itinerary writtenby the team at Secret Corner Hostel.',
+    description: 'The perfect 2-day Chiang Rai itinerary writtenby the team at Secret Corner Boutique Stay.',
     ogImage: { src: 'activities/bluetemple.webp', dest: 'og/two-days-chiangrai.webp' },
   },
   {
     path: 'guides/faq',
-    title: 'FAQ | Secret Corner Hostel Chiang Rai',
-    description: 'Frequently asked questions for your stay at Secret Corner Hostel.',
+    title: 'FAQ | Secret Corner Boutique Stay Chiang Rai',
+    description: 'Frequently asked questions for your stay at Secret Corner Boutique Stay.',
     ogImage: { src: 'architecture/IMG_0282.JPG', dest: 'og/faq.jpeg' },
   },
   {
@@ -114,7 +114,7 @@ for (const route of routes) {
 
   const ogTags = [
     `<meta property="og:type" content="website" />`,
-    `<meta property="og:site_name" content="Secret Corner Hostel" />`,
+    `<meta property="og:site_name" content="Secret Corner Boutique Stay" />`,
     `<meta property="og:url" content="${routePath ? `${BASE_URL}/${routePath}` : BASE_URL}" />`,
     `<meta property="og:title" content="${title}" />`,
     `<meta property="og:description" content="${description}" />`,

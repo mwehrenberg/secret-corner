@@ -50,7 +50,7 @@ const localAttractions = [
     description:
       "A full-day guided trekking adventure in a small group, visiting a Lisu Chinese village, waterfalls, tea plantations, and stunning natural viewpoints. Lunch is included and prepared with your guide using foraged jungle ingredients — a true hands-on cultural experience. Pickup is around 09:00 with return to Secret Corner in the late afternoon. Minimum of two people. Expect rewarding walking and some climbing. Price: 1,500 THB per person.",
     content: trek1,
-    alt: "Trekking tour to hill tribe villages near Chiang Rai with Secret Corner Hostel",
+    alt: "Trekking tour to hill tribe villages near Chiang Rai with Secret Corner Boutique Stay",
   },
   {
     title: "Two Day Trekking Adventure",
@@ -121,7 +121,7 @@ const LocalAttractions = () => {
       {/* Motorbike Promotion */}
       <div className="featured-activity">
         <div className="featured-image">
-          <img src={motorbikePromotion.image} alt="Motorbike rental service in Chiang Rai from Secret Corner Hostel" />
+          <img src={motorbikePromotion.image} alt="Motorbike rental service in Chiang Rai from Secret Corner Boutique Stay" />
         </div>
         <div className="featured-text">
           <h2>{motorbikePromotion.title}</h2>

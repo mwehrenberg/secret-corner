@@ -181,7 +181,7 @@ const ThingsToDoChiangRai = () => {
           north, south, and west.
         </p>
         <p>
-          <strong>Secret Corner Hostel</strong> is right in the heart of it all.
+          <strong>Secret Corner Boutique Stay</strong> is right in the heart of it all.
           We help our guests plan day trips every day — from organizing treks and
           the slow boat to Laos, to lending out maps and sharing the best routes
           for motorbike rides. Comfortable beds, a rooftop hangout, and a team
