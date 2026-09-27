@@ -1047,6 +1047,58 @@
   .editorial-map-wrap { margin-top: -14px !important; }
 }
 
+/* ===== Transport guide: compact questions and answers ===== */
+.transport-guide .guide-section {
+  box-sizing: border-box;
+  max-width: 728px;
+}
+
+.transport-guide .editorial-intro {
+  margin-bottom: 36px;
+}
+
+.transport-guide .transport-option {
+  margin-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.transport-guide .transport-option + .transport-option {
+  border-top: 1px solid rgba(112, 79, 45, 0.18);
+}
+
+.transport-guide .transport-option > h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.35rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.transport-guide .transport-option > p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.transport-guide .transport-note {
+  max-width: 680px;
+  margin-top: 28px;
+  margin-right: max(24px, calc((100% - 680px) / 2));
+  margin-left: max(24px, calc((100% - 680px) / 2));
+  margin-bottom: 0;
+  padding: 22px 24px;
+  background: #f1eadf;
+  border-left: 3px solid #8c6239;
+}
+
+.transport-guide .transport-note > p {
+  margin: 0;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 /* ===== Elephant guide ===== */
 .elephants-guide .guide-section:not(.editorial-intro) {
   padding-top: 34px;

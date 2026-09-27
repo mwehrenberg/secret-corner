@@ -11,17 +11,44 @@ import {
 import logo from "../../images/logo.png";
 import "./NavBar.css";
 
-const travelGuideLinks = [
-    { to: "/guides/best-day-trips-chiang-rai", label: "Best Day Trips" },
-    { to: "/guides/two-days-chiangrai", label: "Two Days in Chiang Rai" },
-    { to: "/guides/pong-phra-bat", label: "Day Trip: Pong Phra Bat" },
-    { to: "/guides/elephants-chiang-rai", label: "Elephants" },
-    { to: "/guides/best-cafes-chiang-rai", label: "Best Cafes" },
-    { to: "/guides/things-to-do-chiang-rai", label: "Things to Do" },
-    { to: "/guides/chiang-rai-no-scooter", label: "Things to Do without a Scooter" },
-    { to: "/localAttractions", label: "Local Attractions" },
-    { to: "/guides/faq", label: "FAQ" },
+const travelGuideGroups = [
+    {
+        title: "Plan your visit",
+        links: [
+            { to: "/guides/things-to-do-chiang-rai", label: "Things to Do" },
+            { to: "/guides/two-days-chiangrai", label: "Two Days in Chiang Rai" },
+            { to: "/guides/getting-around-chiang-rai", label: "Getting Around Chiang Rai" },
+            { to: "/guides/faq", label: "FAQ" },
+        ],
+    },
+    {
+        title: "Day trips & experiences",
+        links: [
+            { to: "/guides/best-day-trips-chiang-rai", label: "Best Day Trips" },
+            { to: "/guides/pong-phra-bat", label: "Pong Phra Bat" },
+            { to: "/guides/elephants-chiang-rai", label: "Elephants" },
+        ],
+    },
+    {
+        title: "Exploring in town",
+        links: [
+            { to: "/guides/best-cafes-chiang-rai", label: "Best Cafes" },
+            { to: "/guides/chiang-rai-no-scooter", label: "Things to Do Without a Scooter" },
+            { to: "/localAttractions", label: "Local Attractions" },
+        ],
+    },
 ];
+
+const GuideGroups = ({ onNavigate }) => travelGuideGroups.map((group) => (
+    <section className="travel-guide-category" key={group.title} aria-label={group.title}>
+        <h3>{group.title}</h3>
+        {group.links.map((link) => (
+            <NavLink to={link.to} key={link.to} onClick={onNavigate}>
+                {link.label}
+            </NavLink>
+        ))}
+    </section>
+));
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,11 +83,7 @@ const Navbar = () => {
                             Travel Guides
                         </button>
                         <div className="nav-dropdown-menu">
-                            {travelGuideLinks.map((link) => (
-                                <NavLink to={link.to} key={link.to}>
-                                    {link.label}
-                                </NavLink>
-                            ))}
+                            <GuideGroups />
                         </div>
                     </div>
                     <NavLink to="/gallery">Gallery</NavLink>
@@ -82,11 +105,7 @@ const Navbar = () => {
                         <NavLink onClick={closeMenu} to="/activities">In-House Activities</NavLink>
                         <details className="mobile-guide-group">
                             <summary>Travel Guides</summary>
-                            {travelGuideLinks.map((link) => (
-                                <NavLink onClick={closeMenu} to={link.to} key={link.to}>
-                                    {link.label}
-                                </NavLink>
-                            ))}
+                            <GuideGroups onNavigate={closeMenu} />
                         </details>
                         <NavLink onClick={closeMenu} to="/gallery">Gallery</NavLink>
 

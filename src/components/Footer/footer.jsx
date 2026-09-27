@@ -43,6 +43,7 @@ const Footer = () => (
           <li><a href="/guides/pong-phra-bat">Pong Phra Bat District Itinerary</a></li>
           <li><a href="/guides/chiang-rai-no-scooter">Things to Do Without a Scooter</a></li>
           <li><a href="/guides/best-day-trips-chiang-rai">Best Day Trips from Chiang Rai</a></li>
+          <li><a href="/guides/getting-around-chiang-rai">How to Get Around Chiang Rai</a></li>
           <li><a href="/guides/two-days-chiangrai">2 Days in Chiang Rai: A Local’s Itinerary</a></li>          <li><a href="/guides/best-cafes-chiang-rai">Best Cafes in Chiang Rai</a></li>        </ul>
       </div>
       <div className="column socials">

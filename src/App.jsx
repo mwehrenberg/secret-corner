@@ -21,6 +21,7 @@ import BestCafesChiangRai from "./pages/guides/BestCafesChiangRai.jsx"
 import PongPhraBat from "./pages/guides/PongPhraBat.jsx"
 import NoScooterChiangRai from "./pages/guides/NoScooterChiangRai.jsx"
 import ElephantsChiangRai from "./pages/guides/ElephantsChiangRai.jsx"
+import GettingAroundChiangRai from "./pages/guides/GettingAroundChiangRai.jsx"
 import Footer from "./components/Footer/footer.jsx"
 
 const RedirectToBooking = () => {
@@ -74,6 +75,7 @@ function NavigationBar() {
           <Route path="/guides/pong-phra-bat" element={<PongPhraBat />} />
           <Route path="/guides/chiang-rai-no-scooter" element={<NoScooterChiangRai />} />
           <Route path="/guides/elephants-chiang-rai" element={<ElephantsChiangRai />} />
+          <Route path="/guides/getting-around-chiang-rai" element={<GettingAroundChiangRai />} />
           <Route path="/book" element={<RedirectToBooking />} />
       </Routes>
   </Router>

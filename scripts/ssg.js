@@ -12,6 +12,11 @@ const OG_VERSION = '2';
 
 const routes = [
   {
+    path: 'guides/getting-around-chiang-rai',
+    title: 'How to Get Around Chiang Rai | Secret Corner',
+    description: "Grab, scooter, tour or private driver? Here's our advice.",
+  },
+  {
     path: '',
     title: 'Secret Corner Boutique Stay Chiang Rai | Book Direct & Save',
     description: 'Clean. Comfortable. Calm. Centrally located.',

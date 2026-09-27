@@ -42,7 +42,7 @@ h2 {
   }
 
   .nav-dropdown {
-    position: relative;
+    position: static;
     height: 85px;
     display: flex;
     align-items: center;
@@ -80,16 +80,19 @@ h2 {
   .nav-dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 32px;
     z-index: 1002;
     display: grid;
-    min-width: 230px;
-    padding: 10px;
-    background: #fff;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    box-sizing: border-box;
+    width: min(820px, calc(100vw - 64px));
+    padding: 28px 20px;
+    background: #fbfaf7;
     border: 1px solid rgba(196, 155, 99, 0.24);
     border-radius: 8px;
     box-shadow: 0 14px 32px rgba(41, 34, 25, 0.14);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(8px);
     transition: opacity 0.18s ease, transform 0.18s ease;
@@ -98,6 +101,7 @@ h2 {
   .nav-dropdown:hover .nav-dropdown-menu,
   .nav-dropdown:focus-within .nav-dropdown-menu {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
   }
@@ -106,8 +110,34 @@ h2 {
     height: auto;
     justify-content: flex-start;
     padding: 10px 12px;
+    font-size: 0.88rem;
+    line-height: 1.5;
     border-radius: 6px;
-    white-space: nowrap;
+    white-space: normal;
+  }
+
+  .travel-guide-category h3 {
+    margin: 0 12px 14px;
+    color: #8a5b2f;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .travel-guide-category a {
+    text-align: left;
+  }
+
+  .nav-dropdown-menu .travel-guide-category {
+    padding: 0 12px;
+  }
+
+  .nav-dropdown-menu .travel-guide-category + .travel-guide-category {
+    border-left: 1px solid rgba(112, 79, 45, 0.18);
   }
 
   .nav-dropdown-menu a::after {
@@ -158,8 +188,21 @@ h2 {
       text-transform: none;
     }
 
-    .mobile-guide-group a {
+    .mobile-guide-group .travel-guide-category a {
       padding-left: 2.25rem;
+    }
+
+    .mobile-guide-group .travel-guide-category {
+      padding: 18px 0 10px;
+      background: #fbfaf7;
+    }
+
+    .mobile-guide-group .travel-guide-category + .travel-guide-category {
+      border-top: 1px solid rgba(112, 79, 45, 0.18);
+    }
+
+    .mobile-guide-group .travel-guide-category h3 {
+      margin: 0 2.25rem 8px;
     }
   }
   
