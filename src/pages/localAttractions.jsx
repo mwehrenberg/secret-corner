@@ -34,7 +34,7 @@ const localAttractions = [
   {
     title: "Slow Boat to Luang Prabang",
     description:
-    "Cruise along the mighty Mekong River and experience one of Southeast Asia's most iconic journeys. This two-day, one-night adventure takes you past dramatic mountains, riverside villages, and lush jungle landscapes on the way to Luang Prabang. Departure from Secret Corner is around 05:00, with arrival in Luang Prabang at approximately 16:00 on day two. The price is 1,600 THB per person and includes taxi to the pier, bus ticket for the border crossing, slow boat ticket, and lunch on day one. Lao visa fees and overnight accommodation in Pak Beng are not included.",
+    "Cruise along the mighty Mekong River and experience one of Southeast Asia's most iconic journeys. This two-day, one-night adventure takes you past dramatic mountains, riverside villages, and lush jungle landscapes on the way to Luang Prabang. Departure from Secret Corner is around 05:00, with arrival in Luang Prabang at approximately 16:00 on day two. The price is 1,990 THB per person and includes taxi to the pier, bus ticket for the border crossing, slow boat ticket, and lunch on day one. Lao visa fees and overnight accommodation in Pak Beng are not included.",
     content: slowboat,
     alt: "Slow boat journey on Mekong River from Chiang Rai to Luang Prabang Laos",
   },
