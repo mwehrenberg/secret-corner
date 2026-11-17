@@ -72,6 +72,10 @@ const faqData = [
         q: "What about car rental?",
         a: "Self-drive rentals are available at the airport. Secret Corner can also arrange a car or minivan with a driver, either by the day or based on your destination. A price list is posted at reception.",
       },
+      {
+        q: "Is there parking available?",
+        a: "Yes! We have one parking space directly in front of our property. Additional street parking is available approximately 50 meters away. Our staff will be happy to assist you upon arrival."
+      }
     ],
   },
   {
